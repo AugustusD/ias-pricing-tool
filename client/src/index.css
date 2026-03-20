@@ -158,8 +158,9 @@
   
   /* IAS-specific components */
   .ias-header {
-    background: oklch(0.12 0 0);
+    background: #ffffff;
     border-bottom: 3px solid oklch(0.68 0.09 78);
+    box-shadow: 0 1px 8px oklch(0 0 0 / 0.08);
   }
   
   .ias-sidebar {

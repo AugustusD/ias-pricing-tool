@@ -1,6 +1,7 @@
 /**
  * IAS Header Component
- * Black background with gold accent, logo, search, and order controls
+ * White background with gold bottom border — logo fully visible against white
+ * Text: black/dark-grey for readability; gold accents for brand elements
  */
 
 import { ShoppingCart, Download, Mail, LayoutList, Search, ChevronDown } from "lucide-react";
@@ -50,13 +51,17 @@ export default function Header({
     <header className="ias-header flex-shrink-0 z-50">
       <div className="flex items-center gap-0 h-14 px-3">
         {/* Logo */}
-        <div className="flex items-center gap-3 pr-4 border-r border-white/10 mr-4 flex-shrink-0">
-          <img src={IAS_LOGO} alt="Innovative Aluminum Systems" className="h-10 w-auto object-contain" style={{filter: 'brightness(1.1)'}} />
+        <div className="flex items-center gap-3 pr-4 border-r border-black/10 mr-4 flex-shrink-0">
+          <img
+            src={IAS_LOGO}
+            alt="Innovative Aluminum Systems"
+            className="h-10 w-auto object-contain"
+          />
           <div className="hidden lg:block">
             <div className="text-[#B69A5A] text-[0.7rem] font-bold uppercase tracking-[0.12em] leading-tight">
               Dealer Pricing Tool
             </div>
-            <div className="text-white/40 text-[0.6rem] uppercase tracking-[0.1em] leading-tight">
+            <div className="text-black/40 text-[0.6rem] uppercase tracking-[0.1em] leading-tight">
               2026 Price List
             </div>
           </div>
@@ -64,13 +69,13 @@ export default function Header({
 
         {/* Search */}
         <div className="flex-1 max-w-sm relative">
-          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white/40" />
+          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-black/35" />
           <input
             type="text"
             placeholder="Search part code or description..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="w-full bg-white/10 text-white placeholder-white/30 text-xs pl-8 pr-3 py-2 rounded border border-white/10 focus:outline-none focus:border-[#B69A5A] focus:bg-white/15 transition-all"
+            className="w-full bg-black/5 text-black placeholder-black/30 text-xs pl-8 pr-3 py-2 rounded border border-black/12 focus:outline-none focus:border-[#B69A5A] focus:bg-white transition-all"
           />
         </div>
 
@@ -78,12 +83,12 @@ export default function Header({
         <div className="relative ml-3 flex-shrink-0" ref={discountRef}>
           <button
             onClick={() => setShowDiscounts(!showDiscounts)}
-            className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white bg-white/10 hover:bg-white/15 px-3 py-2 rounded border border-white/10 transition-all"
+            className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <span className="hidden sm:inline">Discounts</span>
-            <span className="text-[#B69A5A] font-bold">
-              {standardDiscount > 0 || infinityDiscount > 0 ? "●" : ""}
-            </span>
+            {(standardDiscount > 0 || infinityDiscount > 0) && (
+              <span className="text-[#B69A5A] font-bold text-[0.7rem]">●</span>
+            )}
             <ChevronDown className={`w-3 h-3 transition-transform ${showDiscounts ? "rotate-180" : ""}`} />
           </button>
 
@@ -155,7 +160,7 @@ export default function Header({
           <button
             onClick={onExport}
             title="Export to Excel"
-            className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white bg-white/10 hover:bg-white/15 px-3 py-2 rounded border border-white/10 transition-all"
+            className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <Download className="w-3.5 h-3.5" />
             <span className="hidden md:inline">Export</span>
@@ -164,7 +169,7 @@ export default function Header({
           <button
             onClick={onEmail}
             title="Create Email"
-            className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white bg-white/10 hover:bg-white/15 px-3 py-2 rounded border border-white/10 transition-all"
+            className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <Mail className="w-3.5 h-3.5" />
             <span className="hidden md:inline">Email</span>
@@ -173,7 +178,7 @@ export default function Header({
           <button
             onClick={onSummary}
             title="View Order Summary"
-            className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white bg-white/10 hover:bg-white/15 px-3 py-2 rounded border border-white/10 transition-all"
+            className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <LayoutList className="w-3.5 h-3.5" />
             <span className="hidden md:inline">Summary</span>
@@ -187,7 +192,7 @@ export default function Header({
             <ShoppingCart className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Order</span>
             {totalItems > 0 && (
-              <span className="bg-[#f4ce47] text-black text-[0.65rem] font-black px-1.5 py-0.5 rounded-sm min-w-[1.25rem] text-center">
+              <span className="bg-[#1a1a1a] text-white text-[0.65rem] font-black px-1.5 py-0.5 rounded-sm min-w-[1.25rem] text-center">
                 {totalItems}
               </span>
             )}
