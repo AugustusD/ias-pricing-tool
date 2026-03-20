@@ -63,7 +63,7 @@ function DiscountField({
             }
           }}
           className={[
-            "w-14 text-center text-sm font-bold pr-5 pl-2 py-1.5 rounded border transition-all focus:outline-none",
+            "w-24 text-center text-sm font-bold pr-6 pl-2 py-1.5 rounded border transition-all focus:outline-none",
             highlight
               ? "border-[#f4ce47] bg-[#f4ce47]/20 text-black ring-1 ring-[#f4ce47] animate-pulse focus:animate-none focus:ring-[#B69A5A] focus:border-[#B69A5A] focus:bg-white"
               : "border-black/15 bg-white text-black focus:border-[#B69A5A] focus:ring-1 focus:ring-[#B69A5A]",
