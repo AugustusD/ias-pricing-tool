@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback } from "react";
+import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
 
 export type OrderItem = {
   partCode: string;
@@ -29,12 +29,43 @@ type OrderContextType = {
   getEffectivePrice: (item: OrderItem) => number;
 };
 
+const LS_STANDARD = "ias_standard_discount";
+const LS_INFINITY = "ias_infinity_discount";
+
+function readLS(key: string): number {
+  try {
+    const v = localStorage.getItem(key);
+    if (v === null) return 0;
+    const n = parseFloat(v);
+    return isNaN(n) ? 0 : Math.min(100, Math.max(0, n));
+  } catch {
+    return 0;
+  }
+}
+
 const OrderContext = createContext<OrderContextType | null>(null);
 
 export function OrderProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<OrderItem[]>([]);
-  const [standardDiscount, setStandardDiscount] = useState(0);
-  const [infinityDiscount, setInfinityDiscount] = useState(0);
+  const [standardDiscount, setStandardDiscountState] = useState<number>(() => readLS(LS_STANDARD));
+  const [infinityDiscount, setInfinityDiscountState] = useState<number>(() => readLS(LS_INFINITY));
+
+  // Persist discounts to localStorage whenever they change
+  useEffect(() => {
+    try { localStorage.setItem(LS_STANDARD, String(standardDiscount)); } catch {}
+  }, [standardDiscount]);
+
+  useEffect(() => {
+    try { localStorage.setItem(LS_INFINITY, String(infinityDiscount)); } catch {}
+  }, [infinityDiscount]);
+
+  const setStandardDiscount = useCallback((d: number) => {
+    setStandardDiscountState(Math.min(100, Math.max(0, d)));
+  }, []);
+
+  const setInfinityDiscount = useCallback((d: number) => {
+    setInfinityDiscountState(Math.min(100, Math.max(0, d)));
+  }, []);
 
   const getEffectivePrice = useCallback(
     (item: OrderItem): number => {

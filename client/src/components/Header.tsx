@@ -1,12 +1,13 @@
 /**
  * IAS Header Component
- * White background with gold bottom border — logo fully visible against white
- * Text: black/dark-grey for readability; gold accents for brand elements
+ * White background with gold bottom border.
+ * Discount fields are always visible inline — highlighted amber when left at 0%.
+ * Values persist via localStorage (managed in OrderContext).
  */
 
-import { ShoppingCart, Download, Mail, LayoutList, Search, ChevronDown } from "lucide-react";
+import { ShoppingCart, Download, Mail, LayoutList, Search } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 
 const IAS_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663093943154/eWb5yXbeMwxfmcDcdW8bmF/small200_e0c33b5e.png";
 
@@ -21,6 +22,63 @@ type HeaderProps = {
   onSearchChange: (q: string) => void;
 };
 
+/** Controlled percent input — shows raw string while typing, commits on blur/enter */
+function DiscountField({
+  label,
+  value,
+  onChange,
+  highlight,
+}: {
+  label: string;
+  value: number;
+  onChange: (n: number) => void;
+  highlight: boolean;
+}) {
+  const [raw, setRaw] = useState<string | null>(null);
+  const displayed = raw !== null ? raw : String(value);
+
+  function commit(str: string) {
+    setRaw(null);
+    const n = parseFloat(str);
+    if (!isNaN(n)) onChange(Math.min(100, Math.max(0, n)));
+    else onChange(0);
+  }
+
+  return (
+    <div className="flex items-center gap-1.5 flex-shrink-0">
+      <span className="text-[0.65rem] font-semibold uppercase tracking-wide text-black/50 hidden lg:block whitespace-nowrap">
+        {label}
+      </span>
+      <div className="relative">
+        <input
+          type="text"
+          inputMode="decimal"
+          value={displayed}
+          onChange={(e) => setRaw(e.target.value)}
+          onBlur={(e) => commit(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              commit((e.target as HTMLInputElement).value);
+              (e.target as HTMLInputElement).blur();
+            }
+          }}
+          className={[
+            "w-14 text-center text-sm font-bold pr-5 pl-2 py-1.5 rounded border transition-all focus:outline-none",
+            highlight
+              ? "border-[#f4ce47] bg-[#f4ce47]/20 text-black ring-1 ring-[#f4ce47] animate-pulse focus:animate-none focus:ring-[#B69A5A] focus:border-[#B69A5A] focus:bg-white"
+              : "border-black/15 bg-white text-black focus:border-[#B69A5A] focus:ring-1 focus:ring-[#B69A5A]",
+          ].join(" ")}
+        />
+        <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black/40 pointer-events-none font-medium">
+          %
+        </span>
+      </div>
+      {/* Label shown below on small screens */}
+      <span className="text-[0.6rem] text-black/40 lg:hidden whitespace-nowrap">{label.split(" ")[0]}</span>
+    </div>
+  );
+}
+
 export default function Header({
   totalItems,
   totalPrice,
@@ -32,32 +90,21 @@ export default function Header({
   onSearchChange,
 }: HeaderProps) {
   const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
-  const [showDiscounts, setShowDiscounts] = useState(false);
-  const discountRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
-      if (discountRef.current && !discountRef.current.contains(e.target as Node)) {
-        setShowDiscounts(false);
-      }
-    }
-    if (showDiscounts) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showDiscounts]);
+  const stdBlank = standardDiscount === 0;
+  const infBlank = infinityDiscount === 0;
 
   return (
     <header className="ias-header flex-shrink-0 z-50">
-      <div className="flex items-center gap-0 h-14 px-3">
+      <div className="flex items-center gap-2 h-14 px-3">
         {/* Logo */}
-        <div className="flex items-center gap-3 pr-4 border-r border-black/10 mr-4 flex-shrink-0">
+        <div className="flex items-center gap-3 pr-4 border-r border-black/10 mr-2 flex-shrink-0">
           <img
             src={IAS_LOGO}
             alt="Innovative Aluminum Systems"
             className="h-10 w-auto object-contain"
           />
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <div className="text-[#B69A5A] text-[0.7rem] font-bold uppercase tracking-[0.12em] leading-tight">
               Dealer Pricing Tool
             </div>
@@ -68,7 +115,7 @@ export default function Header({
         </div>
 
         {/* Search */}
-        <div className="flex-1 max-w-sm relative">
+        <div className="flex-1 max-w-xs relative">
           <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-black/35" />
           <input
             type="text"
@@ -79,76 +126,35 @@ export default function Header({
           />
         </div>
 
-        {/* Discount controls */}
-        <div className="relative ml-3 flex-shrink-0" ref={discountRef}>
-          <button
-            onClick={() => setShowDiscounts(!showDiscounts)}
-            className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
-          >
-            <span className="hidden sm:inline">Discounts</span>
-            {(standardDiscount > 0 || infinityDiscount > 0) && (
-              <span className="text-[#B69A5A] font-bold text-[0.7rem]">●</span>
-            )}
-            <ChevronDown className={`w-3 h-3 transition-transform ${showDiscounts ? "rotate-180" : ""}`} />
-          </button>
+        {/* ── Always-visible Discount Fields ── */}
+        <div className="flex items-center gap-3 px-3 py-1.5 rounded border border-black/10 bg-black/[0.03] flex-shrink-0 ml-1">
+          {/* Divider label */}
+          <span className="text-[0.6rem] font-bold uppercase tracking-widest text-black/30 hidden md:block">
+            Discounts
+          </span>
+          <div className="w-px h-5 bg-black/10 hidden md:block" />
 
-          {showDiscounts && (
-            <div className="absolute top-full right-0 mt-1 bg-[#1a1a1a] border border-white/10 rounded shadow-2xl p-4 z-50 w-64">
-              <div className="text-[#B69A5A] text-[0.65rem] font-bold uppercase tracking-widest mb-3">
-                Dealer Discounts
-              </div>
-              <div className="space-y-3">
-                <div>
-                  <label className="text-white/60 text-xs block mb-1">Standard Product</label>
-                  <div className="flex items-center gap-2">
-                    <input
-                      type="range"
-                      min="0"
-                      max="50"
-                      step="1"
-                      value={standardDiscount}
-                      onChange={(e) => setStandardDiscount(Number(e.target.value))}
-                      className="flex-1 accent-[#B69A5A]"
-                    />
-                    <input
-                      type="number"
-                      min="0"
-                      max="50"
-                      value={standardDiscount}
-                      onChange={(e) => setStandardDiscount(Math.min(50, Math.max(0, Number(e.target.value))))}
-                      className="w-12 bg-white/10 text-white text-xs font-bold text-center rounded border border-white/20 py-0.5"
-                    />
-                    <span className="text-white/50 text-xs">%</span>
-                  </div>
-                </div>
-                <div>
-                  <label className="text-white/60 text-xs block mb-1">Infinity Product</label>
-                  <div className="flex items-center gap-2">
-                    <input
-                      type="range"
-                      min="0"
-                      max="50"
-                      step="1"
-                      value={infinityDiscount}
-                      onChange={(e) => setInfinityDiscount(Number(e.target.value))}
-                      className="flex-1 accent-[#B69A5A]"
-                    />
-                    <input
-                      type="number"
-                      min="0"
-                      max="50"
-                      value={infinityDiscount}
-                      onChange={(e) => setInfinityDiscount(Math.min(50, Math.max(0, Number(e.target.value))))}
-                      className="w-12 bg-white/10 text-white text-xs font-bold text-center rounded border border-white/20 py-0.5"
-                    />
-                    <span className="text-white/50 text-xs">%</span>
-                  </div>
-                </div>
-                <div className="pt-1 border-t border-white/10 text-white/40 text-[0.65rem]">
-                  Net price items are not discounted
-                </div>
-              </div>
-            </div>
+          <DiscountField
+            label="Standard"
+            value={standardDiscount}
+            onChange={setStandardDiscount}
+            highlight={stdBlank}
+          />
+
+          <div className="w-px h-5 bg-black/10" />
+
+          <DiscountField
+            label="Infinity"
+            value={infinityDiscount}
+            onChange={setInfinityDiscount}
+            highlight={infBlank}
+          />
+
+          {/* Tooltip hint when either is blank */}
+          {(stdBlank || infBlank) && (
+            <span className="text-[0.6rem] text-[#B69A5A] font-semibold hidden lg:block whitespace-nowrap">
+              ← Enter your discount
+            </span>
           )}
         </div>
 
