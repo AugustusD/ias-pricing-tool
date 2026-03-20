@@ -6,6 +6,7 @@
  */
 
 import { useState, useMemo, useCallback } from "react";
+import { X, RotateCcw, Search } from "lucide-react";
 import { CATALOG_DATA } from "@/lib/catalogData";
 import { useOrder } from "@/contexts/OrderContext";
 import { exportToExcel, generateEmailBody } from "@/lib/exportUtils";
@@ -23,8 +24,9 @@ export default function Home() {
   const [orderPanelOpen, setOrderPanelOpen] = useState(false);
   const [summaryModalOpen, setSummaryModalOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [resetConfirm, setResetConfirm] = useState(false);
 
-  const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount } = useOrder();
+  const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder } = useOrder();
 
   const activeCategory = useMemo(
     () => CATALOG_DATA.find((c) => c.id === activeCategoryId) ?? CATALOG_DATA[0],
@@ -65,6 +67,22 @@ export default function Home() {
     window.location.href = `mailto:?subject=${subject}&body=${encodedBody}`;
   }, [orderItems, getEffectivePrice, standardDiscount, infinityDiscount]);
 
+  const handleReset = useCallback(() => {
+    if (orderItems.length === 0) {
+      toast.info("Order is already empty.");
+      return;
+    }
+    if (resetConfirm) {
+      clearOrder();
+      setResetConfirm(false);
+      toast.success("Order cleared.");
+    } else {
+      setResetConfirm(true);
+      // Auto-cancel confirm state after 3s
+      setTimeout(() => setResetConfirm(false), 3000);
+    }
+  }, [orderItems.length, resetConfirm, clearOrder]);
+
   return (
     <div className="flex flex-col h-screen overflow-hidden bg-background">
       {/* Header */}
@@ -75,8 +93,11 @@ export default function Home() {
         onExport={handleExport}
         onEmail={handleEmail}
         onSummary={() => setSummaryModalOpen(true)}
+        onReset={handleReset}
+        resetConfirm={resetConfirm}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
+        onSearchClear={() => setSearchQuery("")}
       />
 
       {/* Main layout */}
@@ -92,9 +113,10 @@ export default function Home() {
 
         {/* Content area */}
         <main className="flex-1 overflow-hidden flex flex-col">
-          {/* Category title bar */}
-          <div className="bg-white border-b border-border px-4 py-2.5 flex items-center gap-3 flex-shrink-0">
-            <div className="flex items-center gap-2">
+          {/* Category title + tab bar */}
+          <div className="bg-white border-b border-border px-4 pt-2.5 pb-0 flex-shrink-0">
+            {/* Category name row */}
+            <div className="flex items-center gap-2 mb-2">
               {activeCategory.isInfinity && (
                 <span className="infinity-badge">Infinity</span>
               )}
@@ -105,9 +127,10 @@ export default function Home() {
                 {activeCategory.name}
               </h2>
             </div>
-            {/* Tab bar */}
+
+            {/* Tab bar — wraps naturally, no horizontal scroll */}
             {activeCategory.tabs.length > 1 && (
-              <div className="flex gap-1 overflow-x-auto ml-2 flex-1">
+              <div className="flex flex-wrap gap-1 pb-0">
                 {activeCategory.tabs.map((tab) => (
                   <button
                     key={tab.id}
@@ -120,6 +143,22 @@ export default function Home() {
               </div>
             )}
           </div>
+
+          {/* Search results banner (shown when searching) */}
+          {searchQuery.trim() && (
+            <div className="bg-[#f4ce47]/15 border-b border-[#f4ce47]/40 px-4 py-1.5 flex items-center gap-2 flex-shrink-0">
+              <Search className="w-3.5 h-3.5 text-black/50" />
+              <span className="text-xs text-black/60">
+                Showing results for <strong className="text-black">"{searchQuery}"</strong> in {activeCategory.name} › {activeTab?.name}
+              </span>
+              <button
+                onClick={() => setSearchQuery("")}
+                className="ml-auto text-xs text-black/50 hover:text-black flex items-center gap-1 transition-colors"
+              >
+                <X className="w-3 h-3" /> Clear
+              </button>
+            </div>
+          )}
 
           {/* Product table */}
           <div className="flex-1 overflow-auto">

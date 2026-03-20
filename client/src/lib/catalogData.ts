@@ -12,16 +12,16 @@ export const CATALOG_DATA = [
         "sheetName": "WP-58",
         "items": [
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPS3616",
             "listPrice": 657.986,
             "dealerPrice": 657.986
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPR3616",
             "listPrice": 657.986,
@@ -29,7 +29,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPS3620",
             "listPrice": 822.4792,
@@ -37,7 +37,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPR3620",
             "listPrice": 822.4792,
@@ -60,16 +60,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.65
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPS4216",
             "listPrice": 687.66,
             "dealerPrice": 687.66
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPR4216",
             "listPrice": 687.66,
@@ -77,7 +77,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPS4220",
             "listPrice": 859.5851,
@@ -85,7 +85,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPR4220",
             "listPrice": 859.5851,
@@ -108,16 +108,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.7822
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPS16",
             "listPrice": 706.41,
             "dealerPrice": 706.41
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPR16",
             "listPrice": 706.41,
@@ -140,16 +140,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 51.1474
           },
           {
-            "description": "Stair, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPS4216",
             "listPrice": 738.8545,
             "dealerPrice": 738.8545
           },
           {
-            "description": "Stair, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPR4216",
             "listPrice": 738.8545,
@@ -172,16 +172,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4876
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPF3616",
             "listPrice": 677.722,
             "dealerPrice": 677.722
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPC3616",
             "listPrice": 657.986,
@@ -189,7 +189,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPF3620",
             "listPrice": 847.1558,
@@ -197,7 +197,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPC3620",
             "listPrice": 822.4792,
@@ -220,16 +220,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.65
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPF4216",
             "listPrice": 708.3013,
             "dealerPrice": 708.3013
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPC4216",
             "listPrice": 687.66,
@@ -237,7 +237,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPF4220",
             "listPrice": 885.3668,
@@ -245,7 +245,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPC4220",
             "listPrice": 859.5851,
@@ -268,16 +268,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.7822
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPF16",
             "listPrice": 733.17,
             "dealerPrice": 733.17
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPC16",
             "listPrice": 706.41,
@@ -300,16 +300,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 51.1474
           },
           {
-            "description": "Stair, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPF4216",
             "listPrice": 761.0218,
             "dealerPrice": 761.0218
           },
           {
-            "description": "Stair, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPC4216",
             "listPrice": 738.8545,
@@ -339,16 +339,16 @@ export const CATALOG_DATA = [
         "sheetName": "WP-58-MIDRAIL",
         "items": [
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPSM3616",
             "listPrice": 878.64,
             "dealerPrice": 878.64
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPRM3616",
             "listPrice": 878.64,
@@ -356,7 +356,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPSM3620",
             "listPrice": 1098.3031,
@@ -364,7 +364,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPRM3620",
             "listPrice": 1098.3031,
@@ -387,16 +387,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.4444
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPSM4216",
             "listPrice": 908.3272,
             "dealerPrice": 908.3272
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPRM4216",
             "listPrice": 908.3272,
@@ -404,7 +404,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPSM4220",
             "listPrice": 1135.409,
@@ -412,7 +412,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPRM4220",
             "listPrice": 1135.409,
@@ -435,16 +435,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.5637
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPSM16",
             "listPrice": 952.3368,
             "dealerPrice": 952.3368
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPRM16",
             "listPrice": 952.3368,
@@ -467,16 +467,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 66.52
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPFM3616",
             "listPrice": 909.3933,
             "dealerPrice": 909.3933
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPCM3616",
             "listPrice": 878.64,
@@ -484,7 +484,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPFM3620",
             "listPrice": 1136.73,
@@ -492,7 +492,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPCM3620",
             "listPrice": 1098.3031,
@@ -515,16 +515,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.4444
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPFM4216",
             "listPrice": 940.1156,
             "dealerPrice": 940.1156
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPCM4216",
             "listPrice": 908.3272,
@@ -532,7 +532,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPFM4220",
             "listPrice": 1175.1412,
@@ -540,7 +540,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPCM4220",
             "listPrice": 1135.409,
@@ -563,16 +563,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.5637
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPFM16",
             "listPrice": 985.6723,
             "dealerPrice": 985.6723
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPCM16",
             "listPrice": 952.3368,
@@ -603,7 +603,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Top-Rail for Open Mid-Rail Picket",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLSW16",
             "listPrice": 210.6871,
@@ -611,7 +611,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top-Rail for Open Mid-Rail Picket",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLRW16",
             "listPrice": 210.6871,
@@ -619,7 +619,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLSW20",
             "listPrice": 263.3556,
@@ -627,7 +627,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLRW20",
             "listPrice": 263.3556,
@@ -651,7 +651,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top-Rail for Open Mid-Rail Picket",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLFW16",
             "listPrice": 217.0188,
@@ -659,7 +659,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top-Rail for Open Mid-Rail Picket",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLCW16",
             "listPrice": 210.6871,
@@ -667,7 +667,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLFW20",
             "listPrice": 271.2604,
@@ -675,7 +675,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLCW20",
             "listPrice": 263.3556,
@@ -698,8 +698,8 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Picket Panel - 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Picket Panel - 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPOMR4216",
             "listPrice": 670.5713,
@@ -707,7 +707,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPOMR4220",
             "listPrice": 838.2109,
@@ -729,16 +729,16 @@ export const CATALOG_DATA = [
         "sheetName": "WP-SLAT",
         "items": [
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPSSLAT3616",
             "listPrice": 885.6008,
             "dealerPrice": 885.6008
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPRSLAT3616",
             "listPrice": 885.6008,
@@ -746,7 +746,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPSSLAT3620",
             "listPrice": 1106.728,
@@ -754,7 +754,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPRSLAT3620",
             "listPrice": 1106.728,
@@ -777,16 +777,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.1227
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPSSLAT4216",
             "listPrice": 932.1457,
             "dealerPrice": 932.1457
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPRSLAT4216",
             "listPrice": 932.1457,
@@ -794,7 +794,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPSSLAT4220",
             "listPrice": 1165.1821,
@@ -802,7 +802,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPRSLAT4220",
             "listPrice": 1165.1821,
@@ -825,16 +825,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 67.51
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPSSLAT16",
             "listPrice": 1000.7669,
             "dealerPrice": 1000.7669
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPRSLAT16",
             "listPrice": 1000.7669,
@@ -857,16 +857,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 72.4696
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPFSLAT3616",
             "listPrice": 912.17,
             "dealerPrice": 912.17
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPCSLAT3616",
             "listPrice": 885.6008,
@@ -874,7 +874,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPFSLAT3620",
             "listPrice": 1139.9335,
@@ -882,7 +882,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPCSLAT3620",
             "listPrice": 1106.728,
@@ -905,16 +905,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.1227
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPFSLAT4216",
             "listPrice": 960.1117,
             "dealerPrice": 960.1117
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPCSLAT4216",
             "listPrice": 932.1457,
@@ -922,7 +922,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPFSLAT4220",
             "listPrice": 1200.1298,
@@ -930,7 +930,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPCSLAT4220",
             "listPrice": 1165.1821,
@@ -953,16 +953,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 67.51
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPFSLAT16",
             "listPrice": 1030.7871,
             "dealerPrice": 1030.7871
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPCSLAT16",
             "listPrice": 1000.7669,
@@ -992,16 +992,16 @@ export const CATALOG_DATA = [
         "sheetName": "WP-SLAT-MIDRAIL",
         "items": [
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPSMSLAT3616",
             "listPrice": 1106.27,
             "dealerPrice": 1106.27
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPRMSLAT3616",
             "listPrice": 1106.27,
@@ -1009,7 +1009,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPSMSLAT3620",
             "listPrice": 1382.5519,
@@ -1017,7 +1017,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPRMSLAT3620",
             "listPrice": 1382.5519,
@@ -1040,16 +1040,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.9042
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPSMSLAT4216",
             "listPrice": 1152.8049,
             "dealerPrice": 1152.8049
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPRMSLAT4216",
             "listPrice": 1152.8049,
@@ -1057,7 +1057,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPSMSLAT4220",
             "listPrice": 1441.0061,
@@ -1065,7 +1065,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPRMSLAT4220",
             "listPrice": 1441.0061,
@@ -1088,16 +1088,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 81.2975
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPSMSLAT16",
             "listPrice": 1246.68,
             "dealerPrice": 1246.68
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPRMSLAT16",
             "listPrice": 1246.68,
@@ -1120,16 +1120,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 87.8372
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPFMSLAT3616",
             "listPrice": 1139.4525,
             "dealerPrice": 1139.4525
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPCMSLAT3616",
             "listPrice": 1106.27,
@@ -1137,7 +1137,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPFMSLAT3620",
             "listPrice": 1424.0263,
@@ -1145,7 +1145,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPCMSLAT3620",
             "listPrice": 1382.5519,
@@ -1168,16 +1168,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.9042
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPFMSLAT4216",
             "listPrice": 1187.38,
             "dealerPrice": 1187.38
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWPCMSLAT4216",
             "listPrice": 1152.8049,
@@ -1185,7 +1185,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPFMSLAT4220",
             "listPrice": 1484.2356,
@@ -1193,7 +1193,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PWPCMSLAT4220",
             "listPrice": 1441.0061,
@@ -1216,16 +1216,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 81.2975
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPFMSLAT16",
             "listPrice": 1284.0796,
             "dealerPrice": 1284.0796
           },
           {
-            "description": "Stair, 36 1/8\u201d Rail Height",
-            "size": "16\u2019",
+            "description": "Stair, 36 1/8” Rail Height",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PWSPCMSLAT16",
             "listPrice": 1246.68,
@@ -1256,7 +1256,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Top Flex Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLSC16",
             "listPrice": 242.6,
@@ -1264,7 +1264,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLSC20",
             "listPrice": 303.25,
@@ -1280,7 +1280,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Flex Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLFC16",
             "listPrice": 249.8602,
@@ -1288,7 +1288,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLFC20",
             "listPrice": 312.3317,
@@ -1319,8 +1319,8 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Level, 36 1/8\u201d Rail Height",
-            "size": "4\u2019",
+            "description": "Level, 36 1/8” Rail Height",
+            "size": "4’",
             "unit": "Each",
             "partCode": "PFRIP364",
             "listPrice": 135.9,
@@ -1328,7 +1328,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "5\u2019",
+            "size": "5’",
             "unit": "Each",
             "partCode": "PFRIP365",
             "listPrice": 169.87,
@@ -1336,7 +1336,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "6\u2019",
+            "size": "6’",
             "unit": "Each",
             "partCode": "PFRIP366",
             "listPrice": 203.8354,
@@ -1351,8 +1351,8 @@ export const CATALOG_DATA = [
             "dealerPrice": 40.1872
           },
           {
-            "description": "Level, 42 1/8\u201d Rail Height",
-            "size": "4\u2019",
+            "description": "Level, 42 1/8” Rail Height",
+            "size": "4’",
             "unit": "Each",
             "partCode": "PFRIP424",
             "listPrice": 143.32,
@@ -1360,7 +1360,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "5\u2019",
+            "size": "5’",
             "unit": "Each",
             "partCode": "PFRIP425",
             "listPrice": 179.1588,
@@ -1368,7 +1368,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "6\u2019",
+            "size": "6’",
             "unit": "Each",
             "partCode": "PFRIP426",
             "listPrice": 214.9905,
@@ -1392,7 +1392,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "6\u2019",
+            "size": "6’",
             "unit": "Each",
             "partCode": "PFRSP6",
             "listPrice": 206.7,
@@ -1400,7 +1400,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "8\u2019",
+            "size": "8’",
             "unit": "Each",
             "partCode": "PFRSP8",
             "listPrice": 275.56,
@@ -1440,7 +1440,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Top Glass Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLSC16",
             "listPrice": 242.6,
@@ -1448,7 +1448,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Glass Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLRC16",
             "listPrice": 242.6,
@@ -1456,7 +1456,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLSC20",
             "listPrice": 303.25,
@@ -1464,7 +1464,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLRC20",
             "listPrice": 303.25,
@@ -1488,7 +1488,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Rail for Open Glass Mid-Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLSW16",
             "listPrice": 210.6871,
@@ -1496,7 +1496,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Rail for Open Glass Mid-Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLRW16",
             "listPrice": 210.6871,
@@ -1504,7 +1504,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLSW20",
             "listPrice": 263.35,
@@ -1512,7 +1512,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLRW20",
             "listPrice": 263.35,
@@ -1536,7 +1536,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Glass Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLFC16",
             "listPrice": 249.8602,
@@ -1544,7 +1544,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Glass Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLCC16",
             "listPrice": 242.6,
@@ -1552,7 +1552,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLFC20",
             "listPrice": 312.3317,
@@ -1560,7 +1560,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLCC20",
             "listPrice": 303.25,
@@ -1584,7 +1584,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Rail for Open Glass Mid-Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLFW16",
             "listPrice": 217.0188,
@@ -1592,7 +1592,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Top Rail for Open Glass Mid-Rail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLCW16",
             "listPrice": 210.6871,
@@ -1600,7 +1600,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLFW20",
             "listPrice": 271.2604,
@@ -1608,7 +1608,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLCW20",
             "listPrice": 263.35,
@@ -1632,7 +1632,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Intermediate Glass Mid-Rail",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLBRW20",
             "listPrice": 158.1226,
@@ -1640,7 +1640,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Intermediate Glass Mid-Rail",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLDMR20",
             "listPrice": 178.1837,
@@ -1664,7 +1664,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Bottom Glass Rail",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLBRC20",
             "listPrice": 150.9328,
@@ -1683,20 +1683,20 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "posts-parts",
-    "name": "Posts & Parts",
+    "id": "posts",
+    "name": "Posts",
     "icon": "Columns",
     "isInfinity": false,
     "isNetPrice": false,
     "tabs": [
       {
         "id": "posts-sfc-mt",
-        "name": "Surface Mounted 1.72\"",
+        "name": "Surface Mount 1.72\"",
         "sheetName": "POSTS-SFC-MT",
         "items": [
           {
             "description": "1.72 Plain Post",
-            "size": "34 1/4\u201d",
+            "size": "34 1/4”",
             "unit": "Each",
             "partCode": "PPS136",
             "listPrice": 54.0207,
@@ -1704,7 +1704,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Plain Post",
-            "size": "40 1/4\u201d",
+            "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PPS142",
             "listPrice": 60.4043,
@@ -1712,7 +1712,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Plain Post",
-            "size": "40 1/4\u201d",
+            "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PEPS142",
             "listPrice": 110.9796,
@@ -1720,7 +1720,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 End Post",
-            "size": "34 1/4\u201d",
+            "size": "34 1/4”",
             "unit": "Each",
             "partCode": "PPS136END",
             "listPrice": 63.3946,
@@ -1728,23 +1728,23 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Mid Post",
-            "size": "34 1/4\u201d",
+            "size": "34 1/4”",
             "unit": "Each",
             "partCode": "PPS136MID",
             "listPrice": 70.89,
             "dealerPrice": 70.89
           },
           {
-            "description": "1.72 90\u00ba Corner Post",
-            "size": "34 1/8\u201d",
+            "description": "1.72 90º Corner Post",
+            "size": "34 1/8”",
             "unit": "Each",
             "partCode": "PPS13690",
             "listPrice": 70.89,
             "dealerPrice": 70.89
           },
           {
-            "description": "1.72 135\u00ba Corner Post",
-            "size": "34 1/8\u201d",
+            "description": "1.72 135º Corner Post",
+            "size": "34 1/8”",
             "unit": "Each",
             "partCode": "PPS136135",
             "listPrice": 74.7578,
@@ -1752,7 +1752,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Custom Angle Corner Post",
-            "size": "34 1/8\u201d",
+            "size": "34 1/8”",
             "unit": "Each",
             "partCode": "PPS136CUS",
             "listPrice": 82.3506,
@@ -1760,7 +1760,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 End Post",
-            "size": "40 1/4\u201d",
+            "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PPS142END",
             "listPrice": 69.3493,
@@ -1768,7 +1768,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 End Post",
-            "size": "40 1/4\u201d",
+            "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PEPS142END",
             "listPrice": 120.49,
@@ -1776,7 +1776,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Mid Post",
-            "size": "40 1/4\u201d",
+            "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PPS142MID",
             "listPrice": 77.3321,
@@ -1784,39 +1784,39 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Mid Post",
-            "size": "40 1/4\u201d",
+            "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PEPS142MID",
             "listPrice": 129.98,
             "dealerPrice": 129.98
           },
           {
-            "description": "1.72 90\u00ba Corner Post",
-            "size": "40 1/8\u201d",
+            "description": "1.72 90º Corner Post",
+            "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PPS14290",
             "listPrice": 77.3321,
             "dealerPrice": 77.3321
           },
           {
-            "description": "1.72 90\u00ba Corner Post",
-            "size": "40 1/8\u201d",
+            "description": "1.72 90º Corner Post",
+            "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PEPS14290",
             "listPrice": 129.98,
             "dealerPrice": 129.98
           },
           {
-            "description": "1.72 135\u00ba Corner Post",
-            "size": "40 1/8\u201d",
+            "description": "1.72 135º Corner Post",
+            "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PPS142135",
             "listPrice": 81.1935,
             "dealerPrice": 81.1935
           },
           {
-            "description": "1.72 135\u00ba Corner Post",
-            "size": "40 1/8\u201d",
+            "description": "1.72 135º Corner Post",
+            "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PEPS142135",
             "listPrice": 133.524,
@@ -1824,7 +1824,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Custom Angle Corner Post",
-            "size": "40 1/8\u201d",
+            "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PPS142CUS",
             "listPrice": 88.7863,
@@ -1832,7 +1832,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Custom Angle Corner Post",
-            "size": "40 1/8\u201d",
+            "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PEPS142CUS",
             "listPrice": 141.6889,
@@ -1840,7 +1840,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Post Material",
-            "size": "246\u201d",
+            "size": "246”",
             "unit": "Each",
             "partCode": "PL172246",
             "listPrice": 256.1269,
@@ -1848,7 +1848,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "1.72 Post Material",
-            "size": "246\u201d",
+            "size": "246”",
             "unit": "Each",
             "partCode": "PEL172246",
             "listPrice": 494.02,
@@ -1930,20 +1930,20 @@ export const CATALOG_DATA = [
       },
       {
         "id": "posts-sfc-mt2",
-        "name": "Surface Mounted 2.5\"/4\"",
+        "name": "Surface Mount 2.5\" / 4\"",
         "sheetName": "POSTS-SFC-MT2",
         "items": [
           {
-            "description": "2.5 Plain Post for 36 1/8\u201d Rail Height without Post Cap",
-            "size": "37\u201d",
+            "description": "2.5 Plain Post for 36 1/8” Rail Height without Post Cap",
+            "size": "37”",
             "unit": "Each",
             "partCode": "PPS236",
             "listPrice": 71.2402,
             "dealerPrice": 71.2402
           },
           {
-            "description": "2.5 Plain Post for 42 1/8\u201d Rail Height without Post Cap",
-            "size": "43\u201d",
+            "description": "2.5 Plain Post for 42 1/8” Rail Height without Post Cap",
+            "size": "43”",
             "unit": "Each",
             "partCode": "PPS242",
             "listPrice": 77.4857,
@@ -1951,7 +1951,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "2 1/2 Post Material, 246 Inches",
-            "size": "246\u201d",
+            "size": "246”",
             "unit": "Each",
             "partCode": "PL250246",
             "listPrice": 326.5682,
@@ -2041,7 +2041,7 @@ export const CATALOG_DATA = [
       },
       {
         "id": "posts-fasc",
-        "name": "Fascia Mounted",
+        "name": "Fascia Mount",
         "sheetName": "POSTS-FASC",
         "items": [
           {
@@ -2061,7 +2061,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 141.4158
           },
           {
-            "description": "Inside 90\u00ba Corner",
+            "description": "Inside 90º Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1I90",
@@ -2069,7 +2069,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 98.2253
           },
           {
-            "description": "Inside 90\u00ba Corner",
+            "description": "Inside 90º Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1I90",
@@ -2077,7 +2077,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 141.4158
           },
           {
-            "description": "Inside 135\u00ba Corner",
+            "description": "Inside 135º Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1I135",
@@ -2085,7 +2085,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 115.6081
           },
           {
-            "description": "Inside 135\u00ba Corner",
+            "description": "Inside 135º Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1I135",
@@ -2109,7 +2109,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 180.875
           },
           {
-            "description": "Outside 90\u00ba Corner",
+            "description": "Outside 90º Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1O90",
@@ -2117,7 +2117,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 123.734
           },
           {
-            "description": "Outside 90\u00ba Corner",
+            "description": "Outside 90º Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1O90",
@@ -2125,7 +2125,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 154.4302
           },
           {
-            "description": "Outside 135\u00ba  Corner",
+            "description": "Outside 135º  Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1O135",
@@ -2133,7 +2133,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 125.4371
           },
           {
-            "description": "Outside 135\u00ba  Corner",
+            "description": "Outside 135º  Corner",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1O135",
@@ -2157,16 +2157,16 @@ export const CATALOG_DATA = [
             "dealerPrice": 180.875
           },
           {
-            "description": "Mid & Inside Corner - 90\u00ba",
-            "size": "5\u201d",
+            "description": "Mid & Inside Corner - 90º",
+            "size": "5”",
             "unit": "Each",
             "partCode": "PPFP172MID",
             "listPrice": 37.4325,
             "dealerPrice": 37.4325
           },
           {
-            "description": "Outside Corner - 90\u00ba",
-            "size": "5\u201d",
+            "description": "Outside Corner - 90º",
+            "size": "5”",
             "unit": "Each",
             "partCode": "PPFP172O90",
             "listPrice": 49.1505,
@@ -2174,7 +2174,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Custom",
-            "size": "5\u201d",
+            "size": "5”",
             "unit": "Each",
             "partCode": "PPFP172CUS",
             "listPrice": 57.3097,
@@ -2189,7 +2189,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Mid",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BMID",
             "listPrice": 116.5052,
@@ -2197,7 +2197,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Left",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BENDL",
             "listPrice": 107.36,
@@ -2205,23 +2205,23 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Right",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BENDR",
             "listPrice": 107.36,
             "dealerPrice": 107.36
           },
           {
-            "description": "Inside 90\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Inside 90º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BI90",
             "listPrice": 116.5052,
             "dealerPrice": 116.5052
           },
           {
-            "description": "Inside 135\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Inside 135º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BI135",
             "listPrice": 138.6,
@@ -2229,23 +2229,23 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Custom Angle Corner",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BICUS",
             "listPrice": 165.53,
             "dealerPrice": 165.53
           },
           {
-            "description": "Outside 90\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Outside 90º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BO90",
             "listPrice": 142.02,
             "dealerPrice": 142.02
           },
           {
-            "description": "Outside 135\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Outside 135º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BO135",
             "listPrice": 148.43,
@@ -2253,7 +2253,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Custom Angle Corner",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BOCUS",
             "listPrice": 172.9441,
@@ -2261,7 +2261,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Mid",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BMID",
             "listPrice": 160.42,
@@ -2269,7 +2269,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Left",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BENDL",
             "listPrice": 150.9198,
@@ -2277,23 +2277,23 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Right",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BENDR",
             "listPrice": 150.9198,
             "dealerPrice": 150.9198
           },
           {
-            "description": "Inside 90\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Inside 90º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BI90",
             "listPrice": 160.42,
             "dealerPrice": 160.42
           },
           {
-            "description": "Inside 135\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Inside 135º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BI135",
             "listPrice": 191.76,
@@ -2301,23 +2301,23 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Custom Angle Corner",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BICUS",
             "listPrice": 211.59,
             "dealerPrice": 211.59
           },
           {
-            "description": "Outside 90\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Outside 90º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BO90",
             "listPrice": 173.4252,
             "dealerPrice": 173.4252
           },
           {
-            "description": "Outside 135\u00ba Corner",
-            "size": "48\u201d",
+            "description": "Outside 135º Corner",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BO135",
             "listPrice": 186.51,
@@ -2325,17 +2325,26 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Custom Angle Corner",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BOCUS",
             "listPrice": 211.59,
             "dealerPrice": 211.59
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "parts",
+    "name": "Parts",
+    "icon": "Wrench",
+    "isInfinity": false,
+    "isNetPrice": false,
+    "tabs": [
       {
         "id": "lvl-slvs-parts-toprail",
-        "name": "Level Sleeves & Parts",
+        "name": "Level Sleeves - Top Rail",
         "sheetName": "LVL-SLVS&PARTS-TOPRAIL",
         "items": [
           {
@@ -2347,7 +2356,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 13.45
           },
           {
-            "description": "90\u00ba Sleeve W/Mount",
+            "description": "90º Sleeve W/Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PSSL90",
@@ -2355,7 +2364,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 33.02
           },
           {
-            "description": "135\u00ba Sleeve W/Mount",
+            "description": "135º Sleeve W/Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PSSL135",
@@ -2419,7 +2428,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 13.45
           },
           {
-            "description": "90\u00ba Sleeve W/Mount",
+            "description": "90º Sleeve W/Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PFSL90",
@@ -2427,7 +2436,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 38.62
           },
           {
-            "description": "135\u00ba Sleeve W/Mount",
+            "description": "135º Sleeve W/Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PFSL135",
@@ -2550,7 +2559,7 @@ export const CATALOG_DATA = [
       },
       {
         "id": "str-slvs-pmp-toprail",
-        "name": "Stair Sleeves & Parts",
+        "name": "Stair Sleeves - Top Rail",
         "sheetName": "STR-SLVS&PMP-TOPRAIL",
         "items": [
           {
@@ -2661,7 +2670,7 @@ export const CATALOG_DATA = [
       },
       {
         "id": "wm-toprail",
-        "name": "Top Rail Wall Mounts",
+        "name": "Wall Mounts - Top Rail",
         "sheetName": "WM-TOPRAIL",
         "items": [
           {
@@ -2681,7 +2690,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.6395
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PSWM22L",
@@ -2689,7 +2698,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PRWM22L",
@@ -2697,7 +2706,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PSWM22R",
@@ -2705,7 +2714,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PRWM22R",
@@ -2713,7 +2722,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PSWM45L",
@@ -2721,7 +2730,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PRWM45L",
@@ -2729,7 +2738,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PSWM45R",
@@ -2737,7 +2746,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PRWM45R",
@@ -2745,7 +2754,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "90\u00ba Left",
+            "description": "90º Left",
             "size": "f",
             "unit": "Each",
             "partCode": "PSWM90L",
@@ -2753,7 +2762,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "90\u00ba Left",
+            "description": "90º Left",
             "size": "f",
             "unit": "Each",
             "partCode": "PRWM90L",
@@ -2761,7 +2770,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "90\u00ba Right",
+            "description": "90º Right",
             "size": "g",
             "unit": "Each",
             "partCode": "PSWM90R",
@@ -2769,7 +2778,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "90\u00ba Right",
+            "description": "90º Right",
             "size": "g",
             "unit": "Each",
             "partCode": "PRWM90R",
@@ -2841,7 +2850,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.6395
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PFWM22L",
@@ -2849,7 +2858,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.32
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PCWM22L",
@@ -2857,7 +2866,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PFWM22R",
@@ -2865,7 +2874,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.32
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PCWM22R",
@@ -2873,7 +2882,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PFWM45L",
@@ -2881,7 +2890,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.39
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PCWM45L",
@@ -2889,7 +2898,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PFWM45R",
@@ -2897,7 +2906,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.39
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PCWM45R",
@@ -2905,7 +2914,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "90\u00ba Left",
+            "description": "90º Left",
             "size": "f",
             "unit": "Each",
             "partCode": "PFWM90L",
@@ -2913,7 +2922,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4356
           },
           {
-            "description": "90\u00ba Left",
+            "description": "90º Left",
             "size": "f",
             "unit": "Each",
             "partCode": "PCWM90L",
@@ -2921,7 +2930,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 50.2243
           },
           {
-            "description": "90\u00ba Right",
+            "description": "90º Right",
             "size": "g",
             "unit": "Each",
             "partCode": "PFWM90R",
@@ -2929,7 +2938,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4356
           },
           {
-            "description": "90\u00ba Right",
+            "description": "90º Right",
             "size": "g",
             "unit": "Each",
             "partCode": "PCWM90R",
@@ -2988,7 +2997,7 @@ export const CATALOG_DATA = [
       },
       {
         "id": "wm-btm-mid-dblrail",
-        "name": "Btm/Mid/Dbl Wall Mounts",
+        "name": "Wall Mounts - Btm/Mid/Dbl",
         "sheetName": "WM-BTM-MID-DBLRAIL",
         "items": [
           {
@@ -3000,7 +3009,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 12.3123
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PBWM22L",
@@ -3008,7 +3017,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.27
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PBWM22R",
@@ -3016,7 +3025,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.27
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PBWM45L",
@@ -3024,7 +3033,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.6926
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PBWM45R",
@@ -3032,7 +3041,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.6926
           },
           {
-            "description": "90\u00ba Left",
+            "description": "90º Left",
             "size": "f",
             "unit": "Each",
             "partCode": "PBWM90L",
@@ -3040,7 +3049,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.4838
           },
           {
-            "description": "90\u00ba Right",
+            "description": "90º Right",
             "size": "g",
             "unit": "Each",
             "partCode": "PBWM90R",
@@ -3091,12 +3100,12 @@ export const CATALOG_DATA = [
       },
       {
         "id": "lvl-slv-btm-mid-dblrail",
-        "name": "Level Sleeves Btm/Mid/Dbl",
+        "name": "Level Sleeves - Btm/Mid/Dbl",
         "sheetName": "LVL-SLV-BTM-MID-DBLRAIL",
         "items": [
           {
             "description": "Sleeve Material w/screw ports",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLBRS20",
             "listPrice": 200.8061,
@@ -3104,7 +3113,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Sleeve Material w/screw ports",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLDMS20",
             "listPrice": 233.2315,
@@ -3143,7 +3152,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 9.491
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PBSLW22L",
@@ -3151,7 +3160,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "22 1/2\u00ba Left",
+            "description": "22 1/2º Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PDSLW22L",
@@ -3159,7 +3168,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PBSLW22R",
@@ -3167,7 +3176,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "22 1/2\u00ba Right",
+            "description": "22 1/2º Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PDSLW22R",
@@ -3175,7 +3184,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PBSLW45L",
@@ -3183,7 +3192,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "45\u00ba Left",
+            "description": "45º Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PDSLW45L",
@@ -3191,7 +3200,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PBSLW45R",
@@ -3199,7 +3208,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "45\u00ba Right",
+            "description": "45º Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PDSLW45R",
@@ -3231,7 +3240,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Inside Sleeve Material W/Screw Ports - Top Rail",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "MLTINSLV20",
             "listPrice": 203.37,
@@ -3254,7 +3263,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 4.8625
           },
           {
-            "description": "22.5\u00ba Left - Mill Finish",
+            "description": "22.5º Left - Mill Finish",
             "size": "b",
             "unit": "Each",
             "partCode": "MTINWM22L",
@@ -3262,7 +3271,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "22.5\u00ba Right - Mill Finish",
+            "description": "22.5º Right - Mill Finish",
             "size": "c",
             "unit": "Each",
             "partCode": "MTINWM22R",
@@ -3270,7 +3279,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "45\u00ba Left - Mill Finish",
+            "description": "45º Left - Mill Finish",
             "size": "d",
             "unit": "Each",
             "partCode": "MTINWM45L",
@@ -3278,7 +3287,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "45\u00ba Right - Mill Finish",
+            "description": "45º Right - Mill Finish",
             "size": "e",
             "unit": "Each",
             "partCode": "MTINWM45R",
@@ -3325,15 +3334,15 @@ export const CATALOG_DATA = [
         "sheetName": "GLS-INSRT-SB&LGS",
         "items": [
           {
-            "description": "Glass Insert - Top - Clear - 10\u2019",
-            "size": "10\u2019",
+            "description": "Glass Insert - Top - Clear - 10’",
+            "size": "10’",
             "unit": "Each",
             "partCode": "RPLTGL",
             "listPrice": 27.62,
             "dealerPrice": 27.62
           },
           {
-            "description": "Glass Insert - Top - Clear - Box of 10\u2019",
+            "description": "Glass Insert - Top - Clear - Box of 10’",
             "size": "42pc",
             "unit": "Box",
             "partCode": "RPLTGLBX",
@@ -3341,8 +3350,8 @@ export const CATALOG_DATA = [
             "dealerPrice": 1099.1352
           },
           {
-            "description": "Glass Insert - Bottom/Mid - Black - 10\u2019",
-            "size": "10\u2019",
+            "description": "Glass Insert - Bottom/Mid - Black - 10’",
+            "size": "10’",
             "unit": "Each",
             "partCode": "RPLBGL",
             "listPrice": 20.41,
@@ -3366,7 +3375,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Setting Block - Rubber - 1/2 x 3/8  X 4 Inches Long",
-            "size": "4\u201d",
+            "size": "4”",
             "unit": "Each",
             "partCode": "RPLSB4",
             "listPrice": 0.8451,
@@ -3398,7 +3407,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Leg Material - Bottom Rail Support - 20 Ft Length",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLLEG20",
             "listPrice": 265.08,
@@ -3413,8 +3422,8 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.0047
           },
           {
-            "description": "Leg Gasket - Neoprene - 1/8\u201d x 1 7/16\u201d x 5/8\u201d",
-            "size": "1/8\u201d",
+            "description": "Leg Gasket - Neoprene - 1/8” x 1 7/16” x 5/8”",
+            "size": "1/8”",
             "unit": "Each",
             "partCode": "RPLBPGLG",
             "listPrice": 1.7983,
@@ -3438,7 +3447,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Handrail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLSW16",
             "listPrice": 210.6871,
@@ -3446,7 +3455,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Handrail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLRW16",
             "listPrice": 210.6871,
@@ -3454,7 +3463,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLSW20",
             "listPrice": 263.35,
@@ -3462,7 +3471,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLRW20",
             "listPrice": 263.35,
@@ -3486,7 +3495,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Handrail",
-            "size": "16\u2019",
+            "size": "16’",
             "unit": "Each",
             "partCode": "PLCW16",
             "listPrice": 210.6871,
@@ -3494,7 +3503,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLPHR1920",
             "listPrice": 254.78,
@@ -3502,7 +3511,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "PLCW20",
             "listPrice": 263.35,
@@ -3526,7 +3535,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Sleeve Material W/Screw Ports",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "MLTINSLV20",
             "listPrice": 203.37,
@@ -3542,7 +3551,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Sleeve - 1.9\" Pipe Rail (1 1/4\" Sch 40)",
-            "size": "20\u2019",
+            "size": "20’",
             "unit": "Each",
             "partCode": "MLPHR19INSLV20",
             "listPrice": 227.7579,
@@ -3573,7 +3582,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 25.8337
           },
           {
-            "description": "90\u00ba Corner",
+            "description": "90º Corner",
             "size": "c",
             "unit": "Each",
             "partCode": "PPHELB1990",
@@ -3773,7 +3782,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.7532
           },
           {
-            "description": "Gate Kit Post - 1.72 - 42\u201d Rail Height (Hinges Not Included)",
+            "description": "Gate Kit Post - 1.72 - 42” Rail Height (Hinges Not Included)",
             "size": "h",
             "unit": "Each",
             "partCode": "PGTKITPST",
@@ -3830,7 +3839,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Mid Post",
-            "size": "24\u201d",
+            "size": "24”",
             "unit": "Each",
             "partCode": "PPSINF24MID",
             "listPrice": 203.3543,
@@ -3838,7 +3847,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Corner Post",
-            "size": "24\u201d",
+            "size": "24”",
             "unit": "Each",
             "partCode": "PPSINF24OUT",
             "listPrice": 203.3543,
@@ -3846,7 +3855,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Corner Post",
-            "size": "24\u201d",
+            "size": "24”",
             "unit": "Each",
             "partCode": "PPSINF24IN",
             "listPrice": 203.3543,
@@ -3854,7 +3863,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Mid Post",
-            "size": "34\u201d",
+            "size": "34”",
             "unit": "Each",
             "partCode": "PPSINF36MID",
             "listPrice": 216.6287,
@@ -3862,7 +3871,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Corner Post",
-            "size": "34\u201d",
+            "size": "34”",
             "unit": "Each",
             "partCode": "PPSINF36OUT",
             "listPrice": 216.6287,
@@ -3870,15 +3879,15 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Corner Post",
-            "size": "34\u201d",
+            "size": "34”",
             "unit": "Each",
             "partCode": "PPSINF36IN",
             "listPrice": 216.6287,
             "dealerPrice": 216.6287
           },
           {
-            "description": "Wall Track - 36\u201d Rail Height",
-            "size": "34\u201d",
+            "description": "Wall Track - 36” Rail Height",
+            "size": "34”",
             "unit": "Each",
             "partCode": "PINFWM36",
             "listPrice": 60.3523,
@@ -3886,7 +3895,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Mid Post",
-            "size": "40\u201d",
+            "size": "40”",
             "unit": "Each",
             "partCode": "PPSINF42MID",
             "listPrice": 231.0472,
@@ -3894,7 +3903,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Corner Post",
-            "size": "40\u201d",
+            "size": "40”",
             "unit": "Each",
             "partCode": "PPSINF42OUT",
             "listPrice": 231.0472,
@@ -3902,15 +3911,15 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Corner Post",
-            "size": "40\u201d",
+            "size": "40”",
             "unit": "Each",
             "partCode": "PPSINF42IN",
             "listPrice": 231.0472,
             "dealerPrice": 231.0472
           },
           {
-            "description": "Wall Track - 42 1/8\u201d Rail Height",
-            "size": "40\u201d",
+            "description": "Wall Track - 42 1/8” Rail Height",
+            "size": "40”",
             "unit": "Each",
             "partCode": "PINFWM42",
             "listPrice": 63.53,
@@ -3918,7 +3927,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Left",
-            "size": "37\u201d",
+            "size": "37”",
             "unit": "Each",
             "partCode": "PPSINF362ENDL",
             "listPrice": 145.4202,
@@ -3926,7 +3935,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Right",
-            "size": "37\u201d",
+            "size": "37”",
             "unit": "Each",
             "partCode": "PPSINF362ENDR",
             "listPrice": 145.4202,
@@ -3934,7 +3943,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Left",
-            "size": "43\u201d",
+            "size": "43”",
             "unit": "Each",
             "partCode": "PPSINF422ENDL",
             "listPrice": 165.7674,
@@ -3942,14 +3951,14 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Right",
-            "size": "43\u201d",
+            "size": "43”",
             "unit": "Each",
             "partCode": "PPSINF422ENDR",
             "listPrice": 165.7674,
             "dealerPrice": 165.7674
           },
           {
-            "description": "2.5\u201d Pyramid Post Cap",
+            "description": "2.5” Pyramid Post Cap",
             "size": "a",
             "unit": "Each",
             "partCode": "PCP250",
@@ -3989,7 +3998,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Mid Post",
-            "size": "32\u201d",
+            "size": "32”",
             "unit": "Each",
             "partCode": "PPFINF24MID",
             "listPrice": 165.6504,
@@ -3997,7 +4006,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Corner Post",
-            "size": "32\u201d",
+            "size": "32”",
             "unit": "Each",
             "partCode": "PPFINF24OUT",
             "listPrice": 165.6504,
@@ -4005,7 +4014,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Corner Post",
-            "size": "32\u201d",
+            "size": "32”",
             "unit": "Each",
             "partCode": "PPFINF24IN",
             "listPrice": 165.6504,
@@ -4013,7 +4022,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Mid Post",
-            "size": "42\u201d",
+            "size": "42”",
             "unit": "Each",
             "partCode": "PPFINF36MID",
             "listPrice": 186.9856,
@@ -4021,7 +4030,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Corner Post",
-            "size": "42\u201d",
+            "size": "42”",
             "unit": "Each",
             "partCode": "PPFINF36OUT",
             "listPrice": 186.9856,
@@ -4029,15 +4038,15 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Corner Post",
-            "size": "42\u201d",
+            "size": "42”",
             "unit": "Each",
             "partCode": "PPFINF36IN",
             "listPrice": 186.9856,
             "dealerPrice": 186.9856
           },
           {
-            "description": "Wall Track - 36\u201d Rail Height",
-            "size": "34\u201d",
+            "description": "Wall Track - 36” Rail Height",
+            "size": "34”",
             "unit": "Each",
             "partCode": "PINFWM36",
             "listPrice": 60.3523,
@@ -4045,7 +4054,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Mid Post",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFINF42MID",
             "listPrice": 201.39,
@@ -4053,7 +4062,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Outside Corner Post",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFINF42OUT",
             "listPrice": 201.39,
@@ -4061,15 +4070,15 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Inside Corner Post",
-            "size": "48\u201d",
+            "size": "48”",
             "unit": "Each",
             "partCode": "PPFINF42IN",
             "listPrice": 201.39,
             "dealerPrice": 201.39
           },
           {
-            "description": "Wall Track - 42 1/8\u201d Rail Height",
-            "size": "40\u201d",
+            "description": "Wall Track - 42 1/8” Rail Height",
+            "size": "40”",
             "unit": "Each",
             "partCode": "PINFWM42",
             "listPrice": 63.53,
@@ -4077,7 +4086,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Left",
-            "size": "45\u201d",
+            "size": "45”",
             "unit": "Each",
             "partCode": "PPFINF362ENDL",
             "listPrice": 206.0169,
@@ -4085,7 +4094,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Right",
-            "size": "45\u201d",
+            "size": "45”",
             "unit": "Each",
             "partCode": "PPFINF362ENDR",
             "listPrice": 206.0169,
@@ -4093,7 +4102,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Left",
-            "size": "51\u201d",
+            "size": "51”",
             "unit": "Each",
             "partCode": "PPFINF422ENDL",
             "listPrice": 220.1483,
@@ -4101,15 +4110,15 @@ export const CATALOG_DATA = [
           },
           {
             "description": "End Post - Right",
-            "size": "51\u201d",
+            "size": "51”",
             "unit": "Each",
             "partCode": "PPFINF422ENDR",
             "listPrice": 220.1483,
             "dealerPrice": 220.1483
           },
           {
-            "description": "2.5\u201d Pyramid Post Cap",
-            "size": "2.5\u201d",
+            "description": "2.5” Pyramid Post Cap",
+            "size": "2.5”",
             "unit": "Each",
             "partCode": "PCP250",
             "listPrice": 14.6785,
@@ -4132,7 +4141,7 @@ export const CATALOG_DATA = [
         "items": [
           {
             "description": "Glass Insert - Infinity 12mm - Black 12 Ft",
-            "size": "12\u2019",
+            "size": "12’",
             "unit": "Each",
             "partCode": "RPLINFGL12",
             "listPrice": 24.6246,
@@ -4140,7 +4149,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Glass Insert - Infinity 13mm - Black 10 Ft",
-            "size": "10\u2019",
+            "size": "10’",
             "unit": "Each",
             "partCode": "RPLINFGL13",
             "listPrice": 20.5227,
@@ -4148,7 +4157,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Glass Wedge - Infinity 12mm - Black 12 Ft Length",
-            "size": "12\u2019",
+            "size": "12’",
             "unit": "Each",
             "partCode": "RPLINFGW12",
             "listPrice": 74.5498,
@@ -4156,7 +4165,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Setting Block - Infinity Topless Glass - Black 10 Ft",
-            "size": "10\u2019",
+            "size": "10’",
             "unit": "Each",
             "partCode": "RPLINFSB",
             "listPrice": 61.94,
@@ -4164,7 +4173,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Glass Wedge - Infinity 12mm - Black, 3 Inches Long",
-            "size": "3\u201d",
+            "size": "3”",
             "unit": "Each",
             "partCode": "RPLINFGW123",
             "listPrice": 3.33,
@@ -4172,7 +4181,7 @@ export const CATALOG_DATA = [
           },
           {
             "description": "Setting Block - Infinity Topless Glass - Black, 1 1/2 Inches Long",
-            "size": "1.5\u201d",
+            "size": "1.5”",
             "unit": "Each",
             "partCode": "RPLINFSB15",
             "listPrice": 2.6263,
@@ -4475,7 +4484,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.92
           },
           {
-            "description": "Apex Roberston Driver Bit #2 \u2013 3 \u00bd\u201d Long",
+            "description": "Apex Roberston Driver Bit #2 – 3 ½” Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR2X350",
@@ -4483,7 +4492,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 4.0
           },
           {
-            "description": "Roberston Driver Bit #2 \u2013 6\u201d Long",
+            "description": "Roberston Driver Bit #2 – 6” Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR2X600",
@@ -4491,7 +4500,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 6.0
           },
           {
-            "description": "Apex Roberston Driver Bit #3 \u2013 3 \u00bd\u201d Long",
+            "description": "Apex Roberston Driver Bit #3 – 3 ½” Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR3X350",
@@ -4499,7 +4508,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 4.0
           },
           {
-            "description": "Roberston Driver Bit #3 \u2013 6\u201d Long",
+            "description": "Roberston Driver Bit #3 – 6” Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR3X600",
@@ -4603,7 +4612,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.87
           },
           {
-            "description": "Infinity 18\u201d Sample Post",
+            "description": "Infinity 18” Sample Post",
             "size": null,
             "unit": "Each",
             "partCode": "APSINF18END-12MM",

@@ -3,9 +3,11 @@
  * White background with gold bottom border.
  * Discount fields are always visible inline — highlighted amber when left at 0%.
  * Values persist via localStorage (managed in OrderContext).
+ * Reset Order button (branded yellow) clears the order with a confirm step.
+ * Search field has an X clear button.
  */
 
-import { ShoppingCart, Download, Mail, LayoutList, Search } from "lucide-react";
+import { ShoppingCart, Download, Mail, LayoutList, Search, X, RotateCcw } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
 import { useState } from "react";
 
@@ -18,8 +20,11 @@ type HeaderProps = {
   onExport: () => void;
   onEmail: () => void;
   onSummary: () => void;
+  onReset: () => void;
+  resetConfirm: boolean;
   searchQuery: string;
   onSearchChange: (q: string) => void;
+  onSearchClear: () => void;
 };
 
 /** Controlled percent input — shows raw string while typing, commits on blur/enter */
@@ -86,8 +91,11 @@ export default function Header({
   onExport,
   onEmail,
   onSummary,
+  onReset,
+  resetConfirm,
   searchQuery,
   onSearchChange,
+  onSearchClear,
 }: HeaderProps) {
   const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
 
@@ -114,16 +122,25 @@ export default function Header({
           </div>
         </div>
 
-        {/* Search */}
+        {/* Search with clear X */}
         <div className="flex-1 max-w-xs relative">
-          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-black/35" />
+          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-black/35 pointer-events-none" />
           <input
             type="text"
             placeholder="Search part code or description..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="w-full bg-black/5 text-black placeholder-black/30 text-xs pl-8 pr-3 py-2 rounded border border-black/12 focus:outline-none focus:border-[#B69A5A] focus:bg-white transition-all"
+            className="w-full bg-black/5 text-black placeholder-black/30 text-xs pl-8 pr-7 py-2 rounded border border-black/12 focus:outline-none focus:border-[#B69A5A] focus:bg-white transition-all"
           />
+          {searchQuery && (
+            <button
+              onClick={onSearchClear}
+              title="Clear search"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-black/35 hover:text-black transition-colors"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
         </div>
 
         {/* ── Always-visible Discount Fields ── */}
@@ -163,6 +180,24 @@ export default function Header({
 
         {/* Action buttons */}
         <div className="flex items-center gap-1.5 flex-shrink-0">
+
+          {/* Reset Order — branded yellow, confirm step */}
+          <button
+            onClick={onReset}
+            title={resetConfirm ? "Click again to confirm reset" : "Reset / Clear Order"}
+            className={[
+              "flex items-center gap-1.5 text-xs font-bold px-3 py-2 rounded border transition-all",
+              resetConfirm
+                ? "bg-red-500 border-red-600 text-white hover:bg-red-600 animate-pulse"
+                : "bg-[#f4ce47] border-[#e0b800] text-black hover:bg-[#ffe066]",
+            ].join(" ")}
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span className="hidden md:inline">
+              {resetConfirm ? "Confirm?" : "Reset"}
+            </span>
+          </button>
+
           <button
             onClick={onExport}
             title="Export to Excel"
