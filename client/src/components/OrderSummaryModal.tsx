@@ -161,17 +161,18 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail }: OrderS
                             />
                           </div>
 
-                          {/* Dealer Price */}
+                          {/* Unit Price */}
                           <div className="text-right">
                             <span className="text-xs font-medium text-foreground">
-                              {item.isNetPrice ? "NET" : `$${effectivePrice.toFixed(2)}`}
+                              ${effectivePrice.toFixed(2)}
+                              {item.isNetPrice && <span className="ml-1 net-badge" style={{fontSize:'0.55rem',padding:'1px 4px'}}>NET</span>}
                             </span>
                           </div>
 
                           {/* Line Total */}
                           <div className="text-right">
                             <span className="text-xs font-bold text-foreground">
-                              {item.isNetPrice ? "NET" : `$${lineTotal.toFixed(2)}`}
+                              ${lineTotal.toFixed(2)}
                             </span>
                           </div>
 
@@ -201,7 +202,7 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail }: OrderS
               <div className="text-[0.6rem] text-muted-foreground uppercase tracking-widest">Grand Total</div>
               <div className="text-xl font-black text-foreground">${totalPrice.toFixed(2)}</div>
               <div className="text-[0.6rem] text-muted-foreground">
-                * Net price items not included in total
+                Net price items included at full dealer price
               </div>
             </div>
           </div>

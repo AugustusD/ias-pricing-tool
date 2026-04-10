@@ -122,10 +122,11 @@ export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: Or
 
                     {/* Price */}
                     <div className="text-right">
-                      <div className="text-xs font-bold text-foreground">
-                        {item.isNetPrice ? "NET" : `$${lineTotal.toFixed(2)}`}
+                      <div className="text-xs font-bold text-foreground flex items-center justify-end gap-1">
+                        ${lineTotal.toFixed(2)}
+                        {item.isNetPrice && <span className="net-badge" style={{fontSize:'0.55rem',padding:'1px 4px'}}>NET</span>}
                       </div>
-                      {item.quantity > 1 && !item.isNetPrice && (
+                      {item.quantity > 1 && (
                         <div className="text-[0.6rem] text-muted-foreground">
                           ${effectivePrice.toFixed(2)} ea.
                         </div>
