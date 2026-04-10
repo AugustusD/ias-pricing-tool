@@ -22,6 +22,7 @@ export function exportToExcel(
   infinityDiscount: number
 ) {
   const wb = XLSX.utils.book_new();
+  const DOLLAR_FMT = "$#,##0.00";
 
   // Single sheet — all ordered items in one flat list
   const rows: (string | number)[][] = [
@@ -68,6 +69,22 @@ export function exportToExcel(
   rows.push(["", "", "", "", "", "", "GRAND TOTAL:", grandTotal, ""]);
 
   const ws = XLSX.utils.aoa_to_sheet(rows);
+
+  // Apply $#,##0.00 format to Dealer Price (F), Effective Price (G), Line Total (H)
+  // Header is row 7 (1-based), data starts at row 8
+  const DATA_START = 8; // first data row (1-based Excel)
+  items.forEach((_, i) => {
+    const r = DATA_START + i;
+    // Dealer Price – column F (index 5)
+    if (ws[`F${r}`] && ws[`F${r}`].t === "n") ws[`F${r}`].z = DOLLAR_FMT;
+    // Effective Price – column G (index 6): only when numeric (not "NET" string)
+    if (ws[`G${r}`] && ws[`G${r}`].t === "n") ws[`G${r}`].z = DOLLAR_FMT;
+    // Line Total – column H (index 7)
+    if (ws[`H${r}`] && ws[`H${r}`].t === "n") ws[`H${r}`].z = DOLLAR_FMT;
+  });
+  // Grand Total row: 2 rows after last data row (blank + total)
+  const grandTotalRow = DATA_START + items.length + 1;
+  if (ws[`H${grandTotalRow}`]) ws[`H${grandTotalRow}`].z = DOLLAR_FMT;
 
   ws["!cols"] = [
     { wch: 22 }, // Part Code
