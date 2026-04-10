@@ -49,19 +49,11 @@ export default function EmailPreviewModal({ onClose }: Props) {
     }
   };
 
-  // ── Open mail client with plain-text body ───────────────────────────────────
+  // ── Open mail client with paste placeholder ───────────────────────────────────────────────
   const handleMailClient = () => {
     const subject = encodeURIComponent("IAS Dealer Order Inquiry");
-    let body = `INNOVATIVE ALUMINUM SYSTEMS\nDealer Order Inquiry\n`;
-    body += `Date: ${date}\n`;
-    body += `Standard Discount: ${standardDiscount}%  |  Infinity Discount: ${infinityDiscount}%\n\n`;
-    body += `Please see the order details below (best viewed in a table-capable email client).\n\n`;
-    rows.forEach(({ item, ep, lt }) => {
-      const price = item.isNetPrice ? "NET" : `$${ep.toFixed(2)}`;
-      body += `${item.partCode}  |  ${item.description ?? ""}  |  ${cleanSize(item.size)}  |  ${item.unit}  |  Qty: ${item.quantity}  |  ${price}  |  $${lt.toFixed(2)}\n`;
-    });
-    body += `\nGRAND TOTAL: $${grandTotal.toFixed(2)}\n`;
-    window.location.href = `mailto:?subject=${subject}&body=${encodeURIComponent(body)}`;
+    const body = encodeURIComponent("*paste copied summary here*");
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
   };
 
   return (
