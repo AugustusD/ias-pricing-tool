@@ -12,7 +12,7 @@ export const CATALOG_DATA = [
         "sheetName": "WP-58",
         "items": [
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPS3616",
@@ -20,7 +20,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 657.986
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPR3616",
@@ -28,7 +28,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 657.986
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPS3620",
@@ -36,7 +36,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 822.4792
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPR3620",
@@ -44,7 +44,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 822.4792
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPS36CUT",
@@ -52,7 +52,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.65
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPR36CUT",
@@ -60,7 +60,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.65
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPS4216",
@@ -68,7 +68,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 687.66
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPR4216",
@@ -76,7 +76,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 687.66
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPS4220",
@@ -84,7 +84,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 859.5851
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPR4220",
@@ -92,7 +92,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 859.5851
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPS42CUT",
@@ -100,7 +100,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.7822
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPR42CUT",
@@ -108,7 +108,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.7822
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPS16",
@@ -116,7 +116,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 706.41
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPR16",
@@ -124,7 +124,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 706.41
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPSCUT",
@@ -132,7 +132,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 51.1474
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPRCUT",
@@ -140,7 +140,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 51.1474
           },
           {
-            "description": "Stair, 42 1/8” Rail Height",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPS4216",
@@ -148,7 +148,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 738.8545
           },
           {
-            "description": "Stair, 42 1/8” Rail Height",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPR4216",
@@ -156,7 +156,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 738.8545
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPS42CUT",
@@ -164,7 +164,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4876
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPR42CUT",
@@ -172,7 +172,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4876
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPF3616",
@@ -180,7 +180,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 677.722
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPC3616",
@@ -188,7 +188,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 657.986
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPF3620",
@@ -196,7 +196,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 847.1558
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPC3620",
@@ -204,7 +204,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 822.4792
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPF36CUT",
@@ -212,7 +212,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.0801
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPC36CUT",
@@ -220,7 +220,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.65
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPF4216",
@@ -228,7 +228,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 708.3013
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPC4216",
@@ -236,7 +236,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 687.66
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPF4220",
@@ -244,7 +244,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 885.3668
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPC4220",
@@ -252,7 +252,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 859.5851
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPF42CUT",
@@ -260,7 +260,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 51.2774
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPC42CUT",
@@ -268,7 +268,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.7822
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPF16",
@@ -276,7 +276,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 733.17
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPC16",
@@ -284,7 +284,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 706.41
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPFCUT",
@@ -292,7 +292,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 52.69
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPCCUT",
@@ -300,7 +300,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 51.1474
           },
           {
-            "description": "Stair, 42 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPF4216",
@@ -308,7 +308,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 761.0218
           },
           {
-            "description": "Stair, 42 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPC4216",
@@ -316,7 +316,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 738.8545
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPF42CUT",
@@ -324,7 +324,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 55.11
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Full Height, Picket, Panel, Stair, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPC42CUT",
@@ -339,7 +339,7 @@ export const CATALOG_DATA = [
         "sheetName": "WP-58-MIDRAIL",
         "items": [
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPSM3616",
@@ -347,7 +347,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 878.64
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPRM3616",
@@ -355,7 +355,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 878.64
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPSM3620",
@@ -363,7 +363,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1098.3031
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPRM3620",
@@ -371,7 +371,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1098.3031
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPSM36CUT",
@@ -379,7 +379,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.4444
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPRM36CUT",
@@ -387,7 +387,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.4444
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPSM4216",
@@ -395,7 +395,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 908.3272
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPRM4216",
@@ -403,7 +403,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 908.3272
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPSM4220",
@@ -411,7 +411,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1135.409
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPRM4220",
@@ -419,7 +419,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1135.409
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPSM42CUT",
@@ -427,7 +427,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.5637
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPRM42CUT",
@@ -435,7 +435,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.5637
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPSM16",
@@ -443,7 +443,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 952.3368
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPRM16",
@@ -451,7 +451,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 952.3368
           },
           {
-            "description": "",
+            "description": "Square, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPSMCUT",
@@ -459,7 +459,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 66.52
           },
           {
-            "description": "",
+            "description": "Round, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPRMCUT",
@@ -467,7 +467,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 66.52
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPFM3616",
@@ -475,7 +475,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 909.3933
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPCM3616",
@@ -483,7 +483,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 878.64
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPFM3620",
@@ -491,7 +491,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1136.73
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPCM3620",
@@ -499,7 +499,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1098.3031
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPFM36CUT",
@@ -507,7 +507,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.5897
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPCM36CUT",
@@ -515,7 +515,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.4444
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPFM4216",
@@ -523,7 +523,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 940.1156
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPCM4216",
@@ -531,7 +531,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 908.3272
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPFM4220",
@@ -539,7 +539,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1175.1412
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPCM4220",
@@ -547,7 +547,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1135.409
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPFM42CUT",
@@ -555,7 +555,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 65.79
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPCM42CUT",
@@ -563,7 +563,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.5637
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPFM16",
@@ -571,7 +571,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 985.6723
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPCM16",
@@ -579,7 +579,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 952.3368
           },
           {
-            "description": "",
+            "description": "Flat, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPFMCUT",
@@ -587,7 +587,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 68.8422
           },
           {
-            "description": "",
+            "description": "Colonial, 5/8\" - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPCMCUT",
@@ -602,7 +602,7 @@ export const CATALOG_DATA = [
         "sheetName": "WP-58-OPEN-MIDRAIL",
         "items": [
           {
-            "description": "Top-Rail for Open Mid-Rail Picket",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLSW16",
@@ -610,7 +610,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "Top-Rail for Open Mid-Rail Picket",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLRW16",
@@ -618,7 +618,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLSW20",
@@ -626,7 +626,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.3556
           },
           {
-            "description": "",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLRW20",
@@ -634,7 +634,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.3556
           },
           {
-            "description": "",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLSWCUT",
@@ -642,7 +642,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLRWCUT",
@@ -650,7 +650,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Top-Rail for Open Mid-Rail Picket",
+            "description": "Flat, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLFW16",
@@ -658,7 +658,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 217.0188
           },
           {
-            "description": "Top-Rail for Open Mid-Rail Picket",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLCW16",
@@ -666,7 +666,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "",
+            "description": "Flat, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLFW20",
@@ -674,7 +674,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 271.2604
           },
           {
-            "description": "",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLCW20",
@@ -682,7 +682,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.3556
           },
           {
-            "description": "",
+            "description": "Flat, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLFWCUT",
@@ -690,7 +690,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.722
           },
           {
-            "description": "",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLCWCUT",
@@ -698,7 +698,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Picket Panel - 42 1/8” Rail Height",
+            "description": "Mid-Rail, 5/8\" - Open Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPOMR4216",
@@ -706,7 +706,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 670.5713
           },
           {
-            "description": "",
+            "description": "Mid-Rail, 5/8\" - Open Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPOMR4220",
@@ -714,7 +714,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 838.2109
           },
           {
-            "description": "",
+            "description": "Mid-Rail, 5/8\" - Open Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPOMR42CUT",
@@ -729,7 +729,7 @@ export const CATALOG_DATA = [
         "sheetName": "WP-SLAT",
         "items": [
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Square, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPSSLAT3616",
@@ -737,7 +737,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 885.6008
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Round, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPRSLAT3616",
@@ -745,7 +745,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 885.6008
           },
           {
-            "description": "",
+            "description": "Square, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPSSLAT3620",
@@ -753,7 +753,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1106.728
           },
           {
-            "description": "",
+            "description": "Round, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPRSLAT3620",
@@ -761,7 +761,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1106.728
           },
           {
-            "description": "",
+            "description": "Square, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPSSLAT36CUT",
@@ -769,7 +769,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.1227
           },
           {
-            "description": "",
+            "description": "Round, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPRSLAT36CUT",
@@ -777,7 +777,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.1227
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Square, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPSSLAT4216",
@@ -785,7 +785,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 932.1457
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Round, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPRSLAT4216",
@@ -793,7 +793,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 932.1457
           },
           {
-            "description": "",
+            "description": "Square, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPSSLAT4220",
@@ -801,7 +801,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1165.1821
           },
           {
-            "description": "",
+            "description": "Round, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPRSLAT4220",
@@ -809,7 +809,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1165.1821
           },
           {
-            "description": "",
+            "description": "Square, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPSSLAT42CUT",
@@ -817,7 +817,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 67.51
           },
           {
-            "description": "",
+            "description": "Round, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPRSLAT42CUT",
@@ -825,7 +825,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 67.51
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Square, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPSSLAT16",
@@ -833,7 +833,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1000.7669
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Round, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPRSLAT16",
@@ -841,7 +841,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1000.7669
           },
           {
-            "description": "",
+            "description": "Square, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPSSLATCUT",
@@ -849,7 +849,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 72.4696
           },
           {
-            "description": "",
+            "description": "Round, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPRSLATCUT",
@@ -857,7 +857,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 72.4696
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPFSLAT3616",
@@ -865,7 +865,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 912.17
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPCSLAT3616",
@@ -873,7 +873,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 885.6008
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPFSLAT3620",
@@ -881,7 +881,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1139.9335
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPCSLAT3620",
@@ -889,7 +889,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1106.728
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPFSLAT36CUT",
@@ -897,7 +897,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 66.0469
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPCSLAT36CUT",
@@ -905,7 +905,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.1227
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPFSLAT4216",
@@ -913,7 +913,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 960.1117
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPCSLAT4216",
@@ -921,7 +921,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 932.1457
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPFSLAT4220",
@@ -929,7 +929,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1200.1298
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPCSLAT4220",
@@ -937,7 +937,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1165.1821
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPFSLAT42CUT",
@@ -945,7 +945,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 69.54
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPCSLAT42CUT",
@@ -953,7 +953,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 67.51
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPFSLAT16",
@@ -961,7 +961,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1030.7871
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPCSLAT16",
@@ -969,7 +969,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1000.7669
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPFSLATCUT",
@@ -977,7 +977,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 74.66
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Full Height, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPCSLATCUT",
@@ -992,7 +992,7 @@ export const CATALOG_DATA = [
         "sheetName": "WP-SLAT-MIDRAIL",
         "items": [
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPSMSLAT3616",
@@ -1000,7 +1000,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1106.27
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPRMSLAT3616",
@@ -1008,7 +1008,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1106.27
           },
           {
-            "description": "",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPSMSLAT3620",
@@ -1016,7 +1016,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1382.5519
           },
           {
-            "description": "",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPRMSLAT3620",
@@ -1024,7 +1024,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1382.5519
           },
           {
-            "description": "",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPSMSLAT36CUT",
@@ -1032,7 +1032,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.9042
           },
           {
-            "description": "",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPRMSLAT36CUT",
@@ -1040,7 +1040,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.9042
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPSMSLAT4216",
@@ -1048,7 +1048,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1152.8049
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPRMSLAT4216",
@@ -1056,7 +1056,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1152.8049
           },
           {
-            "description": "",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPSMSLAT4220",
@@ -1064,7 +1064,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1441.0061
           },
           {
-            "description": "",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPRMSLAT4220",
@@ -1072,7 +1072,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1441.0061
           },
           {
-            "description": "",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPSMSLAT42CUT",
@@ -1080,7 +1080,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 81.2975
           },
           {
-            "description": "",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPRMSLAT42CUT",
@@ -1088,7 +1088,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 81.2975
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPSMSLAT16",
@@ -1096,7 +1096,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1246.68
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPRMSLAT16",
@@ -1104,7 +1104,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1246.68
           },
           {
-            "description": "",
+            "description": "Square, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPSMSLATCUT",
@@ -1112,7 +1112,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 87.8372
           },
           {
-            "description": "",
+            "description": "Round, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPRMSLATCUT",
@@ -1120,7 +1120,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 87.8372
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPFMSLAT3616",
@@ -1128,7 +1128,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1139.4525
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPCMSLAT3616",
@@ -1136,7 +1136,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1106.27
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPFMSLAT3620",
@@ -1144,7 +1144,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1424.0263
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPCMSLAT3620",
@@ -1152,7 +1152,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1382.5519
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPFMSLAT36CUT",
@@ -1160,7 +1160,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 80.25
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPCMSLAT36CUT",
@@ -1168,7 +1168,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.9042
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPFMSLAT4216",
@@ -1176,7 +1176,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1187.38
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWPCMSLAT4216",
@@ -1184,7 +1184,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1152.8049
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPFMSLAT4220",
@@ -1192,7 +1192,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1484.2356
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PWPCMSLAT4220",
@@ -1200,7 +1200,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1441.0061
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPFMSLAT42CUT",
@@ -1208,7 +1208,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 83.7288
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWPCMSLAT42CUT",
@@ -1216,7 +1216,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 81.2975
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPFMSLAT16",
@@ -1224,7 +1224,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1284.0796
           },
           {
-            "description": "Stair, 36 1/8” Rail Height",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PWSPCMSLAT16",
@@ -1232,7 +1232,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1246.68
           },
           {
-            "description": "",
+            "description": "Flat, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPFMSLATCUT",
@@ -1240,7 +1240,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 90.4765
           },
           {
-            "description": "",
+            "description": "Colonial, Slat - Mid-Rail, Picket, Panel, Stair, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PWSPCMSLATCUT",
@@ -1255,7 +1255,7 @@ export const CATALOG_DATA = [
         "sheetName": "WP-FLEXRAIL",
         "items": [
           {
-            "description": "Top Flex Rail",
+            "description": "Square, Glass & Flex Rail, Top Rail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLSC16",
@@ -1263,7 +1263,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 242.6
           },
           {
-            "description": "",
+            "description": "Square, Glass & Flex Rail, Top Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLSC20",
@@ -1271,7 +1271,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 303.25
           },
           {
-            "description": "",
+            "description": "Square, Glass & Flex Rail, Top Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLSCCUT",
@@ -1279,7 +1279,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.63
           },
           {
-            "description": "Top Flex Rail",
+            "description": "Flat, Glass & Flex Rail, Top Rail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLFC16",
@@ -1287,7 +1287,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 249.8602
           },
           {
-            "description": "",
+            "description": "Flat, Glass & Flex Rail, Top Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLFC20",
@@ -1295,7 +1295,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 312.3317
           },
           {
-            "description": "",
+            "description": "Flat, Glass & Flex Rail, Top Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLFCCUT",
@@ -1303,7 +1303,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 20.2171
           },
           {
-            "description": "Flex-Rail Stair Sleeve - Down",
+            "description": "Square, Flex-Rail, Stair, Sleeve, Notched for 1.72 posts",
             "size": null,
             "unit": "Each",
             "partCode": "PFRSSTR",
@@ -1311,7 +1311,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Flex-Rail Stair Sleeve - Down",
+            "description": "Flat, Flex-Rail, Stair, Sleeve, Notched for 1.72 posts",
             "size": null,
             "unit": "Each",
             "partCode": "PFRFSTR",
@@ -1319,7 +1319,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Level, 36 1/8” Rail Height",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 36 1/8\" Rail Height, 4'",
             "size": "4’",
             "unit": "Each",
             "partCode": "PFRIP364",
@@ -1327,7 +1327,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 135.9
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 36 1/8\" Rail Height, 5'",
             "size": "5’",
             "unit": "Each",
             "partCode": "PFRIP365",
@@ -1335,7 +1335,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 169.87
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 36 1/8\" Rail Height, 6'",
             "size": "6’",
             "unit": "Each",
             "partCode": "PFRIP366",
@@ -1343,7 +1343,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 203.8354
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 36 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PFRIP36CUT",
@@ -1351,7 +1351,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 40.1872
           },
           {
-            "description": "Level, 42 1/8” Rail Height",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 42 1/8\" Rail Height, 4'",
             "size": "4’",
             "unit": "Each",
             "partCode": "PFRIP424",
@@ -1359,7 +1359,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 143.32
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 42 1/8\" Rail Height, 5'",
             "size": "5’",
             "unit": "Each",
             "partCode": "PFRIP425",
@@ -1367,7 +1367,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 179.1588
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 42 1/8\" Rail Height, 6'",
             "size": "6’",
             "unit": "Each",
             "partCode": "PFRIP426",
@@ -1375,7 +1375,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 214.9905
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Level, 42 1/8\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PFRIP42CUT",
@@ -1391,7 +1391,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 137.78
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Stair, 36\" Rail Height, 6'",
             "size": "6’",
             "unit": "Each",
             "partCode": "PFRSP6",
@@ -1399,7 +1399,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 206.7
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Stair, 36\" Rail Height, 8'",
             "size": "8’",
             "unit": "Each",
             "partCode": "PFRSP8",
@@ -1407,7 +1407,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 275.56
           },
           {
-            "description": "",
+            "description": "Flex-Rail, Picket, Insert Panel, Stair, 36\" Rail Height, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PFRSPCUT",
@@ -1415,7 +1415,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 39.91
           },
           {
-            "description": "Adjustable Bottom Stair Sleeve Set",
+            "description": "Flex-Rail, Bottom, Stair Sleeve, Adjustable",
             "size": "a",
             "unit": "Each",
             "partCode": "PFRBSTR",
@@ -1439,7 +1439,7 @@ export const CATALOG_DATA = [
         "sheetName": "COMPGLASS",
         "items": [
           {
-            "description": "Top Glass Rail",
+            "description": "Square, Glass & Flex Rail, Top Rail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLSC16",
@@ -1447,7 +1447,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 242.6
           },
           {
-            "description": "Top Glass Rail",
+            "description": "Round, Glass & Flex Rail, Top Rail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLRC16",
@@ -1455,7 +1455,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 242.6
           },
           {
-            "description": "",
+            "description": "Square, Glass & Flex Rail, Top Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLSC20",
@@ -1463,7 +1463,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 303.25
           },
           {
-            "description": "",
+            "description": "Round, Glass & Flex Rail, Top Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLRC20",
@@ -1471,7 +1471,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 303.25
           },
           {
-            "description": "",
+            "description": "Square, Glass & Flex Rail, Top Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLSCCUT",
@@ -1479,7 +1479,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.63
           },
           {
-            "description": "",
+            "description": "Round, Glass & Flex Rail, Top Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLRCCUT",
@@ -1487,7 +1487,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.63
           },
           {
-            "description": "Top Rail for Open Glass Mid-Rail",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLSW16",
@@ -1495,7 +1495,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "Top Rail for Open Glass Mid-Rail",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLRW16",
@@ -1503,7 +1503,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLSW20",
@@ -1511,7 +1511,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.35
           },
           {
-            "description": "",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLRW20",
@@ -1519,7 +1519,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.35
           },
           {
-            "description": "",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLSWCUT",
@@ -1527,7 +1527,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLRWCUT",
@@ -1535,7 +1535,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Top Glass Rail",
+            "description": "Flat, Glass & Flex Rail, Top Rail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLFC16",
@@ -1543,7 +1543,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 249.8602
           },
           {
-            "description": "Top Glass Rail",
+            "description": "Colonial, Glass & Flex Rail, Top Rail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLCC16",
@@ -1551,7 +1551,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 242.6
           },
           {
-            "description": "",
+            "description": "Flat, Glass & Flex Rail, Top Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLFC20",
@@ -1559,7 +1559,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 312.3317
           },
           {
-            "description": "",
+            "description": "Colonial, Glass & Flex Rail, Top Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLCC20",
@@ -1567,7 +1567,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 303.25
           },
           {
-            "description": "",
+            "description": "Flat, Glass & Flex Rail, Top Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLFCCUT",
@@ -1575,7 +1575,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 20.2171
           },
           {
-            "description": "",
+            "description": "Colonial, Glass & Flex Rail, Top Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLCCCUT",
@@ -1583,7 +1583,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.63
           },
           {
-            "description": "Top Rail for Open Glass Mid-Rail",
+            "description": "Flat, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLFW16",
@@ -1591,7 +1591,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 217.0188
           },
           {
-            "description": "Top Rail for Open Glass Mid-Rail",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLCW16",
@@ -1599,7 +1599,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "",
+            "description": "Flat, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLFW20",
@@ -1607,7 +1607,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 271.2604
           },
           {
-            "description": "",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLCW20",
@@ -1615,7 +1615,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.35
           },
           {
-            "description": "",
+            "description": "Flat, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLFWCUT",
@@ -1623,7 +1623,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.722
           },
           {
-            "description": "",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLCWCUT",
@@ -1631,7 +1631,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Intermediate Glass Mid-Rail",
+            "description": "Glass, Mid-Rail, Unpunched Bottom Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLBRW20",
@@ -1639,7 +1639,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 158.1226
           },
           {
-            "description": "Intermediate Glass Mid-Rail",
+            "description": "Double Glass, Mid-Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLDMR20",
@@ -1647,7 +1647,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 178.1837
           },
           {
-            "description": "",
+            "description": "Glass, Mid-Rail, Unpunched Bottom Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLBRWCUT",
@@ -1655,7 +1655,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 10.37
           },
           {
-            "description": "",
+            "description": "Double Glass, Mid-Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLDMRCUT",
@@ -1663,7 +1663,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.7922
           },
           {
-            "description": "Bottom Glass Rail",
+            "description": "Glass, Bottom Rail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLBRC20",
@@ -1671,7 +1671,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 150.9328
           },
           {
-            "description": "",
+            "description": "Glass, Bottom Rail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLBRCCUT",
@@ -1695,7 +1695,7 @@ export const CATALOG_DATA = [
         "sheetName": "POSTS-SFC-MT",
         "items": [
           {
-            "description": "1.72 Plain Post",
+            "description": "1.72, Surface Mount, Regular Wall - Plain, Post, without bottom sleeves, 34 1/4\"",
             "size": "34 1/4”",
             "unit": "Each",
             "partCode": "PPS136",
@@ -1703,7 +1703,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 54.0207
           },
           {
-            "description": "1.72 Plain Post",
+            "description": "1.72, Surface Mount, Regular Wall - Plain, Post, without bottom sleeves, 40 1/4\"",
             "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PPS142",
@@ -1711,7 +1711,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 60.4043
           },
           {
-            "description": "1.72 Plain Post",
+            "description": "1.72, Surface Mount, Heavy Wall - Plain, Post, without bottom sleeves, 40 1/4\"",
             "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PEPS142",
@@ -1719,7 +1719,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 110.9796
           },
           {
-            "description": "1.72 End Post",
+            "description": "1.72, Surface Mount, Regular Wall - End, Post, with bottom sleeve, 34 1/4\"",
             "size": "34 1/4”",
             "unit": "Each",
             "partCode": "PPS136END",
@@ -1727,7 +1727,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.3946
           },
           {
-            "description": "1.72 Mid Post",
+            "description": "1.72, Surface Mount, Regular Wall - Mid, Post, with bottom sleeves, 34 1/4\"",
             "size": "34 1/4”",
             "unit": "Each",
             "partCode": "PPS136MID",
@@ -1735,7 +1735,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.89
           },
           {
-            "description": "1.72 90º Corner Post",
+            "description": "1.72, Surface Mount, Regular Wall - 90Âº Corner, Post, with bottom sleeves, 34 1/8\"",
             "size": "34 1/8”",
             "unit": "Each",
             "partCode": "PPS13690",
@@ -1743,7 +1743,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.89
           },
           {
-            "description": "1.72 135º Corner Post",
+            "description": "1.72, Surface Mount, Regular Wall - 135Âº Corner, Post, with bottom sleeves, 34 1/8\"",
             "size": "34 1/8”",
             "unit": "Each",
             "partCode": "PPS136135",
@@ -1751,7 +1751,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 74.7578
           },
           {
-            "description": "1.72 Custom Angle Corner Post",
+            "description": "1.72, Surface Mount, Regular Wall - Custom Corner, Post, with bottom sleeves, 34 1/8\"",
             "size": "34 1/8”",
             "unit": "Each",
             "partCode": "PPS136CUS",
@@ -1759,7 +1759,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 82.3506
           },
           {
-            "description": "1.72 End Post",
+            "description": "1.72, Surface Mount, Regular Wall - End, Post, with bottom sleeve, 40 1/4\"",
             "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PPS142END",
@@ -1767,7 +1767,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 69.3493
           },
           {
-            "description": "1.72 End Post",
+            "description": "1.72, Surface Mount, Heavy Wall - End, Post, with bottom sleeve, 40 1/8\"",
             "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PEPS142END",
@@ -1775,7 +1775,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 120.49
           },
           {
-            "description": "1.72 Mid Post",
+            "description": "1.72, Surface Mount, Regular Wall - Mid, Post, with bottom sleeves, 40 1/4\"",
             "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PPS142MID",
@@ -1783,7 +1783,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.3321
           },
           {
-            "description": "1.72 Mid Post",
+            "description": "1.72, Surface Mount, Heavy Wall - Mid, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/4”",
             "unit": "Each",
             "partCode": "PEPS142MID",
@@ -1791,7 +1791,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 129.98
           },
           {
-            "description": "1.72 90º Corner Post",
+            "description": "1.72, Surface Mount, Regular Wall - 90Âº Corner, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PPS14290",
@@ -1799,7 +1799,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.3321
           },
           {
-            "description": "1.72 90º Corner Post",
+            "description": "1.72, Surface Mount, Heavy Wall - 90Âº Corner, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PEPS14290",
@@ -1807,7 +1807,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 129.98
           },
           {
-            "description": "1.72 135º Corner Post",
+            "description": "1.72, Surface Mount, Regular Wall - 135Âº Corner, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PPS142135",
@@ -1815,7 +1815,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 81.1935
           },
           {
-            "description": "1.72 135º Corner Post",
+            "description": "1.72, Surface Mount, Heavy Wall - 135Âº Corner, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PEPS142135",
@@ -1823,7 +1823,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 133.524
           },
           {
-            "description": "1.72 Custom Angle Corner Post",
+            "description": "1.72, Surface Mount, Regular Wall - Custom Corner, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PPS142CUS",
@@ -1831,7 +1831,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 88.7863
           },
           {
-            "description": "1.72 Custom Angle Corner Post",
+            "description": "1.72, Surface Mount, Heavy Wall - Custom Corner, Post, with bottom sleeves, 40 1/8\"",
             "size": "40 1/8”",
             "unit": "Each",
             "partCode": "PEPS142CUS",
@@ -1839,7 +1839,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 141.6889
           },
           {
-            "description": "1.72 Post Material",
+            "description": "1.72\", Surface Mount, Post, Level, 4 3/4\"x4 3/4\", 246\"",
             "size": "246”",
             "unit": "Each",
             "partCode": "PL172246",
@@ -1847,7 +1847,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 256.1269
           },
           {
-            "description": "1.72 Post Material",
+            "description": "1.72\", Surface Mount, Post, Extended Level, 4 3/4\"x4 3/4\", 246\"",
             "size": "246”",
             "unit": "Each",
             "partCode": "PEL172246",
@@ -1855,7 +1855,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 494.02
           },
           {
-            "description": "1.72 Post Material - Cut to Length",
+            "description": "1.72, Regular Wall, Post, Material, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PL172CUT",
@@ -1863,7 +1863,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.56
           },
           {
-            "description": "1.72 Post Material - Cut to Length",
+            "description": "1.72, Heavy Wall, Post, Material, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PEL172CUT",
@@ -1887,7 +1887,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.8289
           },
           {
-            "description": "Base Plate Cover - 1.72 Base Cover",
+            "description": "1.72, Surface Mount, Base Plate, Cover, One Piece, 4 3/16\"x4 3/16\"x1 5/16\"",
             "size": "a",
             "unit": "Each",
             "partCode": "PBC17244",
@@ -1895,7 +1895,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 23.4025
           },
           {
-            "description": "Plate - 1.72 Post Base - 4X4X3/8",
+            "description": "1.72\", Surface Mount, Post Pocket, 4 3/8\"x4 3/8\"",
             "size": "b",
             "unit": "Each",
             "partCode": "PPLB1724438",
@@ -1903,7 +1903,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.31
           },
           {
-            "description": "EZ-Shim - Base Plate Shim (10 Per Bag)",
+            "description": "Surface Mount, Base Plate, Shim, Neoprene",
             "size": "d",
             "unit": "Each",
             "partCode": "RPLBPSHIM",
@@ -1911,7 +1911,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 6.9557
           },
           {
-            "description": "Base Plate Gasket - Neoprene - 1/8x4x4",
+            "description": "1.72, Surface Mount, Base Plate, Gasket, Neoprene, 4\"x4\"x1/8\"",
             "size": "e",
             "unit": "Each",
             "partCode": "RPLBPG",
@@ -1934,7 +1934,7 @@ export const CATALOG_DATA = [
         "sheetName": "POSTS-SFC-MT2",
         "items": [
           {
-            "description": "2.5 Plain Post for 36 1/8” Rail Height without Post Cap",
+            "description": "2.5\", Surface Mount, Post, Level, 36\"",
             "size": "37”",
             "unit": "Each",
             "partCode": "PPS236",
@@ -1942,7 +1942,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 71.2402
           },
           {
-            "description": "2.5 Plain Post for 42 1/8” Rail Height without Post Cap",
+            "description": "2.5\", Surface Mount, Post, Level, 42\"",
             "size": "43”",
             "unit": "Each",
             "partCode": "PPS242",
@@ -1950,7 +1950,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 77.4857
           },
           {
-            "description": "2 1/2 Post Material, 246 Inches",
+            "description": "2.5\", Surface Mount, Post, Level, 246\"",
             "size": "246”",
             "unit": "Each",
             "partCode": "PL250246",
@@ -1958,7 +1958,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 326.5682
           },
           {
-            "description": "2 1/2 Post Material - Cut to Length",
+            "description": "2.5\", Surface Mount, Post, Level, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PL250CUT",
@@ -1966,7 +1966,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 20.51
           },
           {
-            "description": "Plate - 2 1/2 Post Base - 4X4X3/8",
+            "description": "2.5\", Surface Mount, Post Pocket, 4 3/8\"x4 3/8\"",
             "size": "a",
             "unit": "Each",
             "partCode": "PPLB2504438",
@@ -2045,7 +2045,7 @@ export const CATALOG_DATA = [
         "sheetName": "POSTS-FASC",
         "items": [
           {
-            "description": "Plain",
+            "description": "1.72, Fascia Mount, Regular Wall - Plain, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1P",
@@ -2053,7 +2053,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 98.2253
           },
           {
-            "description": "Plain",
+            "description": "1.72, Fascia Mount, Heavy Wall - Plain, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1P",
@@ -2061,7 +2061,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 141.4158
           },
           {
-            "description": "Inside 90º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 90Âº Inside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1I90",
@@ -2069,7 +2069,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 98.2253
           },
           {
-            "description": "Inside 90º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 90Âº Inside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1I90",
@@ -2077,7 +2077,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 141.4158
           },
           {
-            "description": "Inside 135º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 135Âº Inside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1I135",
@@ -2085,7 +2085,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 115.6081
           },
           {
-            "description": "Inside 135º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 135Âº Inside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1I135",
@@ -2093,7 +2093,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 169.2257
           },
           {
-            "description": "Inside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Regular Wall -  Custom Inside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1ICUS",
@@ -2101,7 +2101,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 134.2001
           },
           {
-            "description": "Inside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - Custom Intside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1ICUS",
@@ -2109,7 +2109,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 180.875
           },
           {
-            "description": "Outside 90º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall -  90Âº Outside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1O90",
@@ -2117,7 +2117,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 123.734
           },
           {
-            "description": "Outside 90º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 90Âº Outside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1O90",
@@ -2125,7 +2125,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 154.4302
           },
           {
-            "description": "Outside 135º  Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 135Âº Outside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1O135",
@@ -2133,7 +2133,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 125.4371
           },
           {
-            "description": "Outside 135º  Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 135Âº Outside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1O135",
@@ -2141,7 +2141,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 163.9732
           },
           {
-            "description": "Outside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Regular Wall -  Custom Outside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PPFO1OCUS",
@@ -2149,7 +2149,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 141.63
           },
           {
-            "description": "Outside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - Custom Outside Corner, Post, without bottom sleeves, 48\"",
             "size": "48",
             "unit": "Each",
             "partCode": "PEPF1OCUS",
@@ -2157,7 +2157,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 180.875
           },
           {
-            "description": "Mid & Inside Corner - 90º",
+            "description": "1.72, Fascia Mount, Post, Pockets for Mid, End & Inside Corners",
             "size": "5”",
             "unit": "Each",
             "partCode": "PPFP172MID",
@@ -2165,7 +2165,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.4325
           },
           {
-            "description": "Outside Corner - 90º",
+            "description": "1.72, Fascia Mount, Post, Pockets for Outside Corners",
             "size": "5”",
             "unit": "Each",
             "partCode": "PPFP172O90",
@@ -2173,7 +2173,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.1505
           },
           {
-            "description": "Custom",
+            "description": "1.72\", Fascia Mount, Post, Custom Length",
             "size": "5”",
             "unit": "Each",
             "partCode": "PPFP172CUS",
@@ -2188,7 +2188,7 @@ export const CATALOG_DATA = [
         "sheetName": "POSTS-FASC-SLV",
         "items": [
           {
-            "description": "Mid",
+            "description": "1.72, Fascia Mount, Regular Wall - Mid, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BMID",
@@ -2196,7 +2196,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 116.5052
           },
           {
-            "description": "End Left",
+            "description": "1.72, Fascia Mount, Regular Wall - End, Post, Left, with bottom sleeve, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BENDL",
@@ -2204,7 +2204,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 107.36
           },
           {
-            "description": "End Right",
+            "description": "1.72, Fascia Mount, Regular Wall - End, Post, Right, with bottom sleeve, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BENDR",
@@ -2212,7 +2212,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 107.36
           },
           {
-            "description": "Inside 90º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 90Âº Inside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BI90",
@@ -2220,7 +2220,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 116.5052
           },
           {
-            "description": "Inside 135º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 135Âº Inside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BI135",
@@ -2228,7 +2228,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 138.6
           },
           {
-            "description": "Inside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - Custom Inside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BICUS",
@@ -2236,7 +2236,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 165.53
           },
           {
-            "description": "Outside 90º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 90Âº Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BO90",
@@ -2244,7 +2244,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 142.02
           },
           {
-            "description": "Outside 135º Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - 135Âº Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BO135",
@@ -2252,7 +2252,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 148.43
           },
           {
-            "description": "Outside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Regular Wall - Custom Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFO1BOCUS",
@@ -2260,7 +2260,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 172.9441
           },
           {
-            "description": "Mid",
+            "description": "1.72, Fascia Mount, Heavy Wall - Mid, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BMID",
@@ -2268,7 +2268,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 160.42
           },
           {
-            "description": "End Left",
+            "description": "1.72, Fascia Mount, Heavy Wall - End, Post, Left. with bottom sleeve, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BENDL",
@@ -2276,7 +2276,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 150.9198
           },
           {
-            "description": "End Right",
+            "description": "1.72, Fascia Mount, Heavy Wall - End, Post, Right, with bottom sleeve, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BENDR",
@@ -2284,7 +2284,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 150.9198
           },
           {
-            "description": "Inside 90º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 90Âº Inside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BI90",
@@ -2292,7 +2292,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 160.42
           },
           {
-            "description": "Inside 135º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 135Âº Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BI135",
@@ -2300,7 +2300,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 191.76
           },
           {
-            "description": "Inside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - Custom Inside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BICUS",
@@ -2308,7 +2308,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 211.59
           },
           {
-            "description": "Outside 90º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 90Âº Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BO90",
@@ -2316,7 +2316,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 173.4252
           },
           {
-            "description": "Outside 135º Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - 135Âº Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BO135",
@@ -2324,7 +2324,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 186.51
           },
           {
-            "description": "Outside Custom Angle Corner",
+            "description": "1.72, Fascia Mount, Heavy Wall - Custom Outside Corner, Post, with bottom sleeves, 48\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PEPF1BOCUS",
@@ -2348,7 +2348,7 @@ export const CATALOG_DATA = [
         "sheetName": "LVL-SLVS&PARTS-TOPRAIL",
         "items": [
           {
-            "description": "Center Sleeve W/Mount",
+            "description": "Square, Center, Sleeve, with mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PSSLCTR",
@@ -2356,7 +2356,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 13.45
           },
           {
-            "description": "90º Sleeve W/Mount",
+            "description": "Square, 90Âº, Sleeve, with mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PSSL90",
@@ -2364,7 +2364,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 33.02
           },
           {
-            "description": "135º Sleeve W/Mount",
+            "description": "Square, 135Âº, Sleeve, with mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PSSL135",
@@ -2372,7 +2372,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 33.02
           },
           {
-            "description": "End Sleeve W/Mount",
+            "description": "Square, End, Sleeve, with mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PSSLEND",
@@ -2380,7 +2380,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 42.4104
           },
           {
-            "description": "Custom End Sleeve W/Mount & 1 Turn",
+            "description": "Square, One Turn, Custom End, Sleeve, with mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PSSLENDCUS2",
@@ -2388,7 +2388,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.93
           },
           {
-            "description": "Custom One Angle Sleeve W/Mount",
+            "description": "Square, One Turn, Custom, Sleeve, with mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PSSLCUS1",
@@ -2396,7 +2396,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 54.7747
           },
           {
-            "description": "Custom Two Angle Sleeve W/Mount",
+            "description": "Square, Two Turn, Custom, Sleeve, with mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PSSLCUS2",
@@ -2404,7 +2404,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.93
           },
           {
-            "description": "Custom Tee Sleeve W/Mount",
+            "description": "Square, Triple Termination, Custom Tee, Sleeve, with mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PSSLCUSTEE",
@@ -2412,7 +2412,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.93
           },
           {
-            "description": "Step Down Sleeve, Notched to fit 1.72 Post",
+            "description": "Square, Step Down, Sleeve, Notched for 1.72 posts",
             "size": "i",
             "unit": "Each",
             "partCode": "PCPSSD",
@@ -2420,7 +2420,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Center Sleeve W/Mount",
+            "description": "Flat, Center, Sleeve, with mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PFSLCTR",
@@ -2428,7 +2428,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 13.45
           },
           {
-            "description": "90º Sleeve W/Mount",
+            "description": "Flat, 90Âº, Sleeve, with mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PFSL90",
@@ -2436,7 +2436,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 38.62
           },
           {
-            "description": "135º Sleeve W/Mount",
+            "description": "Flat, 135Âº, Sleeve, with mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PFSL135",
@@ -2444,7 +2444,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 38.62
           },
           {
-            "description": "End Sleeve W/Mount",
+            "description": "Flat, End, Sleeve, with mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PFSLEND",
@@ -2452,7 +2452,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.715
           },
           {
-            "description": "Custom End Sleeve W/Mount & 1 Turn",
+            "description": "Flat, One Turn, Custom End, Sleeve, with mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PFSLENDCUS2",
@@ -2460,7 +2460,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 79.7894
           },
           {
-            "description": "Custom One Angle Sleeve W/Mount",
+            "description": "Flat, One Turn, Custom, Sleeve, with mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PFSLCUS1",
@@ -2468,7 +2468,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.0967
           },
           {
-            "description": "Custom Two Angle Sleeve W/Mount",
+            "description": "Flat, Two Turn, Custom, Sleeve, with mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PFSLCUS2",
@@ -2476,7 +2476,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 82.9747
           },
           {
-            "description": "Custom Tee Sleeve W/Mount",
+            "description": "Flat, Triple Termination, Custom Tee, Sleeve, with mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PFSLCUSTEE",
@@ -2484,7 +2484,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 82.9747
           },
           {
-            "description": "Step Down Sleeve, Notched for1.72 Post",
+            "description": "Flat, Step Down, Sleeve, Notched for 1.72 posts",
             "size": "i",
             "unit": "Each",
             "partCode": "PCPFSD",
@@ -2492,7 +2492,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "End Cap W/2 Holes Countersunk",
+            "description": "Square, End, Cap, with 2 countersunk holes",
             "size": "j",
             "unit": "Each",
             "partCode": "PCPS",
@@ -2500,7 +2500,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 9.67
           },
           {
-            "description": "Sleeve Cap - Top Rail",
+            "description": "Square, Sleeve, Cap",
             "size": "k",
             "unit": "Each",
             "partCode": "PCPSSL",
@@ -2508,7 +2508,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 30.43
           },
           {
-            "description": "End Cap W/2 Holes Countersunk",
+            "description": "Flat, End, Cap, with 2 countersunk holes",
             "size": "j",
             "unit": "Each",
             "partCode": "PCPF",
@@ -2516,7 +2516,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 24.24
           },
           {
-            "description": "Sleeve Cap - Top Rail",
+            "description": "Flat, Sleeve, Cap",
             "size": "k",
             "unit": "Each",
             "partCode": "PCPFSL",
@@ -2524,7 +2524,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 30.43
           },
           {
-            "description": "Component Top Rail Post Mount Plate - Mill Finish",
+            "description": "1.72, Glass & Flex Rail, Post Mount, Plate, Mill Finish",
             "size": "l",
             "unit": "Each",
             "partCode": "MPLPMC",
@@ -2532,7 +2532,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 6.74
           },
           {
-            "description": "Welded Picket Post Mount Plate - Mill Finish",
+            "description": "1.72, Picket, Post Mount, Plate, Mill Finish",
             "size": "m",
             "unit": "Each",
             "partCode": "MPLPMW",
@@ -2540,7 +2540,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 6.5527
           },
           {
-            "description": "Welded Picket Post Mount Plate - Powder Coated",
+            "description": "1.72, Picket, Post Mount, Plate, Powder Coated",
             "size": "m",
             "unit": "Each",
             "partCode": "PPLPMW",
@@ -2548,7 +2548,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 10.69
           },
           {
-            "description": "Welded Picket Slat Post Mount Plate",
+            "description": "1.72, Stair & Slat Picket, Post Mount, Plate, Powder Coated",
             "size": "n",
             "unit": "Each",
             "partCode": "PPLPMSTR",
@@ -2563,7 +2563,7 @@ export const CATALOG_DATA = [
         "sheetName": "STR-SLVS&PMP-TOPRAIL",
         "items": [
           {
-            "description": "Custom End Sleeve W/Sloped Mount",
+            "description": "Square, Sloped, Custom End, Sleeve, with mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PSSLENDCUS1",
@@ -2571,7 +2571,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 54.7747
           },
           {
-            "description": "Custom End Sleeve W/Mount & 1 Turn",
+            "description": "Square, One Turn, Custom End, Sleeve, with mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PSSLENDCUS2",
@@ -2579,7 +2579,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.93
           },
           {
-            "description": "Custom Sleeve W/Mount & 1 Turn",
+            "description": "Square, One Turn, Custom, Sleeve, with mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PSSLCUS1",
@@ -2587,7 +2587,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 54.7747
           },
           {
-            "description": "Custom Sleeve W/Mount- Two Angle",
+            "description": "Square, Two Turn, Custom, Sleeve, with mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PSSLCUS2",
@@ -2595,7 +2595,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 70.93
           },
           {
-            "description": "Stair Sleeve - Up Or Down - Any Angle",
+            "description": "Square, Custom Stair, Sleeve",
             "size": "e",
             "unit": "Each",
             "partCode": "PCPSSTR",
@@ -2603,7 +2603,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Flex Rail Stair Sleeve - Down, Notched for 1.72 Post",
+            "description": "Square, Flex-Rail, Stair, Sleeve, Notched for 1.72 posts",
             "size": "f",
             "unit": "Each",
             "partCode": "PFRSSTR",
@@ -2611,7 +2611,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Custom End Sleeve W/Sloped Mount",
+            "description": "Flat, Sloped, Custom End, Sleeve, with mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PFSLENDCUS1",
@@ -2619,7 +2619,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.6265
           },
           {
-            "description": "Custom End Sleeve W/Mount & 1 Turn",
+            "description": "Flat, One Turn, Custom End, Sleeve, with mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PFSLENDCUS2",
@@ -2627,7 +2627,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 79.7894
           },
           {
-            "description": "Custom Sleeve W/Mount & 1 Turn",
+            "description": "Flat, One Turn, Custom, Sleeve, with mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PFSLCUS1",
@@ -2635,7 +2635,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 64.0967
           },
           {
-            "description": "Custom Sleeve W/Mount- Two Angle",
+            "description": "Flat, Two Turn, Custom, Sleeve, with mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PFSLCUS2",
@@ -2643,7 +2643,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 82.9747
           },
           {
-            "description": "Stair Sleeve - Up Or Down - Any Angle",
+            "description": "Flat, Custom Stair, Sleeve",
             "size": "e",
             "unit": "Each",
             "partCode": "PCPFSTR",
@@ -2651,7 +2651,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Flex Rail Stair Sleeve - Down, Notched to fit 1.72 Post",
+            "description": "Flat, Flex-Rail, Stair, Sleeve, Notched for 1.72 posts",
             "size": "f",
             "unit": "Each",
             "partCode": "PFRFSTR",
@@ -2659,7 +2659,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 37.28
           },
           {
-            "description": "Stair Post Mount Plate",
+            "description": "1.72, Stair & Slat Picket, Post Mount, Plate, Powder Coated",
             "size": "g",
             "unit": "Each",
             "partCode": "PPLPMSTR",
@@ -2674,7 +2674,7 @@ export const CATALOG_DATA = [
         "sheetName": "WM-TOPRAIL",
         "items": [
           {
-            "description": "Straight",
+            "description": "Square, Wall Mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PSWM180",
@@ -2682,7 +2682,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.6395
           },
           {
-            "description": "Straight",
+            "description": "Round, Wall Mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PRWM180",
@@ -2690,7 +2690,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.6395
           },
           {
-            "description": "22 1/2º Left",
+            "description": "Square, 22 1/2Âº Left, Wall Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PSWM22L",
@@ -2698,7 +2698,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2º Left",
+            "description": "Round, 22 1/2Âº Left, Wall Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PRWM22L",
@@ -2706,7 +2706,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2º Right",
+            "description": "Square, 22 1/2Âº Right, Wall Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PSWM22R",
@@ -2714,7 +2714,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2º Right",
+            "description": "Round, 22 1/2Âº Right, Wall Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PRWM22R",
@@ -2722,7 +2722,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45º Left",
+            "description": "Square, 45Âº Left, Wall Mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PSWM45L",
@@ -2730,7 +2730,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45º Left",
+            "description": "Round, 45Âº Left, Wall Mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PRWM45L",
@@ -2738,7 +2738,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45º Right",
+            "description": "Square, 45Âº Right, Wall Mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PSWM45R",
@@ -2746,7 +2746,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45º Right",
+            "description": "Round, 45Âº Right, Wall Mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PRWM45R",
@@ -2754,7 +2754,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "90º Left",
+            "description": "Square, One Turn, 90Âº Left, Wall Mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PSWM90L",
@@ -2762,7 +2762,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "90º Left",
+            "description": "Round, One Turn, 90Âº Left, Wall Mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PRWM90L",
@@ -2770,7 +2770,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "90º Right",
+            "description": "Square, One Turn, 90Âº Right, Wall Mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PSWM90R",
@@ -2778,7 +2778,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "90º Right",
+            "description": "Round, One Turn, 90Âº Right, Wall Mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PRWM90R",
@@ -2786,7 +2786,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.6467
           },
           {
-            "description": "Custom 1 Angle",
+            "description": "Square, Custom Angled, Wall Mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PSWMCUS1",
@@ -2794,7 +2794,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 32.8544
           },
           {
-            "description": "Custom 1 Angle",
+            "description": "Round, Custom Angled, Wall Mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PRWMCUS1",
@@ -2802,7 +2802,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 32.8544
           },
           {
-            "description": "Custom 2 Angle",
+            "description": "Square, One Turn, Custom Angled, Wall Mount",
             "size": "i",
             "unit": "Each",
             "partCode": "PSWMCUS2",
@@ -2810,7 +2810,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.33
           },
           {
-            "description": "Custom 2 Angle",
+            "description": "Round, One Turn, Custom Angled, Wall Mount",
             "size": "i",
             "unit": "Each",
             "partCode": "PRWMCUS2",
@@ -2818,7 +2818,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.33
           },
           {
-            "description": "Custom 3 Angle",
+            "description": "Square, Two Turn, Custom Angled, Wall Mount",
             "size": "j",
             "unit": "Each",
             "partCode": "PSWMCUS3",
@@ -2826,7 +2826,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 65.82
           },
           {
-            "description": "Custom 3 Angle",
+            "description": "Round, Two Turn, Custom Angled, Wall Mount",
             "size": "j",
             "unit": "Each",
             "partCode": "PRWMCUS3",
@@ -2834,7 +2834,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 65.82
           },
           {
-            "description": "Straight",
+            "description": "Flat, Wall Mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PFWM180",
@@ -2842,7 +2842,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 23.1944
           },
           {
-            "description": "Straight",
+            "description": "Colonial, Wall Mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PCWM180",
@@ -2850,7 +2850,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.6395
           },
           {
-            "description": "22 1/2º Left",
+            "description": "Flat, 22 1/2Âº Left, Wall Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PFWM22L",
@@ -2858,7 +2858,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.32
           },
           {
-            "description": "22 1/2º Left",
+            "description": "Colonial, 22 1/2Âº Left, Wall Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PCWM22L",
@@ -2866,7 +2866,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "22 1/2º Right",
+            "description": "Flat, 22 1/2Âº Right, Wall Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PFWM22R",
@@ -2874,7 +2874,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.32
           },
           {
-            "description": "22 1/2º Right",
+            "description": "Colonial, 22 1/2Âº Right, Wall Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PCWM22R",
@@ -2882,7 +2882,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45º Left",
+            "description": "Flat, 45Âº Left, Wall Mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PFWM45L",
@@ -2890,7 +2890,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.39
           },
           {
-            "description": "45º Left",
+            "description": "Colonial, 45Âº Left, Wall Mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PCWM45L",
@@ -2898,7 +2898,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "45º Right",
+            "description": "Flat, 45Âº Right, Wall Mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PFWM45R",
@@ -2906,7 +2906,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.39
           },
           {
-            "description": "45º Right",
+            "description": "Colonial, 45Âº Right, Wall Mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PCWM45R",
@@ -2914,7 +2914,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.294
           },
           {
-            "description": "90º Left",
+            "description": "Flat, One Turn, 90Âº Left, Wall Mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PFWM90L",
@@ -2922,7 +2922,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4356
           },
           {
-            "description": "90º Left",
+            "description": "Colonial, One Turn, 90Âº Left, Wall Mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PCWM90L",
@@ -2930,7 +2930,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 50.2243
           },
           {
-            "description": "90º Right",
+            "description": "Flat, One Turn, 90Âº Right, Wall Mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PFWM90R",
@@ -2938,7 +2938,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 53.4356
           },
           {
-            "description": "90º Right",
+            "description": "Colonial, One Turn, 90Âº Right, Wall Mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PCWM90R",
@@ -2946,7 +2946,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 50.2243
           },
           {
-            "description": "Custom 1 Angle",
+            "description": "Flat, Custom Angled, Wall Mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PFWMCUS1",
@@ -2954,7 +2954,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 40.9023
           },
           {
-            "description": "Custom 1 Angle",
+            "description": "Colonial, Custom Angled, Wall Mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PCWMCUS1",
@@ -2962,7 +2962,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 32.8544
           },
           {
-            "description": "Custom 2 Angle",
+            "description": "Flat, One Turn, Custom Angled, Wall Mount",
             "size": "i",
             "unit": "Each",
             "partCode": "PFWMCUS2",
@@ -2970,7 +2970,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 58.7402
           },
           {
-            "description": "Custom 2 Angle",
+            "description": "Colonial, One Turn, Custom Angled, Wall Mount",
             "size": "i",
             "unit": "Each",
             "partCode": "PCWMCUS2",
@@ -2978,7 +2978,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 55.51
           },
           {
-            "description": "Custom 3 Angle",
+            "description": "Flat, Two Turn, Custom Angled, Wall Mount",
             "size": "j",
             "unit": "Each",
             "partCode": "PFWMCUS3",
@@ -2986,7 +2986,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 76.57
           },
           {
-            "description": "Custom 3 Angle",
+            "description": "Colonial, Two Turn, Custom Angled, Wall Mount",
             "size": "j",
             "unit": "Each",
             "partCode": "PCWMCUS3",
@@ -3001,7 +3001,7 @@ export const CATALOG_DATA = [
         "sheetName": "WM-BTM-MID-DBLRAIL",
         "items": [
           {
-            "description": "Straight",
+            "description": "Bottom, Wall Mount",
             "size": "a",
             "unit": "Each",
             "partCode": "PBWM180",
@@ -3009,7 +3009,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 12.3123
           },
           {
-            "description": "22 1/2º Left",
+            "description": "22 1/2Âº Left, Bottom, Wall Mount",
             "size": "b",
             "unit": "Each",
             "partCode": "PBWM22L",
@@ -3017,7 +3017,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.27
           },
           {
-            "description": "22 1/2º Right",
+            "description": "22 1/2Âº Right, Bottom, Wall Mount",
             "size": "c",
             "unit": "Each",
             "partCode": "PBWM22R",
@@ -3025,7 +3025,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.27
           },
           {
-            "description": "45º Left",
+            "description": "45Âº Left, Bottom, Wall Mount",
             "size": "d",
             "unit": "Each",
             "partCode": "PBWM45L",
@@ -3033,7 +3033,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.6926
           },
           {
-            "description": "45º Right",
+            "description": "45Âº Right, Bottom, Wall Mount",
             "size": "e",
             "unit": "Each",
             "partCode": "PBWM45R",
@@ -3041,7 +3041,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.6926
           },
           {
-            "description": "90º Left",
+            "description": "90Âº Left, Bottom, Wall Mount",
             "size": "f",
             "unit": "Each",
             "partCode": "PBWM90L",
@@ -3049,7 +3049,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.4838
           },
           {
-            "description": "90º Right",
+            "description": "90Âº Right, Bottom, Wall Mount",
             "size": "g",
             "unit": "Each",
             "partCode": "PBWM90R",
@@ -3057,7 +3057,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 26.4838
           },
           {
-            "description": "Custom One Angle",
+            "description": "Custom, Angle, Bottom, Wall Mount",
             "size": "h",
             "unit": "Each",
             "partCode": "PBWMCUS1",
@@ -3065,7 +3065,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 22.3233
           },
           {
-            "description": "Custom Two Angle",
+            "description": "Custom, One Turn, Bottom, Wall Mount",
             "size": "i",
             "unit": "Each",
             "partCode": "PBWMCUS2",
@@ -3073,7 +3073,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 32.6594
           },
           {
-            "description": "Custom Three Angle",
+            "description": "Custom, Two Turn, Bottom, Wall Mount",
             "size": "j",
             "unit": "Each",
             "partCode": "PBWMCUS3",
@@ -3081,7 +3081,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.4387
           },
           {
-            "description": "Stair - Up or Down - Any Angle",
+            "description": "Bottom, Wall Mount, Stair",
             "size": "k",
             "unit": "Each",
             "partCode": "PBWMSTR",
@@ -3089,7 +3089,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.87
           },
           {
-            "description": "Wall Mount Plate",
+            "description": "Bottom, Wall Mount, Plate",
             "size": "i",
             "unit": "Each",
             "partCode": "PPLTBWM",
@@ -3104,7 +3104,7 @@ export const CATALOG_DATA = [
         "sheetName": "LVL-SLV-BTM-MID-DBLRAIL",
         "items": [
           {
-            "description": "Sleeve Material w/screw ports",
+            "description": "Glass, Bottom Rail, Slotted, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLBRS20",
@@ -3112,7 +3112,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 200.8061
           },
           {
-            "description": "Sleeve Material w/screw ports",
+            "description": "Double Glass, Mid-Rail, Slotted, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLDMS20",
@@ -3120,7 +3120,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 233.2315
           },
           {
-            "description": "",
+            "description": "Glass, Bottom Rail, Slotted, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLBRSCUT",
@@ -3128,7 +3128,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 12.1953
           },
           {
-            "description": "",
+            "description": "Double Glass, Mid-Rail, Slotted, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLDMSCUT",
@@ -3136,7 +3136,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.1585
           },
           {
-            "description": "Straight",
+            "description": "Welded Picket, Butt Sleeve, 180° Straight",
             "size": "a",
             "unit": "Each",
             "partCode": "PBSLW180",
@@ -3144,7 +3144,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 9.14
           },
           {
-            "description": "Straight",
+            "description": "Welded Picket, Drop Sleeve, 180° Straight",
             "size": "a",
             "unit": "Each",
             "partCode": "PDSLW180",
@@ -3152,7 +3152,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 9.491
           },
           {
-            "description": "22 1/2º Left",
+            "description": "Welded Picket, Butt Sleeve, 22.5° Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PBSLW22L",
@@ -3160,7 +3160,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "22 1/2º Left",
+            "description": "Welded Picket, Drop Sleeve, 22.5° Left",
             "size": "b",
             "unit": "Each",
             "partCode": "PDSLW22L",
@@ -3168,7 +3168,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "22 1/2º Right",
+            "description": "Welded Picket, Butt Sleeve, 22.5° Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PBSLW22R",
@@ -3176,7 +3176,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "22 1/2º Right",
+            "description": "Welded Picket, Drop Sleeve, 22.5° Right",
             "size": "c",
             "unit": "Each",
             "partCode": "PDSLW22R",
@@ -3184,7 +3184,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "45º Left",
+            "description": "Welded Picket, Butt Sleeve, 45° Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PBSLW45L",
@@ -3192,7 +3192,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "45º Left",
+            "description": "Welded Picket, Drop Sleeve, 45° Left",
             "size": "d",
             "unit": "Each",
             "partCode": "PDSLW45L",
@@ -3200,7 +3200,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "45º Right",
+            "description": "Welded Picket, Butt Sleeve, 45° Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PBSLW45R",
@@ -3208,7 +3208,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.5
           },
           {
-            "description": "45º Right",
+            "description": "Welded Picket, Drop Sleeve, 45° Right",
             "size": "e",
             "unit": "Each",
             "partCode": "PDSLW45R",
@@ -3216,7 +3216,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.9222
           },
           {
-            "description": "Custom One Angle",
+            "description": "Welded Picket, Butt Sleeve, Custom Angle",
             "size": "f",
             "unit": "Each",
             "partCode": "PBSLWCUS1",
@@ -3224,7 +3224,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.6666
           },
           {
-            "description": "Custom One Angle",
+            "description": "Welded Picket, Drop Sleeve, Custom Angle",
             "size": "f",
             "unit": "Each",
             "partCode": "PDSLWCUS1",
@@ -3239,7 +3239,7 @@ export const CATALOG_DATA = [
         "sheetName": "IN-SLV&BTM-MIDRAIL-CLIPS",
         "items": [
           {
-            "description": "Inside Sleeve Material W/Screw Ports - Top Rail",
+            "description": "Top Rail, Inside Sleeve, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "MLTINSLV20",
@@ -3247,7 +3247,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 203.37
           },
           {
-            "description": "",
+            "description": "Top Rail, Inside Sleeve, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "MLTINSLVCUT",
@@ -3255,7 +3255,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 13.2224
           },
           {
-            "description": "Straight - Mill Finish",
+            "description": "Top Rail, Wall Mount, 180° Straight",
             "size": "a",
             "unit": "Each",
             "partCode": "MTINWM180",
@@ -3263,7 +3263,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 4.8625
           },
           {
-            "description": "22.5º Left - Mill Finish",
+            "description": "Top Rail, Wall Mount, 22.5° Left",
             "size": "b",
             "unit": "Each",
             "partCode": "MTINWM22L",
@@ -3271,7 +3271,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "22.5º Right - Mill Finish",
+            "description": "Top Rail, Wall Mount, 22.5° Right",
             "size": "c",
             "unit": "Each",
             "partCode": "MTINWM22R",
@@ -3279,7 +3279,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "45º Left - Mill Finish",
+            "description": "Top Rail, Wall Mount, 45° Left",
             "size": "d",
             "unit": "Each",
             "partCode": "MTINWM45L",
@@ -3287,7 +3287,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "45º Right - Mill Finish",
+            "description": "Top Rail, Wall Mount, 45° Right",
             "size": "e",
             "unit": "Each",
             "partCode": "MTINWM45R",
@@ -3295,7 +3295,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.7618
           },
           {
-            "description": "Custom Angle - Mill Finish",
+            "description": "Top Rail, Wall Mount, Custom Angle",
             "size": "f",
             "unit": "Each",
             "partCode": "MTINWMCUS",
@@ -3303,7 +3303,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.2625
           },
           {
-            "description": "Bottom Rail Clip",
+            "description": "Mid-Rail, Bracket Clip",
             "size": "g",
             "unit": "Each",
             "partCode": "MBRCLP",
@@ -3311,7 +3311,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1.1
           },
           {
-            "description": "Rail Clip Material W/Screw Ports - Bottom Rail, 20 Ft",
+            "description": "Mid-Rail, Bracket Clip, 240pc",
             "size": "h",
             "unit": "Each",
             "partCode": "MLBRCLP240",
@@ -3334,7 +3334,7 @@ export const CATALOG_DATA = [
         "sheetName": "GLS-INSRT-SB&LGS",
         "items": [
           {
-            "description": "Glass Insert - Top - Clear - 10’",
+            "description": "Top, Glass, Insert, Clear, 10'",
             "size": "10’",
             "unit": "Each",
             "partCode": "RPLTGL",
@@ -3342,7 +3342,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.62
           },
           {
-            "description": "Glass Insert - Top - Clear - Box of 10’",
+            "description": "Top, Glass, Insert, Clear, 42pc",
             "size": "42pc",
             "unit": "Box",
             "partCode": "RPLTGLBX",
@@ -3350,7 +3350,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 1099.1352
           },
           {
-            "description": "Glass Insert - Bottom/Mid - Black - 10’",
+            "description": "Bottom/Mid, Glass, Insert, Black, 10'",
             "size": "10’",
             "unit": "Each",
             "partCode": "RPLBGL",
@@ -3358,7 +3358,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 20.41
           },
           {
-            "description": "Glass Insert - Bottom - Black - Box Of 42 Lengths",
+            "description": "Bottom/Mid, Glass, Insert, Black, 42pc",
             "size": "42pc",
             "unit": "Box",
             "partCode": "RPLBGLBX",
@@ -3366,7 +3366,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 811.27
           },
           {
-            "description": "Setting Block - Rubber - 1/2 x 3/8 - Per Foot",
+            "description": "Rubber, Glass, Setting Block, 1/2\" x 3/8\", Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "RPLSBFT",
@@ -3374,7 +3374,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 2.2102
           },
           {
-            "description": "Setting Block - Rubber - 1/2 x 3/8  X 4 Inches Long",
+            "description": "Rubber, Glass, Setting Block, 1/2\" x 3/8\"  X 4\"",
             "size": "4”",
             "unit": "Each",
             "partCode": "RPLSB4",
@@ -3382,7 +3382,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 0.8451
           },
           {
-            "description": "Leg - Surface Support - 1 7/8 Inch Bottom Rail Gap",
+            "description": "Surface Mount, Support, Leg, 1 7/8\"  Bottom Rail Gap",
             "size": "a",
             "unit": "Each",
             "partCode": "ALG",
@@ -3390,7 +3390,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 5.8688
           },
           {
-            "description": "Leg - Surface Support - Individually Powder Coated",
+            "description": "Surface Mount, Support, Leg, 1 7/8\"  Bottom Rail Gap - Individually Powder Coated",
             "size": "a",
             "unit": "Each",
             "partCode": "ALGCUS",
@@ -3398,7 +3398,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 8.93
           },
           {
-            "description": "Leg - Fascia Support",
+            "description": "Fascia Mount, Support, Leg",
             "size": "b",
             "unit": "Each",
             "partCode": "PLGFAS",
@@ -3406,7 +3406,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 23.5975
           },
           {
-            "description": "Leg Material - Bottom Rail Support - 20 Ft Length",
+            "description": "Fascia Mount, Support Leg, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLLEG20",
@@ -3414,7 +3414,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 265.08
           },
           {
-            "description": "Leg Material - Bottom Rail Support - Cut to Length",
+            "description": "Fascia Mount, Support Leg, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLLEGCUT",
@@ -3422,7 +3422,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.0047
           },
           {
-            "description": "Leg Gasket - Neoprene - 1/8” x 1 7/16” x 5/8”",
+            "description": "Surface Mount, Base Plate, Gasket, Large, Neoprene",
             "size": "1/8”",
             "unit": "Each",
             "partCode": "RPLBPGLG",
@@ -3446,7 +3446,7 @@ export const CATALOG_DATA = [
         "sheetName": "HRAIL&PARTS",
         "items": [
           {
-            "description": "Handrail",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLSW16",
@@ -3454,7 +3454,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "Handrail",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLRW16",
@@ -3462,7 +3462,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLSW20",
@@ -3470,7 +3470,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.35
           },
           {
-            "description": "",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLRW20",
@@ -3478,7 +3478,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.35
           },
           {
-            "description": "",
+            "description": "Square, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLSWCUT",
@@ -3486,7 +3486,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "",
+            "description": "Round, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLRWCUT",
@@ -3494,7 +3494,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Handrail",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, 16'",
             "size": "16’",
             "unit": "Each",
             "partCode": "PLCW16",
@@ -3502,7 +3502,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 210.6871
           },
           {
-            "description": "",
+            "description": "1.9\" Pipe, Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLPHR1920",
@@ -3510,7 +3510,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 254.78
           },
           {
-            "description": "",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "PLCW20",
@@ -3518,7 +3518,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 263.35
           },
           {
-            "description": "",
+            "description": "1.9\" Pipe, Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLPHR19CUT",
@@ -3526,7 +3526,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 22.98
           },
           {
-            "description": "",
+            "description": "Colonial, Top Rail, for Open Mid-Rail & Handrail, Cut Length",
             "size": "Cut",
             "unit": "Foot",
             "partCode": "PLCWCUT",
@@ -3534,7 +3534,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.1759
           },
           {
-            "description": "Inside Sleeve Material W/Screw Ports",
+            "description": "Top Rail, Inside Sleeve, 20'",
             "size": "20’",
             "unit": "Each",
             "partCode": "MLTINSLV20",
@@ -3542,7 +3542,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 203.37
           },
           {
-            "description": "",
+            "description": "Top Rail, Inside Sleeve, Cut Length",
             "size": "Cut",
             "unit": "Ft",
             "partCode": "MLTINSLVCUT",
@@ -3558,7 +3558,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 227.7579
           },
           {
-            "description": "",
+            "description": "1.9\" Pipe, Handrail, Inside Sleeve, Cut Length",
             "size": "Cut",
             "unit": "Ft",
             "partCode": "MLPHR19INSLVCUT",
@@ -3566,7 +3566,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.7956
           },
           {
-            "description": "Top Rail Handrail - Side Mount - Regular Extension",
+            "description": "1.9\" Pipe, Handrail, Side Mount, Regular Extension",
             "size": "a",
             "unit": "Each",
             "partCode": "PSMTRR",
@@ -3574,7 +3574,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 22.6
           },
           {
-            "description": "Top Rail Handrail - Side Mount - 2 Inch Extension",
+            "description": "1.9\" Pipe, Handrail, Side Mount, 2\" Extension",
             "size": "b",
             "unit": "Each",
             "partCode": "PSMTRR2",
@@ -3582,7 +3582,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 25.8337
           },
           {
-            "description": "90º Corner",
+            "description": "1.9\" Pipe, Handrail, Elbow, 90°",
             "size": "c",
             "unit": "Each",
             "partCode": "PPHELB1990",
@@ -3590,7 +3590,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 41.95
           },
           {
-            "description": "Custom Angle",
+            "description": "1.9\" Pipe, Handrail, Elbow, Custom Angle",
             "size": "d",
             "unit": "Each",
             "partCode": "PPHELB19CUS",
@@ -3598,7 +3598,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 57.596
           },
           {
-            "description": "1.9 Pipe Handrail - Cap",
+            "description": "1.9\" Pipe, Handrail, Cap",
             "size": "e",
             "unit": "Each",
             "partCode": "PCPPH19",
@@ -3606,7 +3606,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 21.9203
           },
           {
-            "description": "1.9 Pipe Handrail - Wall Mount W/Welded Plate - Straight",
+            "description": "1.9\" Pipe, Handrail, Wall Mount, Straight",
             "size": "f",
             "unit": "Each",
             "partCode": "PPHWM19180",
@@ -3614,7 +3614,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.0
           },
           {
-            "description": "1.9 Pipe Handrail - Side Mount - Regular",
+            "description": "1.9\" Pipe, Handrail, Side Mount, Regular",
             "size": "g",
             "unit": "Each",
             "partCode": "PSMPH300",
@@ -3622,7 +3622,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 12.76
           },
           {
-            "description": "1.9 Pipe Handrail - Side Mount - Angled Left or Right Up",
+            "description": "1.9\" Pipe, Handrail, Side Mount, Angled",
             "size": "h",
             "unit": "Each",
             "partCode": "PSMPH300CUS",
@@ -3630,7 +3630,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.4727
           },
           {
-            "description": "Charge - 1 Mitred Corner - Cut, Weld,Buff & Paint",
+            "description": "Handrail, Mitre Corner, Cut, Weld, Buff & Paint Charge",
             "size": "-",
             "unit": "Each",
             "partCode": "CHGMITRE",
@@ -3654,7 +3654,7 @@ export const CATALOG_DATA = [
         "sheetName": "GATES",
         "items": [
           {
-            "description": "Welded Glass Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Square Top, Glass Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWSGL",
@@ -3662,7 +3662,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 421.6212
           },
           {
-            "description": "Welded Glass Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Round Top, Glass Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWRGL",
@@ -3670,7 +3670,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 421.6212
           },
           {
-            "description": "Welded Picket Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Square Top, Welded Picket Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWSWP",
@@ -3678,7 +3678,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 487.86
           },
           {
-            "description": "Welded Picket Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Round Top, Welded Picket Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWRWP",
@@ -3686,7 +3686,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 487.86
           },
           {
-            "description": "Welded Glass Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Flat Top, Glass Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWFGL",
@@ -3694,7 +3694,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 421.6212
           },
           {
-            "description": "Welded Glass Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Colonial Top, Glass Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWCGL",
@@ -3702,7 +3702,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 421.6212
           },
           {
-            "description": "Welded Picket Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Flat Top, Welded Picket Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWFWP",
@@ -3710,7 +3710,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 487.86
           },
           {
-            "description": "Welded Picket Gate - Up to 14 Sq/Ft",
+            "description": "Welded Picket, Gate, Colonial Top, Welded Picket Fill, Up to 14 Sq/Ft",
             "size": null,
             "unit": "Each",
             "partCode": "PGTWCWP",
@@ -3718,7 +3718,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 487.86
           },
           {
-            "description": "Hinge - Female",
+            "description": "Gate, Hinge, Female",
             "size": "a",
             "unit": "Each",
             "partCode": "PGTHF",
@@ -3726,7 +3726,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.6547
           },
           {
-            "description": "Hinge - Male",
+            "description": "Gate, Hinge, Male",
             "size": "b",
             "unit": "Each",
             "partCode": "PGTHM",
@@ -3734,7 +3734,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.034
           },
           {
-            "description": "Hinge - Male - (For Flat Top)*",
+            "description": "Gate, Hinge, Male, For Flat Top",
             "size": "c",
             "unit": "Each",
             "partCode": "PGTHMFT",
@@ -3742,7 +3742,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.3289
           },
           {
-            "description": "Spring Hinge - Black",
+            "description": "Gate, Spring Hinge, Black",
             "size": "d",
             "unit": "Pair",
             "partCode": "RGTHS",
@@ -3750,7 +3750,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 157.5529
           },
           {
-            "description": "Flip Up Latch & Striker Bolt",
+            "description": "Gate, Flip Up Latch & Strike",
             "size": "e",
             "unit": "Each",
             "partCode": "PGTFL",
@@ -3758,7 +3758,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.6388
           },
           {
-            "description": "Cane Bolt W/2 Holders",
+            "description": "Gate, Cane Bolt",
             "size": "f",
             "unit": "Each",
             "partCode": "PGTCB",
@@ -3766,7 +3766,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 52.0575
           },
           {
-            "description": "Spring Latch",
+            "description": "Gate, Stop Latch",
             "size": "g",
             "unit": "Each",
             "partCode": "PGTSL",
@@ -3774,7 +3774,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 24.0135
           },
           {
-            "description": "Striker Plate",
+            "description": "Gate, Stop Post",
             "size": "g",
             "unit": "Each",
             "partCode": "PGTSP",
@@ -3782,7 +3782,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 11.7532
           },
           {
-            "description": "Gate Kit Post - 1.72 - 42” Rail Height (Hinges Not Included)",
+            "description": "Gate, Post Kit",
             "size": "h",
             "unit": "Each",
             "partCode": "PGTKITPST",
@@ -3790,7 +3790,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 56.6469
           },
           {
-            "description": "Square Top End Sleeve W/Mount",
+            "description": "Square, End, Sleeve, with mount",
             "size": "i",
             "unit": "Each",
             "partCode": "PSSLEND",
@@ -3798,7 +3798,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 42.4104
           },
           {
-            "description": "Round Top End Sleeve W/Mount",
+            "description": "Round, End, Sleeve, with mount",
             "size": "j",
             "unit": "Each",
             "partCode": "PRSLEND",
@@ -3806,7 +3806,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 42.4104
           },
           {
-            "description": "Flat Top End Sleeve W/Mount",
+            "description": "Flat, End, Sleeve, with mount",
             "size": "k",
             "unit": "Each",
             "partCode": "PFSLEND",
@@ -3814,7 +3814,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 47.715
           },
           {
-            "description": "Colonial Top End Sleeve W/Mount",
+            "description": "Colonial, End, Sleeve, with mount",
             "size": "l",
             "unit": "Each",
             "partCode": "PCSLEND",
@@ -3838,7 +3838,7 @@ export const CATALOG_DATA = [
         "sheetName": "INF-SFC-POSTS",
         "items": [
           {
-            "description": "Mid Post",
+            "description": "Infinity, Surface Mount, Mid Post, 24\"",
             "size": "24”",
             "unit": "Each",
             "partCode": "PPSINF24MID",
@@ -3846,7 +3846,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 203.3543
           },
           {
-            "description": "Outside Corner Post",
+            "description": "Infinity, Surface Mount, Outside Corner Post, 24\"",
             "size": "24”",
             "unit": "Each",
             "partCode": "PPSINF24OUT",
@@ -3854,7 +3854,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 203.3543
           },
           {
-            "description": "Inside Corner Post",
+            "description": "Infinity, Surface Mount, Inside Corner Post, 24\"",
             "size": "24”",
             "unit": "Each",
             "partCode": "PPSINF24IN",
@@ -3862,7 +3862,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 203.3543
           },
           {
-            "description": "Mid Post",
+            "description": "Infinity, Surface Mount, Mid Post, 34\"",
             "size": "34”",
             "unit": "Each",
             "partCode": "PPSINF36MID",
@@ -3870,7 +3870,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 216.6287
           },
           {
-            "description": "Outside Corner Post",
+            "description": "Infinity, Surface Mount, Outside Corner Post, 34\"",
             "size": "34”",
             "unit": "Each",
             "partCode": "PPSINF36OUT",
@@ -3878,7 +3878,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 216.6287
           },
           {
-            "description": "Inside Corner Post",
+            "description": "Infinity, Surface Mount, Inside Corner Post, 34\"",
             "size": "34”",
             "unit": "Each",
             "partCode": "PPSINF36IN",
@@ -3886,7 +3886,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 216.6287
           },
           {
-            "description": "Wall Track - 36” Rail Height",
+            "description": "Infinity, Wall Track, 36 1/8\" Rail Height",
             "size": "34”",
             "unit": "Each",
             "partCode": "PINFWM36",
@@ -3894,7 +3894,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 60.3523
           },
           {
-            "description": "Mid Post",
+            "description": "Infinity, Surface Mount, Mid Post, 42\"",
             "size": "40”",
             "unit": "Each",
             "partCode": "PPSINF42MID",
@@ -3902,7 +3902,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 231.0472
           },
           {
-            "description": "Outside Corner Post",
+            "description": "Infinity, Surface Mount, Outside Corner Post, 42\"",
             "size": "40”",
             "unit": "Each",
             "partCode": "PPSINF42OUT",
@@ -3910,7 +3910,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 231.0472
           },
           {
-            "description": "Inside Corner Post",
+            "description": "Infinity, Surface Mount, Inside Corner Post, 42\"",
             "size": "40”",
             "unit": "Each",
             "partCode": "PPSINF42IN",
@@ -3918,7 +3918,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 231.0472
           },
           {
-            "description": "Wall Track - 42 1/8” Rail Height",
+            "description": "Infinity, Wall Track, 42 1/8\" Rail Height",
             "size": "40”",
             "unit": "Each",
             "partCode": "PINFWM42",
@@ -3926,7 +3926,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.53
           },
           {
-            "description": "End Post - Left",
+            "description": "Infinity, Surface Mount, 2-Hole End Post, 36 1/8\" Rail Height, Left",
             "size": "37”",
             "unit": "Each",
             "partCode": "PPSINF362ENDL",
@@ -3934,7 +3934,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 145.4202
           },
           {
-            "description": "End Post - Right",
+            "description": "Infinity, Surface Mount, 2-Hole End Post, 36 1/8\" Rail Height, Right",
             "size": "37”",
             "unit": "Each",
             "partCode": "PPSINF362ENDR",
@@ -3942,7 +3942,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 145.4202
           },
           {
-            "description": "End Post - Left",
+            "description": "Infinity, Surface Mount, 2-Hole End Post, 42 1/8\" Rail Height, Left",
             "size": "43”",
             "unit": "Each",
             "partCode": "PPSINF422ENDL",
@@ -3950,7 +3950,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 165.7674
           },
           {
-            "description": "End Post - Right",
+            "description": "Infinity, Surface Mount, 2-Hole End Post, 42 1/8\" Rail Height, Right",
             "size": "43”",
             "unit": "Each",
             "partCode": "PPSINF422ENDR",
@@ -3958,7 +3958,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 165.7674
           },
           {
-            "description": "2.5” Pyramid Post Cap",
+            "description": "2.5\", Post, Cap",
             "size": "a",
             "unit": "Each",
             "partCode": "PCP250",
@@ -3974,7 +3974,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 14.6785
           },
           {
-            "description": "Base Plate Gasket, 4x4 Rubber",
+            "description": "1.72, Surface Mount, Base Plate, Gasket, Neoprene, 4\"x4\"x1/8\"",
             "size": "b",
             "unit": "Each",
             "partCode": "RPLBPG",
@@ -3982,7 +3982,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 3.7444
           },
           {
-            "description": "Base Plate E-Z Shim (Bag of 10)",
+            "description": "Surface Mount, Base Plate, Shim, Neoprene",
             "size": "c",
             "unit": "Each",
             "partCode": "RPLBPSHIM",
@@ -3997,7 +3997,7 @@ export const CATALOG_DATA = [
         "sheetName": "INF-FASC-POSTS",
         "items": [
           {
-            "description": "Mid Post",
+            "description": "Infinity, Fascia Mount, Mid Post, 32\"",
             "size": "32”",
             "unit": "Each",
             "partCode": "PPFINF24MID",
@@ -4005,7 +4005,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 165.6504
           },
           {
-            "description": "Outside Corner Post",
+            "description": "Infinity, Fascia Mount, Outside Corner Post, 32\"",
             "size": "32”",
             "unit": "Each",
             "partCode": "PPFINF24OUT",
@@ -4013,7 +4013,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 165.6504
           },
           {
-            "description": "Inside Corner Post",
+            "description": "Infinity, Fascia Mount, Inside Corner Post, 32\"",
             "size": "32”",
             "unit": "Each",
             "partCode": "PPFINF24IN",
@@ -4021,7 +4021,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 165.6504
           },
           {
-            "description": "Mid Post",
+            "description": "Infinity, Fascia Mount, Mid Post, 42\"",
             "size": "42”",
             "unit": "Each",
             "partCode": "PPFINF36MID",
@@ -4029,7 +4029,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 186.9856
           },
           {
-            "description": "Outside Corner Post",
+            "description": "Infinity, Fascia Mount, Outside Corner Post, 42\"",
             "size": "42”",
             "unit": "Each",
             "partCode": "PPFINF36OUT",
@@ -4037,7 +4037,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 186.9856
           },
           {
-            "description": "Inside Corner Post",
+            "description": "Infinity, Fascia Mount, Inside Corner Post, 42\"",
             "size": "42”",
             "unit": "Each",
             "partCode": "PPFINF36IN",
@@ -4045,7 +4045,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 186.9856
           },
           {
-            "description": "Wall Track - 36” Rail Height",
+            "description": "Infinity, Wall Track, 36 1/8\" Rail Height",
             "size": "34”",
             "unit": "Each",
             "partCode": "PINFWM36",
@@ -4053,7 +4053,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 60.3523
           },
           {
-            "description": "Mid Post",
+            "description": "Infinity, Fascia Mount, Mid Post, 52\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFINF42MID",
@@ -4061,7 +4061,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 201.39
           },
           {
-            "description": "Outside Corner Post",
+            "description": "Infinity, Fascia Mount, Outside Corner Post, 52\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFINF42OUT",
@@ -4069,7 +4069,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 201.39
           },
           {
-            "description": "Inside Corner Post",
+            "description": "Infinity, Fascia Mount, Inside Corner Post, 52\"",
             "size": "48”",
             "unit": "Each",
             "partCode": "PPFINF42IN",
@@ -4077,7 +4077,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 201.39
           },
           {
-            "description": "Wall Track - 42 1/8” Rail Height",
+            "description": "Infinity, Wall Track, 42 1/8\" Rail Height",
             "size": "40”",
             "unit": "Each",
             "partCode": "PINFWM42",
@@ -4085,7 +4085,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 63.53
           },
           {
-            "description": "End Post - Left",
+            "description": "Infinity, Fascia Mount, 2-Hole End Post, 36 1/8\" Rail Height, Left",
             "size": "45”",
             "unit": "Each",
             "partCode": "PPFINF362ENDL",
@@ -4093,7 +4093,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 206.0169
           },
           {
-            "description": "End Post - Right",
+            "description": "Infinity, Fascia Mount, 2-Hole End Post, 36 1/8\" Rail Height, Right",
             "size": "45”",
             "unit": "Each",
             "partCode": "PPFINF362ENDR",
@@ -4101,7 +4101,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 206.0169
           },
           {
-            "description": "End Post - Left",
+            "description": "Infinity, Fascia Mount, 2-Hole End Post, 42 1/8\" Rail Height, Left",
             "size": "51”",
             "unit": "Each",
             "partCode": "PPFINF422ENDL",
@@ -4109,7 +4109,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 220.1483
           },
           {
-            "description": "End Post - Right",
+            "description": "Infinity, Fascia Mount, 2-Hole End Post, 42 1/8\" Rail Height, Right",
             "size": "51”",
             "unit": "Each",
             "partCode": "PPFINF422ENDR",
@@ -4117,7 +4117,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 220.1483
           },
           {
-            "description": "2.5” Pyramid Post Cap",
+            "description": "2.5\", Post, Cap",
             "size": "2.5”",
             "unit": "Each",
             "partCode": "PCP250",
@@ -4140,7 +4140,7 @@ export const CATALOG_DATA = [
         "sheetName": "INF-PARTS&OPTS",
         "items": [
           {
-            "description": "Glass Insert - Infinity 12mm - Black 12 Ft",
+            "description": "Infinity, Glass Insert, 12mm, Black, 12'",
             "size": "12’",
             "unit": "Each",
             "partCode": "RPLINFGL12",
@@ -4148,7 +4148,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 24.6246
           },
           {
-            "description": "Glass Insert - Infinity 13mm - Black 10 Ft",
+            "description": "Infinity, Glass Insert, 13mm, Black, 10'",
             "size": "10’",
             "unit": "Each",
             "partCode": "RPLINFGL13",
@@ -4156,7 +4156,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 20.5227
           },
           {
-            "description": "Glass Wedge - Infinity 12mm - Black 12 Ft Length",
+            "description": "Infinity, Glass Wedge, 12mm, Black, 12'",
             "size": "12’",
             "unit": "Each",
             "partCode": "RPLINFGW12",
@@ -4164,7 +4164,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 74.5498
           },
           {
-            "description": "Setting Block - Infinity Topless Glass - Black 10 Ft",
+            "description": "Infinity, Setting Block, Black, 10'",
             "size": "10’",
             "unit": "Each",
             "partCode": "RPLINFSB",
@@ -4172,7 +4172,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 61.94
           },
           {
-            "description": "Glass Wedge - Infinity 12mm - Black, 3 Inches Long",
+            "description": "Infinity, Glass Wedge, 12mm, Black, 3\"",
             "size": "3”",
             "unit": "Each",
             "partCode": "RPLINFGW123",
@@ -4180,7 +4180,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 3.33
           },
           {
-            "description": "Setting Block - Infinity Topless Glass - Black, 1 1/2 Inches Long",
+            "description": "Infinity, Setting Block, Black, 15mm",
             "size": "1.5”",
             "unit": "Each",
             "partCode": "RPLINFSB15",
@@ -4196,7 +4196,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.5767
           },
           {
-            "description": "Mid Post Base Plate Cover",
+            "description": "Infinity, Mid Post, Base Plate Cover",
             "size": "b",
             "unit": "Each",
             "partCode": "PBCIM",
@@ -4204,7 +4204,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 22.1023
           },
           {
-            "description": "Outside Corner Post Base Plate Cover",
+            "description": "Infinity, Outside Corner Post, Base Plate Cover",
             "size": "c",
             "unit": "Each",
             "partCode": "PBCIO",
@@ -4212,7 +4212,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 23.4025
           },
           {
-            "description": "Inside Corner Post Base Plate Cover",
+            "description": "Infinity, Inside Corner Post, Base Plate Cover",
             "size": "d",
             "unit": "Each",
             "partCode": "PBCII",
@@ -4220,7 +4220,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 23.4025
           },
           {
-            "description": "Glass Shelf Brackets for 12mm Glass",
+            "description": "Infinity, Glass Shelf Brackets, 12mm Glass",
             "size": "e",
             "unit": "Pair",
             "partCode": "PSHLINF12",
@@ -4228,7 +4228,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 229.24
           },
           {
-            "description": "CRL Neutral Cure Silicone - Cartridge",
+            "description": "Neutral Cure Silicone, Cartridge, 305ml",
             "size": "305ml",
             "unit": "Each",
             "partCode": "RSILRTV408",
@@ -4252,7 +4252,7 @@ export const CATALOG_DATA = [
         "sheetName": "FASTENERS",
         "items": [
           {
-            "description": "#8X1/2 - F.H. Tec Screw - Stainless - Mill Finish (Box of 100)",
+            "description": "#8x1/2, F.H. Tec Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC08X050FTS",
@@ -4260,7 +4260,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.46
           },
           {
-            "description": "#8x1 1/4 - F.H. Screw W/#5 Head -JS500 - Mill Finish (Box of 100)",
+            "description": "#8x1 1/4, F.H. Screw, #5 Head JS500, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC08X125FHC",
@@ -4268,7 +4268,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 8.55
           },
           {
-            "description": "#10-32x3/16 - H.D.C. Set Screw - Stainless - Mill Finish (Box of 1)",
+            "description": "#10-32x3/16, Set Screw, Stainless, Cup Point, Box of 100",
             "size": "Box of 1",
             "unit": "Each",
             "partCode": "RSCS10/32X3/16SSC",
@@ -4276,7 +4276,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 0.3
           },
           {
-            "description": "#10x5/8 F.H. Screw W/#7 Head - Stainless - Mill Finish (Box of 100)",
+            "description": "#10x5/8, F.H. Screw, #7 Head, Stainless, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC10X063FHS",
@@ -4284,7 +4284,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 12.31
           },
           {
-            "description": "#10x3/4 - P.H. Tec Screw - Stainless - Mill Finish (Box of 100)",
+            "description": "#10x3/4, P.H. Tec Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC10X075PTS",
@@ -4292,7 +4292,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 22.08
           },
           {
-            "description": "#10x 1 - F.H. Tec Screw Stainless - Mill Finish (Box of 100)",
+            "description": "#10x1, F.H. Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC10X100FHS",
@@ -4300,7 +4300,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.85
           },
           {
-            "description": "#10x 1 1/2 - P.H. Screw W/#8 Head - Stainless - Mill Finish (Box of 100)",
+            "description": "#10x1 1/2, P.H. Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC10X150PHS",
@@ -4308,7 +4308,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.92
           },
           {
-            "description": "#10x2 - F.H. Screw - Stainless - Mill Finish (Box of 100)",
+            "description": "#10x2, F.H. Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC10X200FHDSS",
@@ -4316,7 +4316,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.23
           },
           {
-            "description": "#10X2 - F.H.W. Screw - Zinc - Mill Finish (Box of 100)",
+            "description": "#10x2, F.H. Screw, White, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC10X200FHWS",
@@ -4324,7 +4324,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 7.82
           },
           {
-            "description": "#12x1 1/2 - P.H. Screw - Stainless - Mill Finish (Box of 100)",
+            "description": "#12x1 1/2, P.H. Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC12X150PHS",
@@ -4332,7 +4332,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 21.31
           },
           {
-            "description": "#14x2 - P.H. Screw - Stainless - Mill Finish (Box of 100)",
+            "description": "#14x2, P.H. Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC14X200PHS",
@@ -4340,7 +4340,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 44.62
           },
           {
-            "description": "#14x3 - F.H. Screw - Yellow Zinc -Mill Finish (Box of 100)",
+            "description": "#14x3, F.H. Screw, Yellow Zinc, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC14X300FHD",
@@ -4348,7 +4348,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 30.3
           },
           {
-            "description": "#14x3 - P.H. Screw - Stainless - Mill Finish (Box of 100)",
+            "description": "#14x3, P.H. Screw, Stainless, Mill Finish, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSC14X300PHS",
@@ -4356,7 +4356,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 49.15
           },
           {
-            "description": "5/16x5 - H.H. Screw - Stainless - Mill Finish (Box of 50)",
+            "description": "5/16x5, H.H. Screw, Stainless, Mill Finish, Box of 50",
             "size": "Box of 50",
             "unit": "Box",
             "partCode": "RSC516X500HHS",
@@ -4364,7 +4364,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 78.19
           },
           {
-            "description": "#8x1/2 - F.H. Tec Screw - Stainless (Box of 100)",
+            "description": "#8x1/2, F.H. Tec Screw, Painted, Stocking Colors, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC08X050FTS",
@@ -4372,7 +4372,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 24.31
           },
           {
-            "description": "#8x1 1/4 - F.H. #5 Head Screw -JS500 (Box of 100)",
+            "description": "#8, 1 1/4\", Flat-Head Tec, Screw, JS500 Finish - Painted - for End Caps, 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC08X125FHC",
@@ -4380,7 +4380,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 16.92
           },
           {
-            "description": "#10x5/8 FH Screw - W/#7 Head - Stainless (Box of 100)",
+            "description": "#10x5/8, F.H. Screw, Painted, Stocking Colors, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC10X063FHS",
@@ -4388,7 +4388,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 19.08
           },
           {
-            "description": "#10x3/4 - P.H. Tec Screw - Stainless (Box of 100)",
+            "description": "#10, 3/4\", Pan-Head Tec, Screw, Stainless Steel - Painted - for Railing Assembly, 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC10X075PTS",
@@ -4396,7 +4396,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.31
           },
           {
-            "description": "#12x1 1/2 - P.H. Screw - Stainless (Box of 100)",
+            "description": "#12, 1 1/2\", Pan-Head Tec, Screw, Stainless Steel - Painted - for Wall Mounts at Walls & Flex Rail Panels, 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC12X150PHS",
@@ -4404,7 +4404,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 27.08
           },
           {
-            "description": "#14x2 - P.H. Screw - Stainless (Box of 100)",
+            "description": "#14x2, P.H. Screw, Painted, Stocking Colors, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC14X200PHS",
@@ -4412,7 +4412,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 50.77
           },
           {
-            "description": "#14x3 - P.H. Screw - Stainless (Box of 100)",
+            "description": "#14, 3\", Pan-Head, Screw, Stainless Steel - Painted - for Base Plate Connections, 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "PSC14X300PHS",
@@ -4420,7 +4420,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 56.85
           },
           {
-            "description": "5/16x5 - H.H. Screw - Stainless (Box of 50)",
+            "description": "5/16\", 5\", Hex-Head, Screw, Stainless Steel - Painted - for Base Plate Connections, 50",
             "size": "Box of 50",
             "unit": "Box",
             "partCode": "PSC516X500HHS",
@@ -4428,7 +4428,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 85.12
           },
           {
-            "description": "Custom Color Screw Setup Per Each Color",
+            "description": "Custom Color Screw, Powder Coat Setup Charge",
             "size": "Each",
             "unit": "Each",
             "partCode": "CHGCCSCRSETUP",
@@ -4436,7 +4436,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 150.0
           },
           {
-            "description": "Standard (Non-Stocking) Color Screw Setup Per Each Color",
+            "description": "Stocking Color Screw, Powder Coat Setup Charge",
             "size": "Each",
             "unit": "Each",
             "partCode": "CHGSCSCRSETUP",
@@ -4444,7 +4444,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 40.0
           },
           {
-            "description": "#14 Screw Nylon Insulator - 1/4 Inside Dimension (Box of 100)",
+            "description": "#14, Nylon, Insulator, for #14, 3\" Screws - 1/4\" Inside Dimension, 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RPLSCI14",
@@ -4452,7 +4452,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 20.0
           },
           {
-            "description": "#14 Screw Nylon Insulator - 1/4 Inside Dimension (Box of 5000)",
+            "description": "#14, Nylon Insulator, 1/4\" Inside Dimension, Box of 5000",
             "size": "Box of 5000",
             "unit": "Box",
             "partCode": "RPLSCI14BX5K",
@@ -4476,7 +4476,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 923.08
           },
           {
-            "description": "Concrete Plastic Plugs - 5/16 Drill Hole - MUNGO (Box of 100)",
+            "description": "Concrete Plastic Plug, 5/16\" Drill Hole, MUNGO, Box of 100",
             "size": "Box of 100",
             "unit": "Box",
             "partCode": "RSCPLUGMUNGO",
@@ -4484,7 +4484,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.92
           },
           {
-            "description": "Apex Roberston Driver Bit #2 – 3 ½” Long",
+            "description": "Robertson Driver Bit, #2, 3 1/2\" Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR2X350",
@@ -4492,7 +4492,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 4.0
           },
           {
-            "description": "Roberston Driver Bit #2 – 6” Long",
+            "description": "Robertson Driver Bit, #2, 6\" Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR2X600",
@@ -4500,7 +4500,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 6.0
           },
           {
-            "description": "Apex Roberston Driver Bit #3 – 3 ½” Long",
+            "description": "Robertson Driver Bit, #3, 3 1/2\" Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR3X350",
@@ -4508,7 +4508,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 4.0
           },
           {
-            "description": "Roberston Driver Bit #3 – 6” Long",
+            "description": "Robertson Driver Bit, #3, 6\" Long",
             "size": "Each",
             "unit": "Each",
             "partCode": "RDBR3X600",
@@ -4532,7 +4532,7 @@ export const CATALOG_DATA = [
         "sheetName": "CLR-OPTS",
         "items": [
           {
-            "description": "Custom Color Setup Up Charge Per Each Color*",
+            "description": "Custom Color, Powder Coat Setup Charge, Per Color",
             "size": null,
             "unit": "Each",
             "partCode": "CHGCCSETUP",
@@ -4540,7 +4540,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 200.0
           },
           {
-            "description": "Minimum Paint Set Up Charge",
+            "description": "Minimum Paint, Setup Charge",
             "size": null,
             "unit": "Each",
             "partCode": "CHGSCSETUP",
@@ -4548,7 +4548,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 100.0
           },
           {
-            "description": "Custom Color Screw Setup Per Each Color",
+            "description": "Custom Color Screw, Powder Coat Setup Charge",
             "size": null,
             "unit": "Each",
             "partCode": "CHGCCSCRSETUP",
@@ -4572,7 +4572,7 @@ export const CATALOG_DATA = [
         "sheetName": "SMPLS&BRCHR",
         "items": [
           {
-            "description": "Round Top Glass Railing Mock Up",
+            "description": "Round Top, Glass Railing, Mock Up Sample",
             "size": null,
             "unit": "Each",
             "partCode": "SAMPLERG",
@@ -4580,7 +4580,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 67.24
           },
           {
-            "description": "Square Top Picket Railing Mock Up",
+            "description": "Square Top, Picket Railing, Mock Up Sample",
             "size": null,
             "unit": "Each",
             "partCode": "SAMPLESP",
@@ -4588,7 +4588,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 56.66
           },
           {
-            "description": "Colonial Top Slat Picket Railing Mock Up",
+            "description": "Colonial Top, Slat Picket Railing, Mock Up Sample",
             "size": null,
             "unit": "Each",
             "partCode": "SAMPLECS",
@@ -4596,7 +4596,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 56.66
           },
           {
-            "description": "Flat Top Glass Railing Mock Up",
+            "description": "Flat Top, Glass Railing, Mock Up Sample",
             "size": null,
             "unit": "Each",
             "partCode": "SAMPLEFG",
@@ -4612,7 +4612,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 15.87
           },
           {
-            "description": "Infinity 18” Sample Post",
+            "description": "Infinity, 18\" End Post, Sample, 12mm",
             "size": null,
             "unit": "Each",
             "partCode": "APSINF18END-12MM",
@@ -4620,7 +4620,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 76.6
           },
           {
-            "description": "Innovative Series Color Pack - (Set of 12 Colors )",
+            "description": "Color Chip, Sample",
             "size": null,
             "unit": "Each",
             "partCode": "SAMPLECI",
@@ -4628,7 +4628,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 18.5
           },
           {
-            "description": "Powder Coating",
+            "description": "Brochure, Powder Coating",
             "size": null,
             "unit": "Each",
             "partCode": "BROCHUREPC",
@@ -4636,7 +4636,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 0.5
           },
           {
-            "description": "Component Glass Systems",
+            "description": "Brochure, Component Glass Systems",
             "size": null,
             "unit": "Each",
             "partCode": "BROCHUREG",
@@ -4644,7 +4644,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 0.3
           },
           {
-            "description": "Welded Picket Systems",
+            "description": "Brochure, Welded Picket Systems",
             "size": null,
             "unit": "Each",
             "partCode": "BROCHUREP",
@@ -4652,7 +4652,7 @@ export const CATALOG_DATA = [
             "dealerPrice": 0.3
           },
           {
-            "description": "Infinity Topless Glass System",
+            "description": "Brochure, Infinity Topless Glass",
             "size": null,
             "unit": "Each",
             "partCode": "BROCHUREINF",

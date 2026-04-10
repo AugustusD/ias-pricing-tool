@@ -41,7 +41,7 @@ export function exportToExcel(
       "Dealer Price",
       "Effective Price",
       "Line Total",
-      "Type",
+      "Discount",
     ],
   ];
 
