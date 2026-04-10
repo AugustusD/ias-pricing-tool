@@ -112,11 +112,37 @@ export function generateEmailBody(
   infinityDiscount: number
 ): string {
   const date = new Date().toLocaleDateString();
-  let body = `Innovative Aluminum Systems - Order Inquiry\n`;
-  body += `Date: ${date}\n`;
-  body += `Standard Discount: ${standardDiscount}% | Infinity Discount: ${infinityDiscount}%\n\n`;
-  body += `${"Part Code".padEnd(22)}${"Description".padEnd(45)}${"Size".padEnd(12)}${"Unit".padEnd(8)}${"Qty".padEnd(6)}${"Price".padEnd(14)}${"Total"}\n`;
-  body += "-".repeat(110) + "\n";
+  const SEP  = "=" .repeat(62);
+  const sep  = "-" .repeat(62);
+
+  // right-align a string in a field of given width
+  const rpad = (s: string, w: number) => s.padStart(w);
+  // left-align
+  const lpad = (s: string, w: number) => s.padEnd(w);
+
+  let body = "";
+  body += `INNOVATIVE ALUMINUM SYSTEMS\n`;
+  body += `Dealer Order Inquiry\n`;
+  body += `${SEP}\n`;
+  body += `Date:               ${date}\n`;
+  body += `Standard Discount:  ${standardDiscount}%\n`;
+  body += `Infinity Discount:  ${infinityDiscount}%\n`;
+  body += `${SEP}\n\n`;
+
+  // Column widths: Part Code 14 | Description 28 | Size 8 | Unit 5 | Qty 4 | Price 10 | Total 10
+  const C = { code: 14, desc: 28, size: 8, unit: 5, qty: 4, price: 10, total: 10 };
+
+  const hdr =
+    lpad("PART CODE",  C.code) + "  " +
+    lpad("DESCRIPTION", C.desc) + "  " +
+    lpad("SIZE",  C.size) + "  " +
+    lpad("UNIT",  C.unit) + "  " +
+    rpad("QTY",   C.qty)  + "  " +
+    rpad("PRICE", C.price) + "  " +
+    rpad("TOTAL", C.total);
+
+  body += hdr + "\n";
+  body += sep  + "\n";
 
   let grandTotal = 0;
 
@@ -127,13 +153,23 @@ export function generateEmailBody(
 
     const priceStr = item.isNetPrice ? "NET" : `$${effectivePrice.toFixed(2)}`;
     const totalStr = `$${lineTotal.toFixed(2)}`;
-    const sizeStr = cleanSize(item.size);
+    const sizeStr  = cleanSize(item.size);
+    const descStr  = (item.description || "").substring(0, C.desc);
 
-    body += `${item.partCode.padEnd(22)}${(item.description || "").substring(0, 44).padEnd(45)}${sizeStr.padEnd(12)}${item.unit.padEnd(8)}${String(item.quantity).padEnd(6)}${priceStr.padEnd(14)}${totalStr}\n`;
+    const line =
+      lpad(item.partCode,       C.code) + "  " +
+      lpad(descStr,             C.desc) + "  " +
+      lpad(sizeStr,             C.size) + "  " +
+      lpad(item.unit,           C.unit) + "  " +
+      rpad(String(item.quantity), C.qty) + "  " +
+      rpad(priceStr,            C.price) + "  " +
+      rpad(totalStr,            C.total);
+
+    body += line + "\n";
   }
 
-  body += "-".repeat(110) + "\n";
-  body += `${"".padEnd(22 + 45 + 12 + 8 + 6 + 14)}GRAND TOTAL: $${grandTotal.toFixed(2)}\n`;
+  body += sep + "\n";
+  body += rpad(`GRAND TOTAL:  $${grandTotal.toFixed(2)}`, 62) + "\n";
 
   return body;
 }
