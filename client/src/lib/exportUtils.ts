@@ -151,9 +151,15 @@ export function exportToExcel(
   });
 
   // Grand Total formula (SUM)
-  const dataStartExcel = DATA_START_0 + 1;
-  const dataEndExcel   = DATA_START_0 + items.length;
-  const grandTotalRow  = DATA_START_0 + items.length + 2 + 1; // +1 blank, +1 total, +1 for 1-based
+  // AOA layout (0-based):
+  //   rows 0-7   : title block + header  (8 rows)
+  //   rows 8…8+N-1 : data rows           (N rows)
+  //   row 8+N    : blank row
+  //   row 8+N+1  : grand total row  ← formula goes here
+  // Excel row = 0-based index + 1
+  const dataStartExcel = DATA_START_0 + 1;                    // first data row in Excel (row 9)
+  const dataEndExcel   = DATA_START_0 + items.length;         // last data row in Excel
+  const grandTotalRow  = DATA_START_0 + items.length + 1 + 1; // 0-based grand-total index + 1 for Excel
   setFormula(summaryWs, `H${grandTotalRow}`, `SUM(H${dataStartExcel}:H${dataEndExcel})`, grandTotal, DOLLAR_FMT);
 
   summaryWs["!cols"] = [
@@ -230,9 +236,16 @@ export function exportToExcel(
     });
 
     // Subtotal formula
-    const catDataStart = CAT_DATA_0 + 1;
-    const catDataEnd   = CAT_DATA_0 + catItems.length;
-    const subtotalRow  = CAT_DATA_0 + catItems.length + 2;   // 1-based
+    // AOA layout (0-based):
+    //   row 0       : category name
+    //   row 1       : column headers
+    //   rows 2…2+M-1: data rows  (M items)
+    //   row 2+M     : blank
+    //   row 2+M+1   : subtotal row  ← formula goes here
+    // Excel row = 0-based index + 1
+    const catDataStart = CAT_DATA_0 + 1;                       // first data row in Excel (row 3)
+    const catDataEnd   = CAT_DATA_0 + catItems.length;         // last data row in Excel
+    const subtotalRow  = CAT_DATA_0 + catItems.length + 1 + 1; // 0-based subtotal index + 1 for Excel
     setFormula(cws, `H${subtotalRow}`, `SUM(H${catDataStart}:H${catDataEnd})`, catSubtotal, DOLLAR_FMT);
 
     cws["!cols"] = [
