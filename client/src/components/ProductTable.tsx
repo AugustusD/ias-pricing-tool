@@ -8,6 +8,7 @@ import { useMemo } from "react";
 import { Plus, Minus } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
 import type { OrderItem } from "@/contexts/OrderContext";
+import { cleanSize } from "@/lib/exportUtils";
 
 type CatalogItem = {
   description: string;
@@ -182,7 +183,7 @@ export default function ProductTable({ tab, category, searchQuery }: ProductTabl
                 </div>
 
                 {/* Size */}
-                <div className="text-xs text-muted-foreground">{item.size ?? "—"}</div>
+                <div className="text-xs text-muted-foreground">{cleanSize(item.size) || "—"}</div>
 
                 {/* Unit */}
                 <div className="text-xs text-muted-foreground">{item.unit}</div>

@@ -1,6 +1,20 @@
 import * as XLSX from "xlsx";
 import type { OrderItem } from "@/contexts/OrderContext";
 
+/**
+ * Returns a clean display value for the Size field.
+ * Single lowercase letters (a–n) are placeholder codes from the source data
+ * and should be shown as blank in all outputs.
+ */
+export function cleanSize(size: string | null | undefined): string {
+  if (!size) return "";
+  // Blank out single-letter placeholder codes (a, b, c … n)
+  if (/^[a-zA-Z]$/.test(size.trim())) return "";
+  // Also blank out bare dash
+  if (size.trim() === "-") return "";
+  return size;
+}
+
 export function exportToExcel(
   items: OrderItem[],
   getEffectivePrice: (item: OrderItem) => number,
@@ -9,15 +23,25 @@ export function exportToExcel(
 ) {
   const wb = XLSX.utils.book_new();
 
-  // Summary sheet
-  const summaryRows: (string | number)[][] = [
+  // Single sheet — all ordered items in one flat list
+  const rows: (string | number)[][] = [
     ["Innovative Aluminum Systems - Dealer Order Summary"],
     [""],
     ["Date:", new Date().toLocaleDateString()],
     ["Standard Product Discount:", `${standardDiscount}%`],
     ["Infinity Product Discount:", `${infinityDiscount}%`],
     [""],
-    ["Part Code", "Description", "Size", "Unit", "Qty", "Dealer Price", "Effective Price", "Line Total", "Type"],
+    [
+      "Part Code",
+      "Description",
+      "Size",
+      "Unit",
+      "Qty",
+      "Dealer Price",
+      "Effective Price",
+      "Line Total",
+      "Type",
+    ],
   ];
 
   let grandTotal = 0;
@@ -27,10 +51,10 @@ export function exportToExcel(
     const lineTotal = effectivePrice * item.quantity;
     grandTotal += lineTotal;
 
-    summaryRows.push([
+    rows.push([
       item.partCode,
-      item.description,
-      item.size || "",
+      item.description ?? "",
+      cleanSize(item.size),
       item.unit,
       item.quantity,
       item.dealerPrice !== null ? item.dealerPrice : "N/A",
@@ -40,12 +64,11 @@ export function exportToExcel(
     ]);
   }
 
-  summaryRows.push([""]);
-  summaryRows.push(["", "", "", "", "", "", "GRAND TOTAL:", grandTotal, ""]);
+  rows.push([""]);
+  rows.push(["", "", "", "", "", "", "GRAND TOTAL:", grandTotal, ""]);
 
-  const ws = XLSX.utils.aoa_to_sheet(summaryRows);
+  const ws = XLSX.utils.aoa_to_sheet(rows);
 
-  // Column widths
   ws["!cols"] = [
     { wch: 22 }, // Part Code
     { wch: 50 }, // Description
@@ -58,49 +81,12 @@ export function exportToExcel(
     { wch: 12 }, // Type
   ];
 
-  XLSX.utils.book_append_sheet(wb, ws, "Order Summary");
-
-  // Category breakdown sheets
-  const byCategory = new Map<string, OrderItem[]>();
-  for (const item of items) {
-    const key = item.categoryName;
-    if (!byCategory.has(key)) byCategory.set(key, []);
-    byCategory.get(key)!.push(item);
-  }
-
-  for (const [catName, catItems] of Array.from(byCategory.entries())) {
-    const catRows: (string | number)[][] = [
-      [catName],
-      [""],
-      ["Part Code", "Description", "Size", "Unit", "Qty", "Effective Price", "Line Total"],
-    ];
-
-    for (const item of catItems) {
-      const effectivePrice = getEffectivePrice(item);
-      const lineTotal = effectivePrice * item.quantity;
-      catRows.push([
-        item.partCode,
-        item.description,
-        item.size || "",
-        item.unit,
-        item.quantity,
-        item.isNetPrice ? "NET" : effectivePrice,
-        lineTotal,
-      ]);
-    }
-
-    const catWs = XLSX.utils.aoa_to_sheet(catRows);
-    catWs["!cols"] = [
-      { wch: 22 }, { wch: 50 }, { wch: 12 }, { wch: 8 }, { wch: 6 }, { wch: 16 }, { wch: 14 },
-    ];
-
-    // Sanitize sheet name (max 31 chars, no special chars)
-    const sheetName = catName.replace(/[\\/:*?[\]]/g, "").substring(0, 31);
-    XLSX.utils.book_append_sheet(wb, catWs, sheetName);
-  }
+  XLSX.utils.book_append_sheet(wb, ws, "Order");
 
   XLSX.writeFile(wb, `IAS_Order_${new Date().toISOString().split("T")[0]}.xlsx`);
 }
+
+// ── Email body ────────────────────────────────────────────────────────────────
 
 export function generateEmailBody(
   items: OrderItem[],
@@ -124,8 +110,9 @@ export function generateEmailBody(
 
     const priceStr = item.isNetPrice ? "NET" : `$${effectivePrice.toFixed(2)}`;
     const totalStr = `$${lineTotal.toFixed(2)}`;
+    const sizeStr = cleanSize(item.size);
 
-    body += `${item.partCode.padEnd(22)}${(item.description || "").substring(0, 44).padEnd(45)}${(item.size || "").padEnd(12)}${item.unit.padEnd(8)}${String(item.quantity).padEnd(6)}${priceStr.padEnd(14)}${totalStr}\n`;
+    body += `${item.partCode.padEnd(22)}${(item.description || "").substring(0, 44).padEnd(45)}${sizeStr.padEnd(12)}${item.unit.padEnd(8)}${String(item.quantity).padEnd(6)}${priceStr.padEnd(14)}${totalStr}\n`;
   }
 
   body += "-".repeat(110) + "\n";

@@ -5,6 +5,7 @@
 
 import { X, Trash2, Download, Mail, LayoutList, Minus, Plus } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
+import { cleanSize } from "@/lib/exportUtils";
 
 type OrderPanelProps = {
   onClose: () => void;
@@ -79,10 +80,10 @@ export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: Or
                           <span className="infinity-badge">∞</span>
                         )}
                       </div>
-                      {item.size && (
-                        <div className="text-[0.65rem] text-muted-foreground mt-0.5">
-                          Size: {item.size} · {item.unit}
-                        </div>
+                      {cleanSize(item.size) && (
+                        <span className="text-xs text-muted-foreground">
+                          Size: {cleanSize(item.size)} · {item.unit}
+                        </span>
                       )}
                     </div>
                     <button
