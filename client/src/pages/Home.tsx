@@ -7,7 +7,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { X, RotateCcw, Search } from "lucide-react";
-import { CATALOG_DATA } from "@/lib/catalogData";
+import { catalogData as CATALOG_DATA, type CatalogCategory } from "@/lib/catalogData";
 import { useOrder } from "@/contexts/OrderContext";
 import { exportToExcel } from "@/lib/exportUtils";
 import { toast } from "sonner";
