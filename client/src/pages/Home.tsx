@@ -119,7 +119,7 @@ export default function Home() {
               {activeCategory.isInfinity && (
                 <span className="infinity-badge">Infinity</span>
               )}
-              {activeCategory.isNetPrice && (
+              {activeCategory.isNet && (
                 <span className="net-badge">Net Price</span>
               )}
               <h2 className="font-bold text-sm uppercase tracking-widest text-foreground">
