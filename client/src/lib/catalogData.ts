@@ -2371,7 +2371,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPS13690",
-      "description": "1.72, Surface Mount, Regular Wall - 90Âº Corner, Post, with bottom sleeves, 34 1/8\"",
+      "description": "1.72, Surface Mount, Regular Wall - 90º Corner, Post, with bottom sleeves, 34 1/8\"",
       "size": "34 1/8”",
       "unit": "Each",
       "listPrice": 70.89,
@@ -2382,7 +2382,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPS136135",
-      "description": "1.72, Surface Mount, Regular Wall - 135Âº Corner, Post, with bottom sleeves, 34 1/8\"",
+      "description": "1.72, Surface Mount, Regular Wall - 135º Corner, Post, with bottom sleeves, 34 1/8\"",
       "size": "34 1/8”",
       "unit": "Each",
       "listPrice": 74.757837,
@@ -2426,7 +2426,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPS14290",
-      "description": "1.72, Surface Mount, Regular Wall - 90Âº Corner, Post, with bottom sleeves, 40 1/8\"",
+      "description": "1.72, Surface Mount, Regular Wall - 90º Corner, Post, with bottom sleeves, 40 1/8\"",
       "size": "40 1/8”",
       "unit": "Each",
       "listPrice": 77.332107,
@@ -2437,7 +2437,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPS142135",
-      "description": "1.72, Surface Mount, Regular Wall - 135Âº Corner, Post, with bottom sleeves, 40 1/8\"",
+      "description": "1.72, Surface Mount, Regular Wall - 135º Corner, Post, with bottom sleeves, 40 1/8\"",
       "size": "40 1/8”",
       "unit": "Each",
       "listPrice": 81.193512,
@@ -2726,7 +2726,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1I90",
-      "description": "1.72, Fascia Mount, Regular Wall - 90Âº Inside Corner, Post, without bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 90º Inside Corner, Post, without bottom sleeves, 48\"",
       "size": "48",
       "unit": "Each",
       "listPrice": 98.225297,
@@ -2737,7 +2737,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1I135",
-      "description": "1.72, Fascia Mount, Regular Wall - 135Âº Inside Corner, Post, without bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 135º Inside Corner, Post, without bottom sleeves, 48\"",
       "size": "48",
       "unit": "Each",
       "listPrice": 115.608119,
@@ -2759,7 +2759,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1O90",
-      "description": "1.72, Fascia Mount, Regular Wall -  90Âº Outside Corner, Post, without bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall -  90º Outside Corner, Post, without bottom sleeves, 48\"",
       "size": "48",
       "unit": "Each",
       "listPrice": 123.733971,
@@ -2770,7 +2770,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1O135",
-      "description": "1.72, Fascia Mount, Regular Wall - 135Âº Outside Corner, Post, without bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 135º Outside Corner, Post, without bottom sleeves, 48\"",
       "size": "48",
       "unit": "Each",
       "listPrice": 125.43715,
@@ -2865,7 +2865,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1BI90",
-      "description": "1.72, Fascia Mount, Regular Wall - 90Âº Inside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 90º Inside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 116.505213,
@@ -2876,7 +2876,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1BI135",
-      "description": "1.72, Fascia Mount, Regular Wall - 135Âº Inside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 135º Inside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 138.6,
@@ -2898,7 +2898,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1BO90",
-      "description": "1.72, Fascia Mount, Regular Wall - 90Âº Outside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 90º Outside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 142.02,
@@ -2909,7 +2909,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PPFO1BO135",
-      "description": "1.72, Fascia Mount, Regular Wall - 135Âº Outside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Regular Wall - 135º Outside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 148.43,
@@ -2964,7 +2964,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PEPF1BI90",
-      "description": "1.72, Fascia Mount, Heavy Wall - 90Âº Inside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Heavy Wall - 90º Inside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 160.42,
@@ -2975,7 +2975,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PEPF1BI135",
-      "description": "1.72, Fascia Mount, Heavy Wall - 135Âº Outside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Heavy Wall - 135º Outside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 191.76,
@@ -2997,7 +2997,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PEPF1BO90",
-      "description": "1.72, Fascia Mount, Heavy Wall - 90Âº Outside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Heavy Wall - 90º Outside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 173.42518,
@@ -3008,7 +3008,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PEPF1BO135",
-      "description": "1.72, Fascia Mount, Heavy Wall - 135Âº Outside Corner, Post, with bottom sleeves, 48\"",
+      "description": "1.72, Fascia Mount, Heavy Wall - 135º Outside Corner, Post, with bottom sleeves, 48\"",
       "size": "48”",
       "unit": "Each",
       "listPrice": 186.51,
@@ -3055,7 +3055,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSSL90",
-      "description": "Square, 90Âº, Sleeve, with mount",
+      "description": "Square, 90º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 33.02,
@@ -3066,7 +3066,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSSL135",
-      "description": "Square, 135Âº, Sleeve, with mount",
+      "description": "Square, 135º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 33.02,
@@ -3154,7 +3154,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRSL90",
-      "description": "Round, 90Âº, Sleeve, with mount",
+      "description": "Round, 90º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 33.02,
@@ -3165,7 +3165,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRSL135",
-      "description": "Round, 135Âº, Sleeve, with mount",
+      "description": "Round, 135º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 33.02,
@@ -3253,7 +3253,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFSL90",
-      "description": "Flat, 90Âº, Sleeve, with mount",
+      "description": "Flat, 90º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 38.62,
@@ -3264,7 +3264,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFSL135",
-      "description": "Flat, 135Âº, Sleeve, with mount",
+      "description": "Flat, 135º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 38.62,
@@ -3352,7 +3352,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCSL90",
-      "description": "Colonial, 90Âº, Sleeve, with mount",
+      "description": "Colonial, 90º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 37.13,
@@ -3363,7 +3363,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCSL135",
-      "description": "Colonial, 135Âº, Sleeve, with mount",
+      "description": "Colonial, 135º, Sleeve, with mount",
       "size": null,
       "unit": "Each",
       "listPrice": 37.13,
@@ -3535,7 +3535,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 6.74,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Flat"
+      "sectionHeading": "Post Mount Plates"
     },
     {
       "partCode": "MPLPMW",
@@ -3546,7 +3546,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 6.552687,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Flat"
+      "sectionHeading": "Post Mount Plates"
     },
     {
       "partCode": "PPLPMW",
@@ -3557,7 +3557,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 10.69,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Flat"
+      "sectionHeading": "Post Mount Plates"
     },
     {
       "partCode": "PPLPMSTR",
@@ -3568,7 +3568,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 9.98,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Flat"
+      "sectionHeading": "Post Mount Plates"
     }
         ]
       },
@@ -3717,7 +3717,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 61.62646,
       "dealerPrice": 61.62646,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": null,
       "sectionHeading": ""
     },
     {
@@ -3728,7 +3728,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 79.789364,
       "dealerPrice": 79.789364,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": null,
       "sectionHeading": ""
     },
     {
@@ -3739,7 +3739,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 64.096719,
       "dealerPrice": 64.096719,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": null,
       "sectionHeading": ""
     },
     {
@@ -3750,7 +3750,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 82.974698,
       "dealerPrice": 82.974698,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": null,
       "sectionHeading": ""
     },
     {
@@ -3872,7 +3872,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSWM22L",
-      "description": "Square, 22 1/2Âº Left, Wall Mount",
+      "description": "Square, 22 1/2º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -3883,7 +3883,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSWM22R",
-      "description": "Square, 22 1/2Âº Right, Wall Mount",
+      "description": "Square, 22 1/2º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -3894,7 +3894,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSWM45L",
-      "description": "Square, 45Âº Left, Wall Mount",
+      "description": "Square, 45º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -3905,7 +3905,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSWM45R",
-      "description": "Square, 45Âº Right, Wall Mount",
+      "description": "Square, 45º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -3916,7 +3916,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSWM90L",
-      "description": "Square, One Turn, 90Âº Left, Wall Mount",
+      "description": "Square, One Turn, 90º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 44.64668,
@@ -3927,7 +3927,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PSWM90R",
-      "description": "Square, One Turn, 90Âº Right, Wall Mount",
+      "description": "Square, One Turn, 90º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 44.64668,
@@ -3982,7 +3982,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFWM22L",
-      "description": "Flat, 22 1/2Âº Left, Wall Mount",
+      "description": "Flat, 22 1/2º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 26.32,
@@ -3993,7 +3993,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFWM22R",
-      "description": "Flat, 22 1/2Âº Right, Wall Mount",
+      "description": "Flat, 22 1/2º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 26.32,
@@ -4004,7 +4004,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFWM45L",
-      "description": "Flat, 45Âº Left, Wall Mount",
+      "description": "Flat, 45º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 27.39,
@@ -4015,7 +4015,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFWM45R",
-      "description": "Flat, 45Âº Right, Wall Mount",
+      "description": "Flat, 45º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 27.39,
@@ -4026,7 +4026,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFWM90L",
-      "description": "Flat, One Turn, 90Âº Left, Wall Mount",
+      "description": "Flat, One Turn, 90º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 53.435602,
@@ -4037,7 +4037,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PFWM90R",
-      "description": "Flat, One Turn, 90Âº Right, Wall Mount",
+      "description": "Flat, One Turn, 90º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 53.435602,
@@ -4092,7 +4092,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRWM22L",
-      "description": "Round, 22 1/2Âº Left, Wall Mount",
+      "description": "Round, 22 1/2º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4103,7 +4103,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRWM22R",
-      "description": "Round, 22 1/2Âº Right, Wall Mount",
+      "description": "Round, 22 1/2º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4114,7 +4114,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRWM45L",
-      "description": "Round, 45Âº Left, Wall Mount",
+      "description": "Round, 45º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4125,7 +4125,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRWM45R",
-      "description": "Round, 45Âº Right, Wall Mount",
+      "description": "Round, 45º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4136,7 +4136,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRWM90L",
-      "description": "Round, One Turn, 90Âº Left, Wall Mount",
+      "description": "Round, One Turn, 90º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 44.64668,
@@ -4147,7 +4147,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PRWM90R",
-      "description": "Round, One Turn, 90Âº Right, Wall Mount",
+      "description": "Round, One Turn, 90º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 44.64668,
@@ -4202,7 +4202,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCWM22L",
-      "description": "Colonial, 22 1/2Âº Left, Wall Mount",
+      "description": "Colonial, 22 1/2º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4213,7 +4213,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCWM22R",
-      "description": "Colonial, 22 1/2Âº Right, Wall Mount",
+      "description": "Colonial, 22 1/2º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4224,7 +4224,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCWM45L",
-      "description": "Colonial, 45Âº Left, Wall Mount",
+      "description": "Colonial, 45º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4235,7 +4235,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCWM45R",
-      "description": "Colonial, 45Âº Right, Wall Mount",
+      "description": "Colonial, 45º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 19.294023,
@@ -4246,7 +4246,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCWM90L",
-      "description": "Colonial, One Turn, 90Âº Left, Wall Mount",
+      "description": "Colonial, One Turn, 90º Left, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 50.224265,
@@ -4257,7 +4257,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PCWM90R",
-      "description": "Colonial, One Turn, 90Âº Right, Wall Mount",
+      "description": "Colonial, One Turn, 90º Right, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 50.224265,
@@ -4330,7 +4330,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PBWM22L",
-      "description": "22 1/2Âº Left, Bottom, Wall Mount",
+      "description": "22 1/2º Left, Bottom, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 15.27,
@@ -4341,7 +4341,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PDWM22L",
-      "description": "22 1/2Âº Left, Double Glass, Wall Mount",
+      "description": "22 1/2º Left, Double Glass, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 17.083791,
@@ -4352,7 +4352,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PBWM22R",
-      "description": "22 1/2Âº Right, Bottom, Wall Mount",
+      "description": "22 1/2º Right, Bottom, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 15.27,
@@ -4363,7 +4363,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PDWM22R",
-      "description": "22 1/2Âº Right, Double Glass, Wall Mount",
+      "description": "22 1/2º Right, Double Glass, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 17.083791,
@@ -4374,7 +4374,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PBWM45L",
-      "description": "45Âº Left, Bottom, Wall Mount",
+      "description": "45º Left, Bottom, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 15.692645,
@@ -4385,7 +4385,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PDWM45L",
-      "description": "45Âº Left, Double Glass, Wall Mount",
+      "description": "45º Left, Double Glass, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 20.867188,
@@ -4396,7 +4396,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PBWM45R",
-      "description": "45Âº Right, Bottom, Wall Mount",
+      "description": "45º Right, Bottom, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 15.692645,
@@ -4407,7 +4407,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PDWM45R",
-      "description": "45Âº Right, Double Glass, Wall Mount",
+      "description": "45º Right, Double Glass, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 20.867188,
@@ -4418,7 +4418,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PBWM90L",
-      "description": "90Âº Left, Bottom, Wall Mount",
+      "description": "90º Left, Bottom, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 26.483776,
@@ -4429,7 +4429,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PDWM90L",
-      "description": "90Âº Left, Double Glass, Wall Mount",
+      "description": "90º Left, Double Glass, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 31.658319,
@@ -4440,7 +4440,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PBWM90R",
-      "description": "90Âº Right, Bottom, Wall Mount",
+      "description": "90º Right, Bottom, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 26.483776,
@@ -4451,7 +4451,7 @@ export const catalogData: CatalogCategory[] = [
     },
     {
       "partCode": "PDWM90R",
-      "description": "90Âº Right, Double Glass, Wall Mount",
+      "description": "90º Right, Double Glass, Wall Mount",
       "size": null,
       "unit": "Each",
       "listPrice": 31.658319,
