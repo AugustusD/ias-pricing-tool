@@ -9,13 +9,14 @@ import { useState, useMemo, useCallback } from "react";
 import { X, RotateCcw, Search } from "lucide-react";
 import { CATALOG_DATA } from "@/lib/catalogData";
 import { useOrder } from "@/contexts/OrderContext";
-import { exportToExcel, generateEmailBody } from "@/lib/exportUtils";
+import { exportToExcel } from "@/lib/exportUtils";
 import { toast } from "sonner";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ProductTable from "@/components/ProductTable";
 import OrderPanel from "@/components/OrderPanel";
 import OrderSummaryModal from "@/components/OrderSummaryModal";
+import EmailPreviewModal from "@/components/EmailPreviewModal";
 
 export default function Home() {
   const [activeCategoryId, setActiveCategoryId] = useState<string>(CATALOG_DATA[0].id);
@@ -25,6 +26,7 @@ export default function Home() {
   const [summaryModalOpen, setSummaryModalOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [resetConfirm, setResetConfirm] = useState(false);
+  const [emailModalOpen, setEmailModalOpen] = useState(false);
 
   const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder } = useOrder();
 
@@ -61,11 +63,8 @@ export default function Home() {
       toast.error("No items in order to email.");
       return;
     }
-    const body = generateEmailBody(orderItems, getEffectivePrice, standardDiscount, infinityDiscount);
-    const subject = encodeURIComponent("IAS Dealer Order Inquiry");
-    const encodedBody = encodeURIComponent(body);
-    window.location.href = `mailto:?subject=${subject}&body=${encodedBody}`;
-  }, [orderItems, getEffectivePrice, standardDiscount, infinityDiscount]);
+    setEmailModalOpen(true);
+  }, [orderItems.length]);
 
   const handleReset = useCallback(() => {
     if (orderItems.length === 0) {
@@ -190,6 +189,11 @@ export default function Home() {
           onExport={handleExport}
           onEmail={handleEmail}
         />
+      )}
+
+      {/* Email preview modal */}
+      {emailModalOpen && (
+        <EmailPreviewModal onClose={() => setEmailModalOpen(false)} />
       )}
     </div>
   );
