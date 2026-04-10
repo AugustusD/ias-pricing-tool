@@ -1,196 +1,161 @@
 /**
  * IAS Excel Export Utility
  *
- * Produces a formula-driven workbook:
- *  - "Settings" sheet holds the two discount rates in named cells
- *  - "Order Summary" sheet references those cells via formulas
- *  - Effective Price column uses IF logic:
- *      Net items  → dealer price (no discount)
- *      Infinity   → dealer price × (1 - Infinity discount / 100)
- *      Standard   → dealer price × (1 - Standard discount / 100)
- *  - Line Total = Effective Price × Qty  (formula)
- *  - Grand Total = SUM(line totals)      (formula)
- *  - All dollar columns formatted as $#,##0.00
- *  - Per-category sheets mirror the same formula pattern
+ * Strategy: use XLSX.utils.aoa_to_sheet() to lay down ALL data (text + numbers)
+ * reliably, then overwrite specific cells with formula objects.
+ * This guarantees product rows are never empty.
+ *
+ * Workbook structure:
+ *  Sheet 1 – "Settings"      : Standard % in B2, Infinity % in B3
+ *  Sheet 2 – "Order Summary" : All items; Effective Price & Line Total are formulas
+ *  Sheet 3+ – per category   : Same formula pattern + SUBTOTAL row
+ *
+ * Formula rules:
+ *  Net items   → Effective Price = Dealer Price  (no discount)
+ *  Infinity    → Effective Price = Dealer Price × (1 − Settings!$B$3/100)
+ *  Standard    → Effective Price = Dealer Price × (1 − Settings!$B$2/100)
+ *  Line Total  = Effective Price × Qty
+ *  Grand Total = SUM(line total range)
+ *
+ * All $ columns formatted as $#,##0.00
  */
 
 import * as XLSX from "xlsx";
 import type { OrderItem } from "@/contexts/OrderContext";
 
-// ── helpers ──────────────────────────────────────────────────────────────────
+const DOLLAR_FMT = "$#,##0.00";
+const STD_REF    = "Settings!$B$2";   // Standard discount % cell
+const INF_REF    = "Settings!$B$3";   // Infinity discount % cell
 
-/** Convert 0-based column index to Excel letter(s): 0→A, 25→Z, 26→AA … */
-function colLetter(idx: number): string {
-  let s = "";
-  let n = idx;
-  do {
-    s = String.fromCharCode(65 + (n % 26)) + s;
-    n = Math.floor(n / 26) - 1;
-  } while (n >= 0);
-  return s;
+/** Apply number format to a single cell (creates cell if missing) */
+function applyDollarFmt(ws: XLSX.WorkSheet, addr: string) {
+  if (!ws[addr]) return;
+  ws[addr].z = DOLLAR_FMT;
+  if (!ws[addr].s) ws[addr].s = {};
+  (ws[addr].s as Record<string, unknown>).numFmt = DOLLAR_FMT;
 }
 
-/** Cell address string, e.g. cellAddr(0,0) → "A1" */
-function cellAddr(col: number, row: number): string {
-  return `${colLetter(col)}${row + 1}`;
-}
-
-/** Apply a number format to a range of cells in a worksheet */
-function applyFmt(ws: XLSX.WorkSheet, fmt: string, col: number, rowStart: number, rowEnd: number) {
-  for (let r = rowStart; r <= rowEnd; r++) {
-    const addr = cellAddr(col, r);
-    if (!ws[addr]) ws[addr] = { t: "n", v: 0 };
-    if (!ws[addr].s) ws[addr].s = {};
-    ws[addr].s.numFmt = fmt;
+/** Overwrite a cell with a formula, preserving a static fallback value */
+function setFormula(ws: XLSX.WorkSheet, addr: string, formula: string, fallback: number, fmt?: string) {
+  ws[addr] = { t: "n", f: formula, v: fallback };
+  if (fmt) {
     ws[addr].z = fmt;
+    if (!ws[addr].s) ws[addr].s = {};
+    (ws[addr].s as Record<string, unknown>).numFmt = fmt;
   }
 }
 
-/** Write a formula cell */
-function fmtCell(formula: string, numFmt?: string): XLSX.CellObject {
-  const cell: XLSX.CellObject = { t: "n", f: formula, v: 0 };
-  if (numFmt) { cell.z = numFmt; if (!cell.s) cell.s = {}; (cell.s as any).numFmt = numFmt; }
-  return cell;
-}
-
-/** Write a plain number cell with optional format */
-function numCell(value: number, numFmt?: string): XLSX.CellObject {
-  const cell: XLSX.CellObject = { t: "n", v: value };
-  if (numFmt) { cell.z = numFmt; if (!cell.s) cell.s = {}; (cell.s as any).numFmt = numFmt; }
-  return cell;
-}
-
-const DOLLAR_FMT = '$#,##0.00';
-
-// ── main export ───────────────────────────────────────────────────────────────
-
 export function exportToExcel(
   items: OrderItem[],
-  _getEffectivePrice: (item: OrderItem) => number,
+  getEffectivePrice: (item: OrderItem) => number,
   standardDiscount: number,
   infinityDiscount: number
 ) {
   const wb = XLSX.utils.book_new();
 
   // ── Sheet 1: Settings ──────────────────────────────────────────────────────
-  // Holds the two discount rates so all other sheets can reference them.
-  // Standard discount → Settings!B2
-  // Infinity discount → Settings!B3
-  const settingsData: XLSX.CellObject[][] = [
-    [{ t: "s", v: "IAS Discount Settings" }, { t: "s", v: "" }],
-    [{ t: "s", v: "Standard Product Discount (%)" }, numCell(standardDiscount)],
-    [{ t: "s", v: "Infinity Product Discount (%)" }, numCell(infinityDiscount)],
-    [{ t: "s", v: "" }, { t: "s", v: "" }],
-    [{ t: "s", v: "Note: Change these values to recalculate all sheets automatically." }, { t: "s", v: "" }],
+  const settingsAoa: (string | number)[][] = [
+    ["IAS Discount Settings", ""],
+    ["Standard Product Discount (%)", standardDiscount],
+    ["Infinity Product Discount (%)", infinityDiscount],
+    ["", ""],
+    ["Change B2 / B3 to recalculate all sheets automatically.", ""],
   ];
-
-  const settingsWs = XLSX.utils.aoa_to_sheet([]);
-  // Write cells manually so we can control types
-  settingsData.forEach((row, r) => {
-    row.forEach((cell, c) => {
-      settingsWs[cellAddr(c, r)] = cell;
-    });
-  });
-  settingsWs["!ref"] = `A1:B${settingsData.length}`;
-  settingsWs["!cols"] = [{ wch: 38 }, { wch: 16 }];
+  const settingsWs = XLSX.utils.aoa_to_sheet(settingsAoa);
+  settingsWs["!cols"] = [{ wch: 42 }, { wch: 18 }];
   XLSX.utils.book_append_sheet(wb, settingsWs, "Settings");
 
-  // References to the discount cells on the Settings sheet
-  const STD_DISC_REF = "Settings!$B$2";   // e.g. 45.75  (percent value)
-  const INF_DISC_REF = "Settings!$B$3";
-
   // ── Sheet 2: Order Summary ─────────────────────────────────────────────────
-  // Columns:
-  //  A  Part Code
-  //  B  Description
-  //  C  Size
-  //  D  Unit
-  //  E  Qty
-  //  F  Dealer Price
-  //  G  Effective Price  ← formula
-  //  H  Line Total       ← formula (G×E)
-  //  I  Type
+  // Build a plain AOA first (all static values), then overwrite formula cells.
+  //
+  // Row layout (1-based Excel rows):
+  //   1  Title
+  //   2  (blank)
+  //   3  Date
+  //   4  Standard discount label + value
+  //   5  Infinity discount label + value
+  //   6  (blank)
+  //   7  (blank)
+  //   8  Column headers
+  //   9… data rows
+  //   last+1  (blank)
+  //   last+2  Grand Total row
 
-  const HEADER_ROW = 7;   // 0-based row index of the column header row (row 8 in Excel)
-  const DATA_START  = 8;  // 0-based row index of first data row (row 9 in Excel)
+  const TITLE_ROWS = 7;          // rows before header (0-based: rows 0-6)
+  const HEADER_ROW_0 = 7;        // 0-based index of header row  → Excel row 8
+  const DATA_START_0 = 8;        // 0-based index of first data row → Excel row 9
 
-  const summaryWs: XLSX.WorkSheet = {};
+  // Pre-calculate effective prices for fallback values
+  const effectivePrices = items.map((item) => getEffectivePrice(item));
 
-  // Title block (rows 1-6)
-  summaryWs["A1"] = { t: "s", v: "Innovative Aluminum Systems – Dealer Order Summary" };
-  summaryWs["A2"] = { t: "s", v: "" };
-  summaryWs["A3"] = { t: "s", v: "Date:" };
-  summaryWs["B3"] = { t: "s", v: new Date().toLocaleDateString() };
-  summaryWs["A4"] = { t: "s", v: "Standard Product Discount:" };
-  summaryWs["B4"] = fmtCell(`${STD_DISC_REF}/100`, "0.00%");
-  summaryWs["A5"] = { t: "s", v: "Infinity Product Discount:" };
-  summaryWs["B5"] = fmtCell(`${INF_DISC_REF}/100`, "0.00%");
-  summaryWs["A6"] = { t: "s", v: "" };
-
-  // Column headers (row HEADER_ROW+1 in Excel)
-  const headers = ["Part Code","Description","Size","Unit","Qty","Dealer Price","Effective Price","Line Total","Type"];
-  headers.forEach((h, c) => {
-    summaryWs[cellAddr(c, HEADER_ROW)] = { t: "s", v: h };
-  });
+  // Build AOA
+  const summaryAoa: (string | number | null)[][] = [
+    ["Innovative Aluminum Systems – Dealer Order Summary", null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null, null],
+    ["Date:", new Date().toLocaleDateString(), null, null, null, null, null, null, null],
+    ["Standard Product Discount:", `${standardDiscount}%`, null, null, null, null, null, null, null],
+    ["Infinity Product Discount:", `${infinityDiscount}%`, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null, null],
+    // Header row (index 7)
+    ["Part Code", "Description", "Size", "Unit", "Qty", "Dealer Price", "Effective Price", "Line Total", "Type"],
+  ];
 
   // Data rows
-  const dataRowCount = items.length;
   items.forEach((item, i) => {
-    const r = DATA_START + i;           // 0-based
-    const excelRow = r + 1;             // 1-based (for formula strings)
-
-    const dealerPrice = item.dealerPrice ?? 0;
-
-    // A: Part Code
-    summaryWs[cellAddr(0, r)] = { t: "s", v: item.partCode };
-    // B: Description
-    summaryWs[cellAddr(1, r)] = { t: "s", v: item.description || "" };
-    // C: Size
-    summaryWs[cellAddr(2, r)] = { t: "s", v: item.size || "" };
-    // D: Unit
-    summaryWs[cellAddr(3, r)] = { t: "s", v: item.unit };
-    // E: Qty
-    summaryWs[cellAddr(4, r)] = { t: "n", v: item.quantity };
-    // F: Dealer Price
-    summaryWs[cellAddr(5, r)] = numCell(dealerPrice, DOLLAR_FMT);
-
-    // G: Effective Price formula
-    // Net items  → F (no discount)
-    // Infinity   → F * (1 - Settings!$B$3/100)
-    // Standard   → F * (1 - Settings!$B$2/100)
-    let effectiveFormula: string;
-    if (item.isNetPrice) {
-      effectiveFormula = `F${excelRow}`;
-    } else if (item.isInfinity) {
-      effectiveFormula = `F${excelRow}*(1-${INF_DISC_REF}/100)`;
-    } else {
-      effectiveFormula = `F${excelRow}*(1-${STD_DISC_REF}/100)`;
-    }
-    summaryWs[cellAddr(6, r)] = fmtCell(effectiveFormula, DOLLAR_FMT);
-
-    // H: Line Total = G * E
-    summaryWs[cellAddr(7, r)] = fmtCell(`G${excelRow}*E${excelRow}`, DOLLAR_FMT);
-
-    // I: Type label
+    const ep = effectivePrices[i];
+    const lineTotal = ep * item.quantity;
     const typeLabel = item.isNetPrice ? "Net Price" : item.isInfinity ? "Infinity" : "Standard";
-    summaryWs[cellAddr(8, r)] = { t: "s", v: typeLabel };
+    summaryAoa.push([
+      item.partCode,
+      item.description || "",
+      item.size || "",
+      item.unit,
+      item.quantity,
+      item.dealerPrice ?? 0,   // F – Dealer Price (static, formula references this)
+      ep,                       // G – Effective Price (will be overwritten with formula)
+      lineTotal,                // H – Line Total (will be overwritten with formula)
+      typeLabel,
+    ]);
   });
 
-  // Grand Total row
-  const totalRow0 = DATA_START + dataRowCount + 1; // blank gap row
-  const totalRow  = totalRow0 + 1;
-  const totalExcel = totalRow + 1;
-  const dataStartExcel = DATA_START + 1;
-  const dataEndExcel   = DATA_START + dataRowCount;
+  // Blank + Grand Total rows
+  summaryAoa.push([null, null, null, null, null, null, null, null, null]);
+  const grandTotal = effectivePrices.reduce((s, ep, i) => s + ep * items[i].quantity, 0);
+  summaryAoa.push([null, null, null, null, null, null, "GRAND TOTAL:", grandTotal, null]);
 
-  summaryWs[cellAddr(6, totalRow)] = { t: "s", v: "GRAND TOTAL:" };
-  summaryWs[cellAddr(7, totalRow)] = fmtCell(
-    `SUM(H${dataStartExcel}:H${dataEndExcel})`,
-    DOLLAR_FMT
-  );
+  const summaryWs = XLSX.utils.aoa_to_sheet(summaryAoa);
 
-  // Sheet ref
-  summaryWs["!ref"] = `A1:I${totalExcel}`;
+  // Now overwrite formula cells
+  items.forEach((item, i) => {
+    const excelRow = DATA_START_0 + i + 1;   // 1-based Excel row number
+    const ep = effectivePrices[i];
+    const lineTotal = ep * item.quantity;
+
+    // G: Effective Price formula
+    let effFormula: string;
+    if (item.isNetPrice) {
+      effFormula = `F${excelRow}`;
+    } else if (item.isInfinity) {
+      effFormula = `F${excelRow}*(1-${INF_REF}/100)`;
+    } else {
+      effFormula = `F${excelRow}*(1-${STD_REF}/100)`;
+    }
+    setFormula(summaryWs, `G${excelRow}`, effFormula, ep, DOLLAR_FMT);
+
+    // H: Line Total formula
+    setFormula(summaryWs, `H${excelRow}`, `G${excelRow}*E${excelRow}`, lineTotal, DOLLAR_FMT);
+
+    // F: Dealer Price – just format
+    applyDollarFmt(summaryWs, `F${excelRow}`);
+  });
+
+  // Grand Total formula (SUM)
+  const dataStartExcel = DATA_START_0 + 1;
+  const dataEndExcel   = DATA_START_0 + items.length;
+  const grandTotalRow  = DATA_START_0 + items.length + 2 + 1; // +1 blank, +1 total, +1 for 1-based
+  setFormula(summaryWs, `H${grandTotalRow}`, `SUM(H${dataStartExcel}:H${dataEndExcel})`, grandTotal, DOLLAR_FMT);
+
   summaryWs["!cols"] = [
     { wch: 22 }, // A Part Code
     { wch: 50 }, // B Description
@@ -207,62 +172,69 @@ export function exportToExcel(
 
   // ── Per-category sheets ────────────────────────────────────────────────────
   // Columns: A Part Code | B Description | C Size | D Unit | E Qty | F Dealer Price | G Effective Price | H Line Total
+  const CAT_HDR_0  = 1;   // 0-based header row (row 2 in Excel, row 1 is category name)
+  const CAT_DATA_0 = 2;   // 0-based first data row (row 3 in Excel)
+
   const byCategory = new Map<string, OrderItem[]>();
   for (const item of items) {
     if (!byCategory.has(item.categoryName)) byCategory.set(item.categoryName, []);
     byCategory.get(item.categoryName)!.push(item);
   }
 
-  const CAT_HDR = 1;   // 0-based header row
-  const CAT_DATA = 2;  // 0-based first data row
-
   for (const [catName, catItems] of Array.from(byCategory.entries())) {
-    const cws: XLSX.WorkSheet = {};
+    const catEffPrices = catItems.map((item) => getEffectivePrice(item));
 
-    // Title
-    cws["A1"] = { t: "s", v: catName };
-
-    // Headers
-    const catHeaders = ["Part Code","Description","Size","Unit","Qty","Dealer Price","Effective Price","Line Total"];
-    catHeaders.forEach((h, c) => { cws[cellAddr(c, CAT_HDR)] = { t: "s", v: h }; });
+    const catAoa: (string | number | null)[][] = [
+      [catName, null, null, null, null, null, null, null],
+      ["Part Code", "Description", "Size", "Unit", "Qty", "Dealer Price", "Effective Price", "Line Total"],
+    ];
 
     catItems.forEach((item, i) => {
-      const r = CAT_DATA + i;
-      const excelRow = r + 1;
-      const dealerPrice = item.dealerPrice ?? 0;
+      const ep = catEffPrices[i];
+      catAoa.push([
+        item.partCode,
+        item.description || "",
+        item.size || "",
+        item.unit,
+        item.quantity,
+        item.dealerPrice ?? 0,
+        ep,
+        ep * item.quantity,
+      ]);
+    });
 
-      cws[cellAddr(0, r)] = { t: "s", v: item.partCode };
-      cws[cellAddr(1, r)] = { t: "s", v: item.description || "" };
-      cws[cellAddr(2, r)] = { t: "s", v: item.size || "" };
-      cws[cellAddr(3, r)] = { t: "s", v: item.unit };
-      cws[cellAddr(4, r)] = { t: "n", v: item.quantity };
-      cws[cellAddr(5, r)] = numCell(dealerPrice, DOLLAR_FMT);
+    // Blank + Subtotal
+    catAoa.push([null, null, null, null, null, null, null, null]);
+    const catSubtotal = catEffPrices.reduce((s, ep, i) => s + ep * catItems[i].quantity, 0);
+    catAoa.push([null, null, null, null, null, null, "SUBTOTAL:", catSubtotal]);
+
+    const cws = XLSX.utils.aoa_to_sheet(catAoa);
+
+    // Overwrite formula cells
+    catItems.forEach((item, i) => {
+      const excelRow = CAT_DATA_0 + i + 1;   // 1-based
+      const ep = catEffPrices[i];
+      const lineTotal = ep * item.quantity;
 
       let effFormula: string;
       if (item.isNetPrice) {
         effFormula = `F${excelRow}`;
       } else if (item.isInfinity) {
-        effFormula = `F${excelRow}*(1-${INF_DISC_REF}/100)`;
+        effFormula = `F${excelRow}*(1-${INF_REF}/100)`;
       } else {
-        effFormula = `F${excelRow}*(1-${STD_DISC_REF}/100)`;
+        effFormula = `F${excelRow}*(1-${STD_REF}/100)`;
       }
-      cws[cellAddr(6, r)] = fmtCell(effFormula, DOLLAR_FMT);
-      cws[cellAddr(7, r)] = fmtCell(`G${excelRow}*E${excelRow}`, DOLLAR_FMT);
+      setFormula(cws, `G${excelRow}`, effFormula, ep, DOLLAR_FMT);
+      setFormula(cws, `H${excelRow}`, `G${excelRow}*E${excelRow}`, lineTotal, DOLLAR_FMT);
+      applyDollarFmt(cws, `F${excelRow}`);
     });
 
-    // Subtotal row
-    const subTotalRow0 = CAT_DATA + catItems.length;
-    const subTotalRow  = subTotalRow0 + 1;
-    const catDataStart = CAT_DATA + 1;
-    const catDataEnd   = CAT_DATA + catItems.length;
+    // Subtotal formula
+    const catDataStart = CAT_DATA_0 + 1;
+    const catDataEnd   = CAT_DATA_0 + catItems.length;
+    const subtotalRow  = CAT_DATA_0 + catItems.length + 2;   // 1-based
+    setFormula(cws, `H${subtotalRow}`, `SUM(H${catDataStart}:H${catDataEnd})`, catSubtotal, DOLLAR_FMT);
 
-    cws[cellAddr(6, subTotalRow)] = { t: "s", v: "SUBTOTAL:" };
-    cws[cellAddr(7, subTotalRow)] = fmtCell(
-      `SUM(H${catDataStart}:H${catDataEnd})`,
-      DOLLAR_FMT
-    );
-
-    cws["!ref"] = `A1:H${subTotalRow + 1}`;
     cws["!cols"] = [
       { wch: 22 }, { wch: 50 }, { wch: 12 }, { wch: 8 },
       { wch: 6  }, { wch: 16 }, { wch: 18 }, { wch: 16 },
@@ -275,7 +247,7 @@ export function exportToExcel(
   XLSX.writeFile(wb, `IAS_Order_${new Date().toISOString().split("T")[0]}.xlsx`);
 }
 
-// ── Email body (unchanged) ────────────────────────────────────────────────────
+// ── Email body ────────────────────────────────────────────────────────────────
 
 export function generateEmailBody(
   items: OrderItem[],
