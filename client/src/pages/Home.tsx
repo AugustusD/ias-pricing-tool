@@ -116,9 +116,6 @@ export default function Home() {
           <div className="bg-white border-b border-border px-4 pt-2.5 pb-0 flex-shrink-0">
             {/* Category name row */}
             <div className="flex items-center gap-2 mb-2">
-              {activeCategory.isInfinity && (
-                <span className="infinity-badge">Infinity</span>
-              )}
               {activeCategory.isNet && (
                 <span className="net-badge">Net Price</span>
               )}

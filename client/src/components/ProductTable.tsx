@@ -246,11 +246,12 @@ export default function ProductTable({ tab, category, searchQuery }: ProductTabl
 
             {/* Section heading separator (within a profile or for non-profile sheets) */}
             {group.sectionLabel && (
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 border-b border-gray-200">
-                <span className="text-[0.68rem] font-semibold uppercase tracking-wider text-gray-500">
+              <div className="flex items-center gap-2 px-3 py-2 bg-black border-b border-[#B69A5A]">
+                <div className="w-1 h-4 bg-[#B69A5A] rounded-full flex-shrink-0" />
+                <span className="text-[0.7rem] font-bold uppercase tracking-widest text-[#B69A5A]">
                   {group.sectionLabel}
                 </span>
-                <div className="flex-1 h-px bg-gray-200" />
+                <div className="flex-1 h-px bg-[#B69A5A]/30" />
               </div>
             )}
 
@@ -288,9 +289,7 @@ export default function ProductTable({ tab, category, searchQuery }: ProductTabl
                       {category.isNetPrice && (
                         <span className="net-badge">Net</span>
                       )}
-                      {category.isInfinity && !category.isNetPrice && (
-                        <span className="infinity-badge">∞</span>
-                      )}
+
                     </div>
                   </div>
 
@@ -327,7 +326,7 @@ export default function ProductTable({ tab, category, searchQuery }: ProductTabl
                         </span>
                         {showDiscount && (
                           <div className="text-[0.6rem] text-[#B69A5A] font-medium">
-                            {category.isInfinity ? "∞ disc." : "disc."}
+                            disc.
                           </div>
                         )}
                       </div>

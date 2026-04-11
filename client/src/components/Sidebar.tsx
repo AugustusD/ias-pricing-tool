@@ -121,9 +121,6 @@ export default function Sidebar({
                       {cat.name}
                     </span>
                     <span className="flex-shrink-0 flex items-center gap-1">
-                      {cat.isInfinity && (
-                        <span className="text-[0.55rem] text-[#B69A5A] font-bold uppercase tracking-wide">INF</span>
-                      )}
                       {cat.isNetPrice && (
                         <span className="text-[0.55rem] text-[#f4ce47] font-bold uppercase tracking-wide">NET</span>
                       )}

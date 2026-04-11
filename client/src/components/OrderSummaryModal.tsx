@@ -136,9 +136,7 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail }: OrderS
                                 {item.partCode}
                               </span>
                               {item.isNetPrice && <span className="net-badge">Net</span>}
-                              {item.isInfinity && !item.isNetPrice && (
-                                <span className="infinity-badge">∞</span>
-                              )}
+
                             </div>
                           </div>
 

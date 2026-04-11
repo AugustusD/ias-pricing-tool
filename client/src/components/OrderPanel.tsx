@@ -76,9 +76,7 @@ export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: Or
                           {item.partCode}
                         </span>
                         {item.isNetPrice && <span className="net-badge">Net</span>}
-                        {item.isInfinity && !item.isNetPrice && (
-                          <span className="infinity-badge">∞</span>
-                        )}
+
                       </div>
                       {cleanSize(item.size) && (
                         <span className="text-xs text-muted-foreground">
