@@ -28,7 +28,7 @@
 - ✅ **∞ badge removed from all locations** (checkpoint c6b8624a)
 - ✅ **All section headers unified to dark gold style** (checkpoint c6b8624a)
 - ✅ **Wall Mounts – Top Rail: PRWM* → `profileGroup: "Round"`, PCWM* → `profileGroup: "Colonial"`** (confirmed already correct at checkpoint c6b8624a)
-- ✅ **Level Sleeves & Top Rail: End Caps (PCPS, PCPR, PCPSSL, PCPRSL, PCPF, PCPC, PCPFSL, PCPCSL) → `sectionHeading: "End Caps & Sleeve Caps"`** (this session)
+- ✅ **Level Sleeves & Top Rail: End Caps (PCPS, PCPR, PCPSSL, PCPRSL, PCPF, PCPC, PCPFSL, PCPCSL) → moved into their respective profile groups (Square/Round/Flat/Colonial) so they appear at the bottom of each profile section** (checkpoint b95dbfc5 → this session)
 - ✅ **Stair Sleeves & PMP: Flat custom stair sleeves (PFSLENDCUS1/2, PFSLCUS1/2) → `profileGroup: "Flat"`** (this session)
 
 ---

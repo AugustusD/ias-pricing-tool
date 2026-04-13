@@ -3446,8 +3446,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 9.67,
       "dealerPrice": 9.67,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Square",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPR",
@@ -3457,8 +3457,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 9.67,
       "dealerPrice": 9.67,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Round",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPSSL",
@@ -3468,8 +3468,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 30.43,
       "dealerPrice": 30.43,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Square",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPRSL",
@@ -3479,8 +3479,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 30.43,
       "dealerPrice": 30.43,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Round",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPF",
@@ -3490,8 +3490,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 24.24,
       "dealerPrice": 24.24,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Flat",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPC",
@@ -3501,8 +3501,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 9.67,
       "dealerPrice": 9.67,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Colonial",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPFSL",
@@ -3512,8 +3512,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 30.43,
       "dealerPrice": 30.43,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Flat",
+      "sectionHeading": ""
     },
     {
       "partCode": "PCPCSL",
@@ -3523,8 +3523,8 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 30.43,
       "dealerPrice": 30.43,
       "type": "standard",
-      "profileGroup": null,
-      "sectionHeading": "End Caps & Sleeve Caps"
+      "profileGroup": "Colonial",
+      "sectionHeading": ""
     },
     {
       "partCode": "MPLPMC",
