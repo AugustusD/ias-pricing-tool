@@ -143,9 +143,27 @@ export default function ProductTable({ tab, category, searchQuery }: ProductTabl
         }
       }
 
-      // Append any items without a profile
+      // Append any items without a profile — group by sectionHeading so standalone
+      // sections like "Post Mount Plates" render their header correctly even in a
+      // tab that also has profile groups.
       if (noProfileItems.length > 0) {
-        result.push({ profileLabel: null, sectionLabel: null, items: noProfileItems });
+        let npSection = "";
+        let npBucket: CatalogItem[] = [];
+        for (const item of noProfileItems) {
+          const sh = item.sectionHeading ?? "";
+          if (sh !== npSection) {
+            if (npBucket.length > 0) {
+              result.push({ profileLabel: null, sectionLabel: npSection || null, items: npBucket });
+            }
+            npSection = sh;
+            npBucket = [item];
+          } else {
+            npBucket.push(item);
+          }
+        }
+        if (npBucket.length > 0) {
+          result.push({ profileLabel: null, sectionLabel: npSection || null, items: npBucket });
+        }
       }
 
       return result;
