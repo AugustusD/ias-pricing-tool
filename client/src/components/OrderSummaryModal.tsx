@@ -12,9 +12,10 @@ type OrderSummaryModalProps = {
   onClose: () => void;
   onExport: () => void;
   onEmail: () => void;
+  colorSelection: string;
 };
 
-export default function OrderSummaryModal({ onClose, onExport, onEmail }: OrderSummaryModalProps) {
+export default function OrderSummaryModal({ onClose, onExport, onEmail, colorSelection }: OrderSummaryModalProps) {
   const {
     items,
     removeItem,
@@ -23,8 +24,6 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail }: OrderS
     totalPrice,
     getEffectivePrice,
     clearOrder,
-    standardDiscount,
-    infinityDiscount,
   } = useOrder();
 
   // Group by category
@@ -54,19 +53,17 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail }: OrderS
           </button>
         </div>
 
-        {/* Discount info bar */}
+        {/* Meta info bar */}
         <div className="bg-[#f8f7f5] border-b border-border px-6 py-2.5 flex items-center gap-6 flex-shrink-0">
           <div className="flex items-center gap-2">
             <span className="text-xs text-muted-foreground">Date:</span>
             <span className="text-xs font-medium">{new Date().toLocaleDateString()}</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-muted-foreground">Standard Discount:</span>
-            <span className="text-xs font-bold text-[#B69A5A]">{standardDiscount}%</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-muted-foreground">Infinity Discount:</span>
-            <span className="text-xs font-bold text-[#B69A5A]">{infinityDiscount}%</span>
+            <span className="text-xs text-muted-foreground">Color:</span>
+            <span className="text-xs font-bold text-[#B69A5A]">
+              {colorSelection === "UNSPECIFIED" ? "— Unspecified" : colorSelection === "CUSTOM" ? "Custom (specify)" : colorSelection}
+            </span>
           </div>
           <div className="flex items-center gap-2 ml-auto">
             <span className="text-xs text-muted-foreground">Items:</span>

@@ -10,10 +10,10 @@ import { X, Copy, Mail, Check, Printer } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
 import { cleanSize } from "@/lib/exportUtils";
 
-type Props = { onClose: () => void };
+type Props = { onClose: () => void; colorSelection: string };
 
-export default function EmailPreviewModal({ onClose }: Props) {
-  const { items, getEffectivePrice, standardDiscount, infinityDiscount } = useOrder();
+export default function EmailPreviewModal({ onClose, colorSelection }: Props) {
+  const { items, getEffectivePrice } = useOrder();
   const [copied, setCopied] = useState(false);
   const tableRef = useRef<HTMLDivElement>(null);
 
@@ -140,12 +140,10 @@ export default function EmailPreviewModal({ onClose }: Props) {
                           <td style={{ fontWeight: "600" }}>{date}</td>
                         </tr>
                         <tr>
-                          <td style={{ paddingRight: "20px", color: "#555", paddingBottom: "2px" }}>Standard Discount:</td>
-                          <td style={{ fontWeight: "600" }}>{standardDiscount}%</td>
-                        </tr>
-                        <tr>
-                          <td style={{ paddingRight: "20px", color: "#555" }}>Infinity Discount:</td>
-                          <td style={{ fontWeight: "600" }}>{infinityDiscount}%</td>
+                          <td style={{ paddingRight: "20px", color: "#555" }}>Color:</td>
+                          <td style={{ fontWeight: "600" }}>
+                            {colorSelection === "UNSPECIFIED" ? "— Unspecified" : colorSelection === "CUSTOM" ? "Custom (specify)" : colorSelection}
+                          </td>
                         </tr>
                       </tbody>
                     </table>

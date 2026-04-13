@@ -192,12 +192,13 @@ export default function Home() {
           onClose={() => setSummaryModalOpen(false)}
           onExport={handleExport}
           onEmail={handleEmail}
+          colorSelection={colorSelection}
         />
       )}
 
       {/* Email preview modal */}
       {emailModalOpen && (
-        <EmailPreviewModal onClose={() => setEmailModalOpen(false)} />
+        <EmailPreviewModal onClose={() => setEmailModalOpen(false)} colorSelection={colorSelection} />
       )}
     </div>
   );
