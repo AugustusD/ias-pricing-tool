@@ -3447,7 +3447,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 9.67,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Square"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPR",
@@ -3458,7 +3458,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 9.67,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Round"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPSSL",
@@ -3469,7 +3469,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 30.43,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Square"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPRSL",
@@ -3480,7 +3480,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 30.43,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Round"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPF",
@@ -3491,7 +3491,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 24.24,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Flat"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPC",
@@ -3502,7 +3502,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 9.67,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Colonial"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPFSL",
@@ -3513,7 +3513,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 30.43,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Flat"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "PCPCSL",
@@ -3524,7 +3524,7 @@ export const catalogData: CatalogCategory[] = [
       "dealerPrice": 30.43,
       "type": "standard",
       "profileGroup": null,
-      "sectionHeading": "Colonial"
+      "sectionHeading": "End Caps & Sleeve Caps"
     },
     {
       "partCode": "MPLPMC",
@@ -3717,7 +3717,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 61.62646,
       "dealerPrice": 61.62646,
       "type": "standard",
-      "profileGroup": null,
+      "profileGroup": "Flat",
       "sectionHeading": ""
     },
     {
@@ -3728,7 +3728,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 79.789364,
       "dealerPrice": 79.789364,
       "type": "standard",
-      "profileGroup": null,
+      "profileGroup": "Flat",
       "sectionHeading": ""
     },
     {
@@ -3739,7 +3739,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 64.096719,
       "dealerPrice": 64.096719,
       "type": "standard",
-      "profileGroup": null,
+      "profileGroup": "Flat",
       "sectionHeading": ""
     },
     {
@@ -3750,7 +3750,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 82.974698,
       "dealerPrice": 82.974698,
       "type": "standard",
-      "profileGroup": null,
+      "profileGroup": "Flat",
       "sectionHeading": ""
     },
     {
@@ -4087,7 +4087,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 14.639535,
       "dealerPrice": 14.639535,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4098,7 +4098,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4109,7 +4109,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4120,7 +4120,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4131,7 +4131,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4142,7 +4142,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 44.64668,
       "dealerPrice": 44.64668,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4153,7 +4153,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 44.64668,
       "dealerPrice": 44.64668,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4164,7 +4164,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 32.854444,
       "dealerPrice": 32.854444,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4175,7 +4175,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 49.33,
       "dealerPrice": 49.33,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4186,7 +4186,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 65.82,
       "dealerPrice": 65.82,
       "type": "standard",
-      "profileGroup": "Square",
+      "profileGroup": "Round",
       "sectionHeading": ""
     },
     {
@@ -4197,7 +4197,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 14.639535,
       "dealerPrice": 14.639535,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4208,7 +4208,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4219,7 +4219,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4230,7 +4230,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4241,7 +4241,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 19.294023,
       "dealerPrice": 19.294023,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4252,7 +4252,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 50.224265,
       "dealerPrice": 50.224265,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4263,7 +4263,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 50.224265,
       "dealerPrice": 50.224265,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4274,7 +4274,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 32.854444,
       "dealerPrice": 32.854444,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4285,7 +4285,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 55.51,
       "dealerPrice": 55.51,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     },
     {
@@ -4296,7 +4296,7 @@ export const catalogData: CatalogCategory[] = [
       "listPrice": 71.988547,
       "dealerPrice": 71.988547,
       "type": "standard",
-      "profileGroup": "Flat",
+      "profileGroup": "Colonial",
       "sectionHeading": ""
     }
         ]
