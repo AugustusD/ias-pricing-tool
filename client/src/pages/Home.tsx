@@ -27,6 +27,7 @@ export default function Home() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [resetConfirm, setResetConfirm] = useState(false);
   const [emailModalOpen, setEmailModalOpen] = useState(false);
+  const [profileFilter, setProfileFilter] = useState<string | null>(null);
 
   const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder } = useOrder();
 
@@ -97,6 +98,8 @@ export default function Home() {
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         onSearchClear={() => setSearchQuery("")}
+        profileFilter={profileFilter}
+        onProfileFilterChange={setProfileFilter}
       />
 
       {/* Main layout */}
@@ -163,6 +166,7 @@ export default function Home() {
                 tab={activeTab as any}
                 category={activeCategory as any}
                 searchQuery={searchQuery}
+                profileFilter={profileFilter}
               />
             )}
           </div>

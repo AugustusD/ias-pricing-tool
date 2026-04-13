@@ -111,8 +111,17 @@ export default function Sidebar({
                 className={`ias-sidebar-item w-full text-left flex items-center gap-2.5 px-3 py-2.5 ${isActive ? "active" : ""}`}
                 title={collapsed ? cat.name : undefined}
               >
-                <span className={`flex-shrink-0 ${isActive ? "text-[#B69A5A]" : "text-white/40"}`}>
-                  {ICON_MAP[cat.icon] ?? <Square className="w-4 h-4" />}
+                {/* Gold-filled checkbox — filled when active */}
+                <span className={`flex-shrink-0 w-4 h-4 rounded-sm border flex items-center justify-center transition-all duration-150 ${
+                  isActive
+                    ? "bg-[#B69A5A] border-[#B69A5A]"
+                    : "bg-transparent border-white/25"
+                }`}>
+                  {isActive && (
+                    <svg viewBox="0 0 10 8" className="w-2.5 h-2.5" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="1,4 3.5,6.5 9,1" />
+                    </svg>
+                  )}
                 </span>
 
                 {!collapsed && (

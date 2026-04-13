@@ -5,6 +5,7 @@
  * Values persist via localStorage (managed in OrderContext).
  * Reset Order button (branded yellow) clears the order with a confirm step.
  * Search field has an X clear button.
+ * Profile filter buttons (Square / Round / Flat / Colonial) sit between search and discounts.
  */
 
 import { ShoppingCart, Download, Mail, LayoutList, Search, X, RotateCcw } from "lucide-react";
@@ -12,6 +13,8 @@ import { useOrder } from "@/contexts/OrderContext";
 import { useState } from "react";
 
 const IAS_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663093943154/eWb5yXbeMwxfmcDcdW8bmF/small200_e0c33b5e.png";
+
+const PROFILE_FILTERS = ["Square", "Round", "Flat", "Colonial"] as const;
 
 type HeaderProps = {
   totalItems: number;
@@ -25,6 +28,8 @@ type HeaderProps = {
   searchQuery: string;
   onSearchChange: (q: string) => void;
   onSearchClear: () => void;
+  profileFilter: string | null;
+  onProfileFilterChange: (profile: string | null) => void;
 };
 
 /** Controlled percent input — shows raw string while typing, commits on blur/enter */
@@ -68,7 +73,7 @@ function DiscountField({
             }
           }}
           className={[
-            "w-24 text-center text-sm font-bold pr-6 pl-2 py-1.5 rounded border transition-all focus:outline-none",
+            "w-20 text-center text-sm font-bold pr-6 pl-2 py-1.5 rounded border transition-all focus:outline-none",
             highlight
               ? "border-[#f4ce47] bg-[#f4ce47]/20 text-black ring-1 ring-[#f4ce47] animate-pulse focus:animate-none focus:ring-[#B69A5A] focus:border-[#B69A5A] focus:bg-white"
               : "border-black/15 bg-white text-black focus:border-[#B69A5A] focus:ring-1 focus:ring-[#B69A5A]",
@@ -96,6 +101,8 @@ export default function Header({
   searchQuery,
   onSearchChange,
   onSearchClear,
+  profileFilter,
+  onProfileFilterChange,
 }: HeaderProps) {
   const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
 
@@ -143,8 +150,33 @@ export default function Header({
           )}
         </div>
 
+        {/* ── Profile Filter Buttons ── */}
+        <div className="flex items-center gap-1 px-2 py-1 rounded border border-black/10 bg-black/[0.02] flex-shrink-0">
+          <span className="text-[0.55rem] font-bold uppercase tracking-widest text-black/25 hidden md:block mr-1 whitespace-nowrap">
+            Profile
+          </span>
+          {PROFILE_FILTERS.map((profile) => {
+            const active = profileFilter === profile;
+            return (
+              <button
+                key={profile}
+                onClick={() => onProfileFilterChange(active ? null : profile)}
+                title={active ? `Clear ${profile} filter` : `Filter by ${profile} profile`}
+                className={[
+                  "text-[0.65rem] font-bold px-2.5 py-1 rounded transition-all duration-150 whitespace-nowrap",
+                  active
+                    ? "bg-[#B69A5A] text-black border border-[#9a8040] shadow-sm"
+                    : "bg-transparent text-black/45 border border-transparent hover:border-black/20 hover:text-black/70 hover:bg-black/5",
+                ].join(" ")}
+              >
+                {profile}
+              </button>
+            );
+          })}
+        </div>
+
         {/* ── Always-visible Discount Fields ── */}
-        <div className="flex items-center gap-3 px-3 py-1.5 rounded border border-black/10 bg-black/[0.03] flex-shrink-0 ml-1">
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded border border-black/10 bg-black/[0.03] flex-shrink-0">
           {/* Divider label */}
           <span className="text-[0.6rem] font-bold uppercase tracking-widest text-black/30 hidden md:block">
             Discounts

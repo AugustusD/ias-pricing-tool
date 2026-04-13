@@ -44,6 +44,8 @@ type ProductTableProps = {
   tab: CatalogTab;
   category: CatalogCategory;
   searchQuery: string;
+  /** When set, only show items belonging to this profile group (or items with no profile group) */
+  profileFilter?: string | null;
 };
 
 function formatPrice(price: number | null): string {
@@ -54,7 +56,7 @@ function formatPrice(price: number | null): string {
 // Profile group order matching the PDF layout
 const PROFILE_ORDER = ["Square", "Round", "Flat", "Colonial", "1.9\" Pipe Rail"];
 
-export default function ProductTable({ tab, category, searchQuery }: ProductTableProps) {
+export default function ProductTable({ tab, category, searchQuery, profileFilter }: ProductTableProps) {
   const { items: orderItems, addItem, updateQuantity, getEffectivePrice } = useOrder();
 
   const orderMap = useMemo(() => {
@@ -66,15 +68,26 @@ export default function ProductTable({ tab, category, searchQuery }: ProductTabl
   }, [orderItems]);
 
   const filteredItems = useMemo(() => {
-    if (!searchQuery.trim()) return tab.items;
-    const q = searchQuery.toLowerCase();
-    return tab.items.filter(
-      (item) =>
-        item.partCode.toLowerCase().includes(q) ||
-        item.description.toLowerCase().includes(q) ||
-        (item.size && item.size.toLowerCase().includes(q))
-    );
-  }, [tab.items, searchQuery]);
+    let items = tab.items;
+    // Apply text search
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      items = items.filter(
+        (item) =>
+          item.partCode.toLowerCase().includes(q) ||
+          item.description.toLowerCase().includes(q) ||
+          (item.size && item.size.toLowerCase().includes(q))
+      );
+    }
+    // Apply profile filter: keep items that belong to the selected profile,
+    // AND keep items with no profileGroup (standalone sections like Post Mount Plates)
+    if (profileFilter) {
+      items = items.filter(
+        (item) => !item.profileGroup || item.profileGroup === profileFilter
+      );
+    }
+    return items;
+  }, [tab.items, searchQuery, profileFilter]);
 
   // Determine if this tab uses profile grouping
   const hasProfiles = useMemo(
