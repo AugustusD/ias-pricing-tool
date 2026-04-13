@@ -28,6 +28,7 @@ export default function Home() {
   const [resetConfirm, setResetConfirm] = useState(false);
   const [emailModalOpen, setEmailModalOpen] = useState(false);
   const [profileFilter, setProfileFilter] = useState<string | null>(null);
+  const [colorSelection, setColorSelection] = useState<string>("UNSPECIFIED");
 
   const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder } = useOrder();
 
@@ -100,6 +101,8 @@ export default function Home() {
         onSearchClear={() => setSearchQuery("")}
         profileFilter={profileFilter}
         onProfileFilterChange={setProfileFilter}
+        colorSelection={colorSelection}
+        onColorChange={setColorSelection}
       />
 
       {/* Main layout */}

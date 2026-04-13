@@ -16,6 +16,25 @@ const IAS_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663093943154/eWb5y
 
 const PROFILE_FILTERS = ["Square", "Round", "Flat", "Colonial"] as const;
 
+const IAS_COLORS = [
+  "UNSPECIFIED",
+  "White",
+  "Light Ivory",
+  "Sandalwood",
+  "Oyster Gray",
+  "Beige",
+  "Silver Matte",
+  "Coastal Grey",
+  "Hartford Green",
+  "Phantom Bronze",
+  "Rideau Brown",
+  "Sparrow Grey",
+  "Black",
+  "Textured Black",
+  "Flat Black",
+  "CUSTOM",
+] as const;
+
 type HeaderProps = {
   totalItems: number;
   totalPrice: number;
@@ -30,6 +49,8 @@ type HeaderProps = {
   onSearchClear: () => void;
   profileFilter: string | null;
   onProfileFilterChange: (profile: string | null) => void;
+  colorSelection: string;
+  onColorChange: (color: string) => void;
 };
 
 /** Controlled percent input — shows raw string while typing, commits on blur/enter */
@@ -103,6 +124,8 @@ export default function Header({
   onSearchClear,
   profileFilter,
   onProfileFilterChange,
+  colorSelection,
+  onColorChange,
 }: HeaderProps) {
   const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
 
@@ -148,6 +171,36 @@ export default function Header({
               <X className="w-3.5 h-3.5" />
             </button>
           )}
+        </div>
+
+        {/* ── Color Selector ── */}
+        <div className="flex items-center gap-1.5 px-2 py-1 rounded border border-black/10 bg-black/[0.02] flex-shrink-0">
+          <span className="text-[0.55rem] font-bold uppercase tracking-widest text-black/25 hidden md:block whitespace-nowrap">
+            Color
+          </span>
+          <select
+            value={colorSelection}
+            onChange={(e) => onColorChange(e.target.value)}
+            className={[
+              "text-[0.65rem] font-semibold pl-2 pr-6 py-1 rounded border transition-all appearance-none bg-no-repeat cursor-pointer focus:outline-none",
+              colorSelection === "UNSPECIFIED"
+                ? "border-black/15 bg-white text-black/40 focus:border-[#B69A5A]"
+                : colorSelection === "CUSTOM"
+                ? "border-[#B69A5A] bg-[#B69A5A]/10 text-black focus:border-[#B69A5A]"
+                : "border-[#B69A5A] bg-[#B69A5A] text-black font-bold focus:border-[#9a8040]",
+            ].join(" ")}
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E")`,
+              backgroundPosition: "right 0.4rem center",
+              backgroundSize: "8px 5px",
+            }}
+          >
+            {IAS_COLORS.map((c) => (
+              <option key={c} value={c}>
+                {c === "UNSPECIFIED" ? "— Color —" : c === "CUSTOM" ? "Custom…" : c}
+              </option>
+            ))}
+          </select>
         </div>
 
         {/* ── Profile Filter Buttons ── */}
