@@ -17,6 +17,7 @@ import ProductTable from "@/components/ProductTable";
 import OrderPanel from "@/components/OrderPanel";
 import OrderSummaryModal from "@/components/OrderSummaryModal";
 import EmailPreviewModal from "@/components/EmailPreviewModal";
+import PrintQuoteModal from "@/components/PrintQuoteModal";
 
 export default function Home() {
   const [activeCategoryId, setActiveCategoryId] = useState<string>(CATALOG_DATA[0].id);
@@ -27,6 +28,7 @@ export default function Home() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [resetConfirm, setResetConfirm] = useState(false);
   const [emailModalOpen, setEmailModalOpen] = useState(false);
+  const [printModalOpen, setPrintModalOpen] = useState(false);
   const [profileFilter, setProfileFilter] = useState<string | null>(null);
   const [colorSelection, setColorSelection] = useState<string>("UNSPECIFIED");
 
@@ -68,6 +70,14 @@ export default function Home() {
     setEmailModalOpen(true);
   }, [orderItems.length]);
 
+  const handlePrint = useCallback(() => {
+    if (orderItems.length === 0) {
+      toast.error("No items in order to print.");
+      return;
+    }
+    setPrintModalOpen(true);
+  }, [orderItems.length]);
+
   const handleReset = useCallback(() => {
     if (orderItems.length === 0) {
       toast.info("Order is already empty.");
@@ -103,6 +113,7 @@ export default function Home() {
         onProfileFilterChange={setProfileFilter}
         colorSelection={colorSelection}
         onColorChange={setColorSelection}
+        onPrint={handlePrint}
       />
 
       {/* Main layout */}
@@ -198,6 +209,15 @@ export default function Home() {
       {/* Email preview modal */}
       {emailModalOpen && (
         <EmailPreviewModal onClose={() => setEmailModalOpen(false)} />
+      )}
+
+      {/* Print / PDF modal */}
+      {printModalOpen && (
+        <PrintQuoteModal
+          onClose={() => setPrintModalOpen(false)}
+          colorSelection={colorSelection}
+          profileFilter={profileFilter}
+        />
       )}
     </div>
   );
