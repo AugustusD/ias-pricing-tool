@@ -8,7 +8,7 @@
  * Profile filter buttons (Square / Round / Flat / Colonial) sit between search and discounts.
  */
 
-import { ShoppingCart, Download, Mail, LayoutList, Search, X, RotateCcw, Printer } from "lucide-react";
+import { ShoppingCart, Download, Mail, LayoutList, Search, X, RotateCcw } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
 import { useState } from "react";
 
@@ -51,7 +51,6 @@ type HeaderProps = {
   onProfileFilterChange: (profile: string | null) => void;
   colorSelection: string;
   onColorChange: (color: string) => void;
-  onPrint: () => void;
 };
 
 /** Controlled percent input — shows raw string while typing, commits on blur/enter */
@@ -127,7 +126,6 @@ export default function Header({
   onProfileFilterChange,
   colorSelection,
   onColorChange,
-  onPrint,
 }: HeaderProps) {
   const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
 
@@ -283,15 +281,6 @@ export default function Header({
             <span className="hidden md:inline">
               {resetConfirm ? "Confirm?" : "Reset"}
             </span>
-          </button>
-
-          <button
-            onClick={onPrint}
-            title="Print / Save as PDF"
-            className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
-          >
-            <Printer className="w-3.5 h-3.5" />
-            <span className="hidden md:inline">Print</span>
           </button>
 
           <button
