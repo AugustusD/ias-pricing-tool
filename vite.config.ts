@@ -150,7 +150,17 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
+// Manus runtime + debug collector are dev-only tooling — when running a
+// production build (e.g. on Vercel) they inject ~350KB of dev runtime into
+// index.html and try to phone home to a Manus server that doesn't exist,
+// which leaves the deployed site as a blank page. Skip them in production.
+const isProd = process.env.NODE_ENV === "production" || process.env.VERCEL === "1";
+const plugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  ...(isProd ? [] : [vitePluginManusRuntime(), vitePluginManusDebugCollector()]),
+];
 
 export default defineConfig({
   plugins,
