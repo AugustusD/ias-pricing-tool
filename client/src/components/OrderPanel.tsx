@@ -15,7 +15,7 @@ type OrderPanelProps = {
 };
 
 export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: OrderPanelProps) {
-  const { items, removeItem, updateQuantity, totalItems, totalPrice, getEffectivePrice, clearOrder, standardDiscount, infinityDiscount } = useOrder();
+  const { items, removeItem, updateQuantity, adjustQuantity, totalItems, totalPrice, getEffectivePrice, clearOrder, standardDiscount, infinityDiscount } = useOrder();
 
   return (
     <div className="order-panel w-80 flex flex-col flex-shrink-0 overflow-hidden">
@@ -96,7 +96,7 @@ export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: Or
                     {/* Qty control */}
                     <div className="qty-control">
                       <button
-                        onClick={() => updateQuantity(item.partCode, item.quantity - 1)}
+                        onClick={() => adjustQuantity(item.partCode, -1)}
                         className="qty-btn"
                       >
                         <Minus className="w-2.5 h-2.5" />
@@ -111,7 +111,7 @@ export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: Or
                         className="qty-input"
                       />
                       <button
-                        onClick={() => updateQuantity(item.partCode, item.quantity + 1)}
+                        onClick={() => adjustQuantity(item.partCode, 1)}
                         className="qty-btn"
                       >
                         <Plus className="w-2.5 h-2.5" />

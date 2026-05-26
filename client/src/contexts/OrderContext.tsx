@@ -19,6 +19,9 @@ type OrderContextType = {
   addItem: (item: Omit<OrderItem, "quantity">) => void;
   removeItem: (partCode: string) => void;
   updateQuantity: (partCode: string, quantity: number) => void;
+  /** Increment/decrement by delta. Reads current qty from latest state so
+   *  rapid clicks compose correctly (won't drop updates from stale closures). */
+  adjustQuantity: (partCode: string, delta: number) => void;
   clearOrder: () => void;
   totalItems: number;
   totalPrice: number;
@@ -103,6 +106,17 @@ export function OrderProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
+  const adjustQuantity = useCallback((partCode: string, delta: number) => {
+    setItems((prev) => {
+      const next = prev
+        .map((i) =>
+          i.partCode === partCode ? { ...i, quantity: i.quantity + delta } : i
+        )
+        .filter((i) => i.quantity > 0);
+      return next;
+    });
+  }, []);
+
   const clearOrder = useCallback(() => setItems([]), []);
 
   const totalItems = items.reduce((sum, i) => sum + i.quantity, 0);
@@ -118,6 +132,7 @@ export function OrderProvider({ children }: { children: React.ReactNode }) {
         addItem,
         removeItem,
         updateQuantity,
+        adjustQuantity,
         clearOrder,
         totalItems,
         totalPrice,

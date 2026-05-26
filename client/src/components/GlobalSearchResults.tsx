@@ -59,7 +59,7 @@ export default function GlobalSearchResults({
   profileFilter,
   onJumpToTab,
 }: GlobalSearchResultsProps) {
-  const { items: orderItems, addItem, updateQuantity, getEffectivePrice } = useOrder();
+  const { items: orderItems, addItem, updateQuantity, adjustQuantity, getEffectivePrice } = useOrder();
 
   const orderMap = useMemo(() => {
     const map = new Map<string, number>();
@@ -304,7 +304,7 @@ export default function GlobalSearchResults({
                       ) : (
                         <div className="qty-control">
                           <button
-                            onClick={() => updateQuantity(item.partCode, qty - 1)}
+                            onClick={() => adjustQuantity(item.partCode, -1)}
                             className="qty-btn"
                           >
                             <Minus className="w-2.5 h-2.5" />
@@ -322,7 +322,7 @@ export default function GlobalSearchResults({
                             className="qty-input"
                           />
                           <button
-                            onClick={() => updateQuantity(item.partCode, qty + 1)}
+                            onClick={() => adjustQuantity(item.partCode, 1)}
                             className="qty-btn"
                           >
                             <Plus className="w-2.5 h-2.5" />
