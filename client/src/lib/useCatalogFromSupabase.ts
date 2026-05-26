@@ -111,6 +111,11 @@ export function useCatalogFromSupabase() {
   const [data, setData] = useState<CatalogCategory[]>(() =>
     STATIC_STRUCTURE.map((cat) => ({
       ...cat,
+      // ProductTable / GlobalSearchResults read `isNetPrice`, catalogData
+      // defines `isNet`. Alias here so net categories (Fasteners, Color
+      // Options, Samples) actually skip the discount math.
+      isNetPrice: cat.isNet ?? false,
+      isInfinity: cat.isInfinity ?? false,
       tabs: cat.tabs.map((tab) => ({ ...tab, items: [] })),
     }))
   );
@@ -168,6 +173,8 @@ export function useCatalogFromSupabase() {
 
       const filled = STATIC_STRUCTURE.map((cat) => ({
         ...cat,
+        isNetPrice: cat.isNet ?? false,
+        isInfinity: cat.isInfinity ?? false,
         tabs: cat.tabs.map((tab) => ({
           ...tab,
           items: itemsBySheet.get(tab.sheetName) ?? [],

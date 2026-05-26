@@ -139,7 +139,7 @@ export default function Header({
 
   return (
     <header className="ias-header flex-shrink-0 z-50">
-      <div className="flex flex-wrap items-center gap-2 md:flex-nowrap md:h-14 px-3 py-2 md:py-0">
+      <div className="flex flex-wrap items-center gap-2 px-3 py-2 min-h-14">
         {/* Logo */}
         <div className="flex items-center gap-3 pr-4 border-r border-black/10 mr-2 flex-shrink-0">
           <img
@@ -189,7 +189,7 @@ export default function Header({
         >
           <span
             className={[
-              "text-[0.55rem] font-bold uppercase tracking-widest hidden md:block whitespace-nowrap",
+              "text-[0.55rem] font-bold uppercase tracking-widest hidden xl:block whitespace-nowrap",
               colorRequired && colorSelection === "UNSPECIFIED"
                 ? "text-[#B69A5A]"
                 : "text-black/25",
@@ -226,7 +226,7 @@ export default function Header({
 
         {/* ── Profile Filter Buttons (multi-select, click again to un-select) ── */}
         <div className="flex items-center gap-1 px-2 py-1 rounded border border-black/10 bg-black/[0.02] flex-shrink-0">
-          <span className="text-[0.55rem] font-bold uppercase tracking-widest text-black/25 hidden md:block mr-1 whitespace-nowrap">
+          <span className="text-[0.55rem] font-bold uppercase tracking-widest text-black/25 hidden xl:block mr-1 whitespace-nowrap">
             Profile
           </span>
           {PROFILE_FILTERS.map((profile) => {
@@ -268,10 +268,10 @@ export default function Header({
         {/* ── Always-visible Discount Fields ── */}
         <div className="flex items-center gap-2 px-3 py-1.5 rounded border border-black/10 bg-black/[0.03] flex-shrink-0">
           {/* Divider label */}
-          <span className="text-[0.6rem] font-bold uppercase tracking-widest text-black/30 hidden md:block">
+          <span className="text-[0.6rem] font-bold uppercase tracking-widest text-black/30 hidden xl:block">
             Discounts
           </span>
-          <div className="w-px h-5 bg-black/10 hidden md:block" />
+          <div className="w-px h-5 bg-black/10 hidden xl:block" />
 
           <DiscountField
             label="Standard"
@@ -312,7 +312,7 @@ export default function Header({
             ].join(" ")}
           >
             <RotateCcw className="w-3.5 h-3.5" />
-            <span className="hidden md:inline">
+            <span className="hidden xl:inline">
               {resetConfirm ? "Confirm?" : "Reset"}
             </span>
           </button>
@@ -323,7 +323,7 @@ export default function Header({
             className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <Download className="w-3.5 h-3.5" />
-            <span className="hidden md:inline">Export</span>
+            <span className="hidden xl:inline">Export</span>
           </button>
 
           <button
@@ -332,7 +332,7 @@ export default function Header({
             className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <Mail className="w-3.5 h-3.5" />
-            <span className="hidden md:inline">Email</span>
+            <span className="hidden xl:inline">Email</span>
           </button>
 
           <button
@@ -341,7 +341,7 @@ export default function Header({
             className="flex items-center gap-1.5 text-xs text-black/60 hover:text-black bg-black/5 hover:bg-black/10 px-3 py-2 rounded border border-black/12 transition-all"
           >
             <LayoutList className="w-3.5 h-3.5" />
-            <span className="hidden md:inline">Summary</span>
+            <span className="hidden xl:inline">Summary</span>
           </button>
 
           {/* Cart button */}
