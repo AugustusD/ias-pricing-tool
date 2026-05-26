@@ -14,7 +14,7 @@ import { useState } from "react";
 
 const IAS_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663093943154/eWb5yXbeMwxfmcDcdW8bmF/small200_e0c33b5e.png";
 
-const PROFILE_FILTERS = ["Square", "Round", "Flat", "Colonial"] as const;
+const PROFILE_FILTERS = ["Square", "Round", "Flat", "Colonial", "LOPRO"] as const;
 
 const IAS_COLORS = [
   "UNSPECIFIED",

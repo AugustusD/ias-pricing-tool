@@ -54,7 +54,7 @@ function formatPrice(price: number | null): string {
 }
 
 // Profile group order matching the PDF layout
-const PROFILE_ORDER = ["Square", "Round", "Flat", "Colonial", "1.9\" Pipe Rail"];
+const PROFILE_ORDER = ["Square", "Round", "Flat", "Colonial", "LOPRO", "1.9\" Pipe Rail"];
 
 export default function ProductTable({ tab, category, searchQuery, profileFilter }: ProductTableProps) {
   const { items: orderItems, addItem, updateQuantity, getEffectivePrice } = useOrder();
