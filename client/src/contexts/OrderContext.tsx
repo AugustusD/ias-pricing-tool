@@ -29,6 +29,10 @@ type OrderContextType = {
   infinityDiscount: number;
   setStandardDiscount: (d: number) => void;
   setInfinityDiscount: (d: number) => void;
+  /** True when the discounts were supplied by the Dealer Portal via URL
+   *  hash. When locked, the Header should render the values as read-only —
+   *  the admin is the source of truth and dealers can't override them. */
+  discountLocked: boolean;
   getEffectivePrice: (item: OrderItem) => number;
 };
 
@@ -46,12 +50,42 @@ function readLS(key: string): number {
   }
 }
 
+// Read the dealer's discounts from the URL hash, dropped here by the Dealer
+// Portal's Order Sheets tile. Format: #std=33.5&inf=43.5 (percentages, 0-100).
+// When present, both fields are locked — admin is the source of truth.
+// Returns null if no hash params are present.
+function readHashDiscounts(): { standard: number; infinity: number } | null {
+  if (typeof window === "undefined" || !window.location.hash) return null;
+  const raw = window.location.hash.startsWith("#") ? window.location.hash.slice(1) : window.location.hash;
+  const params = new URLSearchParams(raw);
+  const std = params.get("std");
+  const inf = params.get("inf");
+  if (std === null && inf === null) return null;
+  const stdN = std === null ? 0 : parseFloat(std);
+  const infN = inf === null ? 0 : parseFloat(inf);
+  if (!Number.isFinite(stdN) || !Number.isFinite(infN)) return null;
+  return {
+    standard: Math.min(100, Math.max(0, stdN)),
+    infinity: Math.min(100, Math.max(0, infN)),
+  };
+}
+
 const OrderContext = createContext<OrderContextType | null>(null);
 
 export function OrderProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<OrderItem[]>([]);
-  const [standardDiscount, setStandardDiscountState] = useState<number>(() => readLS(LS_STANDARD));
-  const [infinityDiscount, setInfinityDiscountState] = useState<number>(() => readLS(LS_INFINITY));
+
+  // Hash discounts win over localStorage. If the dealer arrived via the
+  // portal's Order Sheets tile, both values come from the admin and are
+  // locked. Otherwise fall back to the manual-entry localStorage flow.
+  const hashDiscounts = readHashDiscounts();
+  const [discountLocked] = useState<boolean>(hashDiscounts !== null);
+  const [standardDiscount, setStandardDiscountState] = useState<number>(
+    () => hashDiscounts?.standard ?? readLS(LS_STANDARD)
+  );
+  const [infinityDiscount, setInfinityDiscountState] = useState<number>(
+    () => hashDiscounts?.infinity ?? readLS(LS_INFINITY)
+  );
 
   // Persist discounts to localStorage whenever they change
   useEffect(() => {
@@ -140,6 +174,7 @@ export function OrderProvider({ children }: { children: React.ReactNode }) {
         infinityDiscount,
         setStandardDiscount,
         setInfinityDiscount,
+        discountLocked,
         getEffectivePrice,
       }}
     >

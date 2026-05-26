@@ -63,11 +63,13 @@ function DiscountField({
   value,
   onChange,
   highlight,
+  locked,
 }: {
   label: string;
   value: number;
   onChange: (n: number) => void;
   highlight: boolean;
+  locked?: boolean;
 }) {
   const [raw, setRaw] = useState<string | null>(null);
   const displayed = raw !== null ? raw : String(value);
@@ -89,17 +91,22 @@ function DiscountField({
           type="text"
           inputMode="decimal"
           value={displayed}
-          onChange={(e) => setRaw(e.target.value)}
-          onBlur={(e) => commit(e.target.value)}
+          readOnly={locked}
+          onChange={(e) => { if (!locked) setRaw(e.target.value); }}
+          onBlur={(e) => { if (!locked) commit(e.target.value); }}
           onKeyDown={(e) => {
+            if (locked) return;
             if (e.key === "Enter") {
               commit((e.target as HTMLInputElement).value);
               (e.target as HTMLInputElement).blur();
             }
           }}
+          title={locked ? "Set by Innovative Aluminum admin." : undefined}
           className={[
             "w-20 text-center text-sm font-bold pr-6 pl-2 py-1.5 rounded border transition-all focus:outline-none",
-            highlight
+            locked
+              ? "border-[#B69A5A] bg-[#FAF8F2] text-[#3D2E14] cursor-not-allowed"
+              : highlight
               ? "border-[#f4ce47] bg-[#f4ce47]/20 text-black ring-1 ring-[#f4ce47] animate-pulse focus:animate-none focus:ring-[#B69A5A] focus:border-[#B69A5A] focus:bg-white"
               : "border-black/15 bg-white text-black focus:border-[#B69A5A] focus:ring-1 focus:ring-[#B69A5A]",
           ].join(" ")}
@@ -132,10 +139,12 @@ export default function Header({
   onColorChange,
   colorRequired,
 }: HeaderProps) {
-  const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
+  const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount, discountLocked } = useOrder();
 
-  const stdBlank = standardDiscount === 0;
-  const infBlank = infinityDiscount === 0;
+  // Don't highlight as "missing" when admin set them to 0 — the lock indicates
+  // the value is intentional, not blank.
+  const stdBlank = !discountLocked && standardDiscount === 0;
+  const infBlank = !discountLocked && infinityDiscount === 0;
 
   return (
     <header className="ias-header flex-shrink-0 z-50">
@@ -278,6 +287,7 @@ export default function Header({
             value={standardDiscount}
             onChange={setStandardDiscount}
             highlight={stdBlank}
+            locked={discountLocked}
           />
 
           <div className="w-px h-5 bg-black/10" />
@@ -287,10 +297,15 @@ export default function Header({
             value={infinityDiscount}
             onChange={setInfinityDiscount}
             highlight={infBlank}
+            locked={discountLocked}
           />
 
-          {/* Tooltip hint when either is blank */}
-          {(stdBlank || infBlank) && (
+          {/* Hint copy: "set by IAS" when locked, "← Enter your discount" when blank */}
+          {discountLocked ? (
+            <span className="text-[0.6rem] text-[#B69A5A] font-bold uppercase tracking-wider hidden lg:block whitespace-nowrap">
+              Set by IAS
+            </span>
+          ) : (stdBlank || infBlank) && (
             <span className="text-[0.6rem] text-[#B69A5A] font-semibold hidden lg:block whitespace-nowrap">
               ← Enter your discount
             </span>
