@@ -10,7 +10,7 @@
 
 import { ShoppingCart, Download, Mail, LayoutList, Search, X, RotateCcw } from "lucide-react";
 import { useOrder } from "@/contexts/OrderContext";
-import { useState } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 
 const IAS_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663093943154/eWb5yXbeMwxfmcDcdW8bmF/small200_e0c33b5e.png";
 
@@ -48,7 +48,9 @@ type HeaderProps = {
   onSearchChange: (q: string) => void;
   onSearchClear: () => void;
   profileFilter: string[];
-  onProfileFilterChange: (profiles: string[]) => void;
+  /** Accepts either the next value or a functional updater — so rapid clicks
+   *  don't drop selections from a stale closure. */
+  onProfileFilterChange: Dispatch<SetStateAction<string[]>>;
   colorSelection: string;
   onColorChange: (color: string) => void;
   /** When true, color selector glows amber to signal required-field state. */
@@ -230,11 +232,11 @@ export default function Header({
           {PROFILE_FILTERS.map((profile) => {
             const active = profileFilter.includes(profile);
             const toggle = () => {
-              if (active) {
-                onProfileFilterChange(profileFilter.filter((p) => p !== profile));
-              } else {
-                onProfileFilterChange([...profileFilter, profile]);
-              }
+              onProfileFilterChange((prev) =>
+                prev.includes(profile)
+                  ? prev.filter((p) => p !== profile)
+                  : [...prev, profile]
+              );
             };
             return (
               <button
@@ -295,11 +297,8 @@ export default function Header({
           )}
         </div>
 
-        {/* Spacer */}
-        <div className="flex-1" />
-
-        {/* Action buttons */}
-        <div className="flex items-center gap-1.5 flex-shrink-0">
+        {/* Action buttons — pushed right by ml-auto so the search can grow */}
+        <div className="flex items-center gap-1.5 flex-shrink-0 ml-auto">
 
           {/* Reset Order — branded yellow, confirm step */}
           <button
