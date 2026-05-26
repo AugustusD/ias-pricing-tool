@@ -90,9 +90,33 @@ export default function EmailPreviewModal({ onClose, colorSelection }: Props) {
   };
 
   // ── Open mail client ──────────────────────────────────────────────────────
+  // Build a plain-text version of the order and put it directly into the mailto
+  // body so the dealer doesn't have to copy-paste first. Browsers can't attach
+  // a PDF via mailto (OS limitation) — the dealer can use the Print/PDF button
+  // separately if they want a formal attachment.
   const handleMailClient = () => {
+    const lines: string[] = [];
+    lines.push("Innovative Aluminum Systems — Dealer Order Inquiry");
+    lines.push(`Date: ${date}`);
+    lines.push(`Color: ${colorSelection === "UNSPECIFIED" ? "—" : colorSelection}`);
+    lines.push("");
+    lines.push("Part Code | Description | Size | Unit | Qty | Unit Price | Line Total");
+    lines.push("-".repeat(72));
+    for (const { item, ep, lt } of rows) {
+      const desc = item.description.replace(/\s+/g, " ").trim();
+      const size = cleanSize(item.size) || "—";
+      const unitPriceStr = item.isNetPrice ? `NET $${ep.toFixed(2)}` : `$${ep.toFixed(2)}`;
+      lines.push(
+        `${item.partCode} | ${desc} | ${size} | ${item.unit} | ${item.quantity} | ${unitPriceStr} | $${lt.toFixed(2)}`
+      );
+    }
+    lines.push("-".repeat(72));
+    lines.push(`GRAND TOTAL: $${grandTotal.toFixed(2)}`);
+    lines.push("");
+    lines.push("(Tip: use the Print/PDF button in the pricing tool to attach a formatted copy.)");
+
     const subject = encodeURIComponent("IAS Dealer Order Inquiry");
-    const body = encodeURIComponent("*paste copied summary here*");
+    const body = encodeURIComponent(lines.join("\n"));
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   };
 
