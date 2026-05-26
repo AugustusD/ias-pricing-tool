@@ -14,6 +14,7 @@ import { toast } from "sonner";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ProductTable from "@/components/ProductTable";
+import GlobalSearchResults from "@/components/GlobalSearchResults";
 import OrderPanel from "@/components/OrderPanel";
 import OrderSummaryModal from "@/components/OrderSummaryModal";
 import EmailPreviewModal from "@/components/EmailPreviewModal";
@@ -28,7 +29,7 @@ export default function Home() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [resetConfirm, setResetConfirm] = useState(false);
   const [emailModalOpen, setEmailModalOpen] = useState(false);
-  const [profileFilter, setProfileFilter] = useState<string | null>(null);
+  const [profileFilter, setProfileFilter] = useState<string[]>([]);
   const [colorSelection, setColorSelection] = useState<string>("UNSPECIFIED");
 
   const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder } = useOrder();
@@ -52,22 +53,38 @@ export default function Home() {
     setSearchQuery("");
   }, [CATALOG_DATA]);
 
+  const handleJumpToTab = useCallback((catId: string, tabId: string) => {
+    setActiveCategoryId(catId);
+    setActiveTabId(tabId);
+    setSearchQuery("");
+  }, []);
+
+  const isSearching = searchQuery.trim().length > 0;
+
   const handleExport = useCallback(() => {
     if (orderItems.length === 0) {
       toast.error("No items in order to export.");
       return;
     }
+    if (colorSelection === "UNSPECIFIED") {
+      toast.error("Select a color before exporting — required for the order.");
+      return;
+    }
     exportToExcel(orderItems, getEffectivePrice, standardDiscount, infinityDiscount);
     toast.success("Order exported to Excel!");
-  }, [orderItems, getEffectivePrice, standardDiscount, infinityDiscount]);
+  }, [orderItems, getEffectivePrice, standardDiscount, infinityDiscount, colorSelection]);
 
   const handleEmail = useCallback(() => {
     if (orderItems.length === 0) {
       toast.error("No items in order to email.");
       return;
     }
+    if (colorSelection === "UNSPECIFIED") {
+      toast.error("Select a color before emailing — required for the order.");
+      return;
+    }
     setEmailModalOpen(true);
-  }, [orderItems.length]);
+  }, [orderItems.length, colorSelection]);
 
   const handleReset = useCallback(() => {
     if (orderItems.length === 0) {
@@ -104,6 +121,7 @@ export default function Home() {
         onProfileFilterChange={setProfileFilter}
         colorSelection={colorSelection}
         onColorChange={setColorSelection}
+        colorRequired={totalItems > 0}
       />
 
       {/* Main layout */}
@@ -119,40 +137,42 @@ export default function Home() {
 
         {/* Content area */}
         <main className="flex-1 overflow-hidden flex flex-col">
-          {/* Category title + tab bar */}
-          <div className="bg-white border-b border-border px-4 pt-2.5 pb-0 flex-shrink-0">
-            {/* Category name row */}
-            <div className="flex items-center gap-2 mb-2">
-              {activeCategory.isNet && (
-                <span className="net-badge">Net Price</span>
-              )}
-              <h2 className="font-bold text-sm uppercase tracking-widest text-foreground">
-                {activeCategory.name}
-              </h2>
-            </div>
-
-            {/* Tab bar — wraps naturally, no horizontal scroll */}
-            {activeCategory.tabs.length > 1 && (
-              <div className="flex flex-wrap gap-1 pb-0">
-                {activeCategory.tabs.map((tab) => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTabId(tab.id)}
-                    className={`ias-tab ${activeTabId === tab.id ? "active" : ""}`}
-                  >
-                    {tab.name}
-                  </button>
-                ))}
+          {/* Category title + tab bar — hidden in global search mode */}
+          {!isSearching && (
+            <div className="bg-white border-b border-border px-4 pt-2.5 pb-0 flex-shrink-0">
+              {/* Category name row */}
+              <div className="flex items-center gap-2 mb-2">
+                {activeCategory.isNet && (
+                  <span className="net-badge">Net Price</span>
+                )}
+                <h2 className="font-bold text-sm uppercase tracking-widest text-foreground">
+                  {activeCategory.name}
+                </h2>
               </div>
-            )}
-          </div>
 
-          {/* Search results banner (shown when searching) */}
-          {searchQuery.trim() && (
+              {/* Tab bar — wraps naturally, no horizontal scroll */}
+              {activeCategory.tabs.length > 1 && (
+                <div className="flex flex-wrap gap-1 pb-0">
+                  {activeCategory.tabs.map((tab) => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTabId(tab.id)}
+                      className={`ias-tab ${activeTabId === tab.id ? "active" : ""}`}
+                    >
+                      {tab.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Search results banner */}
+          {isSearching && (
             <div className="bg-[#f4ce47]/15 border-b border-[#f4ce47]/40 px-4 py-1.5 flex items-center gap-2 flex-shrink-0">
               <Search className="w-3.5 h-3.5 text-black/50" />
               <span className="text-xs text-black/60">
-                Showing results for <strong className="text-black">"{searchQuery}"</strong> in {activeCategory.name} › {activeTab?.name}
+                Searching <strong className="text-black">"{searchQuery}"</strong> across all categories
               </span>
               <button
                 onClick={() => setSearchQuery("")}
@@ -163,15 +183,24 @@ export default function Home() {
             </div>
           )}
 
-          {/* Product table */}
+          {/* Product table (or global search results) */}
           <div className="flex-1 overflow-auto">
-            {activeTab && (
-              <ProductTable
-                tab={activeTab as any}
-                category={activeCategory as any}
+            {isSearching ? (
+              <GlobalSearchResults
+                categories={CATALOG_DATA as any}
                 searchQuery={searchQuery}
                 profileFilter={profileFilter}
+                onJumpToTab={handleJumpToTab}
               />
+            ) : (
+              activeTab && (
+                <ProductTable
+                  tab={activeTab as any}
+                  category={activeCategory as any}
+                  searchQuery={searchQuery}
+                  profileFilter={profileFilter}
+                />
+              )
             )}
           </div>
         </main>

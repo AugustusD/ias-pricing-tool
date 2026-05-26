@@ -47,10 +47,12 @@ type HeaderProps = {
   searchQuery: string;
   onSearchChange: (q: string) => void;
   onSearchClear: () => void;
-  profileFilter: string | null;
-  onProfileFilterChange: (profile: string | null) => void;
+  profileFilter: string[];
+  onProfileFilterChange: (profiles: string[]) => void;
   colorSelection: string;
   onColorChange: (color: string) => void;
+  /** When true, color selector glows amber to signal required-field state. */
+  colorRequired?: boolean;
 };
 
 /** Controlled percent input — shows raw string while typing, commits on blur/enter */
@@ -126,6 +128,7 @@ export default function Header({
   onProfileFilterChange,
   colorSelection,
   onColorChange,
+  colorRequired,
 }: HeaderProps) {
   const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount } = useOrder();
 
@@ -134,7 +137,7 @@ export default function Header({
 
   return (
     <header className="ias-header flex-shrink-0 z-50">
-      <div className="flex items-center gap-2 h-14 px-3">
+      <div className="flex flex-wrap items-center gap-2 md:flex-nowrap md:h-14 px-3 py-2 md:py-0">
         {/* Logo */}
         <div className="flex items-center gap-3 pr-4 border-r border-black/10 mr-2 flex-shrink-0">
           <img
@@ -152,8 +155,8 @@ export default function Header({
           </div>
         </div>
 
-        {/* Search with clear X */}
-        <div className="flex-1 max-w-xs relative">
+        {/* Search with clear X — full width on mobile, capped on desktop */}
+        <div className="order-last w-full md:order-none md:w-auto md:flex-1 md:max-w-xs relative">
           <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-black/35 pointer-events-none" />
           <input
             type="text"
@@ -174,16 +177,32 @@ export default function Header({
         </div>
 
         {/* ── Color Selector ── */}
-        <div className="flex items-center gap-1.5 px-2 py-1 rounded border border-black/10 bg-black/[0.02] flex-shrink-0">
-          <span className="text-[0.55rem] font-bold uppercase tracking-widest text-black/25 hidden md:block whitespace-nowrap">
-            Color
+        <div
+          className={[
+            "flex items-center gap-1.5 px-2 py-1 rounded border flex-shrink-0 transition-all",
+            colorRequired && colorSelection === "UNSPECIFIED"
+              ? "border-[#f4ce47] bg-[#f4ce47]/15 ring-1 ring-[#f4ce47]"
+              : "border-black/10 bg-black/[0.02]",
+          ].join(" ")}
+        >
+          <span
+            className={[
+              "text-[0.55rem] font-bold uppercase tracking-widest hidden md:block whitespace-nowrap",
+              colorRequired && colorSelection === "UNSPECIFIED"
+                ? "text-[#B69A5A]"
+                : "text-black/25",
+            ].join(" ")}
+          >
+            Color{colorRequired && colorSelection === "UNSPECIFIED" ? " *" : ""}
           </span>
           <select
             value={colorSelection}
             onChange={(e) => onColorChange(e.target.value)}
             className={[
               "text-[0.65rem] font-semibold pl-2 pr-6 py-1 rounded border transition-all appearance-none bg-no-repeat cursor-pointer focus:outline-none",
-              colorSelection === "UNSPECIFIED"
+              colorRequired && colorSelection === "UNSPECIFIED"
+                ? "border-[#f4ce47] bg-white text-black animate-pulse focus:animate-none focus:border-[#B69A5A]"
+                : colorSelection === "UNSPECIFIED"
                 ? "border-black/15 bg-white text-black/40 focus:border-[#B69A5A]"
                 : colorSelection === "CUSTOM"
                 ? "border-[#B69A5A] bg-[#B69A5A]/10 text-black focus:border-[#B69A5A]"
@@ -203,18 +222,25 @@ export default function Header({
           </select>
         </div>
 
-        {/* ── Profile Filter Buttons ── */}
+        {/* ── Profile Filter Buttons (multi-select, click again to un-select) ── */}
         <div className="flex items-center gap-1 px-2 py-1 rounded border border-black/10 bg-black/[0.02] flex-shrink-0">
           <span className="text-[0.55rem] font-bold uppercase tracking-widest text-black/25 hidden md:block mr-1 whitespace-nowrap">
             Profile
           </span>
           {PROFILE_FILTERS.map((profile) => {
-            const active = profileFilter === profile;
+            const active = profileFilter.includes(profile);
+            const toggle = () => {
+              if (active) {
+                onProfileFilterChange(profileFilter.filter((p) => p !== profile));
+              } else {
+                onProfileFilterChange([...profileFilter, profile]);
+              }
+            };
             return (
               <button
                 key={profile}
-                onClick={() => onProfileFilterChange(active ? null : profile)}
-                title={active ? `Clear ${profile} filter` : `Filter by ${profile} profile`}
+                onClick={toggle}
+                title={active ? `Un-select ${profile}` : `Add ${profile} to filter`}
                 className={[
                   "text-[0.65rem] font-bold px-2.5 py-1 rounded transition-all duration-150 whitespace-nowrap",
                   active
@@ -226,6 +252,15 @@ export default function Header({
               </button>
             );
           })}
+          {profileFilter.length > 0 && (
+            <button
+              onClick={() => onProfileFilterChange([])}
+              title="Clear all profile filters"
+              className="ml-1 text-[0.6rem] text-black/40 hover:text-black underline decoration-dotted whitespace-nowrap"
+            >
+              clear
+            </button>
+          )}
         </div>
 
         {/* ── Always-visible Discount Fields ── */}

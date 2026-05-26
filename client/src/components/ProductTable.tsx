@@ -44,8 +44,9 @@ type ProductTableProps = {
   tab: CatalogTab;
   category: CatalogCategory;
   searchQuery: string;
-  /** When set, only show items belonging to this profile group (or items with no profile group) */
-  profileFilter?: string | null;
+  /** Multi-select profile filter — empty array means show all. Items with no
+   *  profileGroup (standalone sections) are always shown. */
+  profileFilter?: string[];
 };
 
 function formatPrice(price: number | null): string {
@@ -69,21 +70,27 @@ export default function ProductTable({ tab, category, searchQuery, profileFilter
 
   const filteredItems = useMemo(() => {
     let items = tab.items;
-    // Apply text search
+    // Apply text search — punctuation-forgiving: strip commas, slashes, and
+    // collapse extra whitespace from both the query and the searchable text
+    // before substring-matching. So "center sleeve" matches "Center, Sleeve"
+    // and "wp 5/8" matches "WP-5/8" or "WP, 5/8".
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      items = items.filter(
-        (item) =>
-          item.partCode.toLowerCase().includes(q) ||
-          item.description.toLowerCase().includes(q) ||
-          (item.size && item.size.toLowerCase().includes(q))
-      );
+      const norm = (s: string) =>
+        s.toLowerCase().replace(/[,/\\-]/g, " ").replace(/\s+/g, " ").trim();
+      const q = norm(searchQuery);
+      items = items.filter((item) => {
+        const haystack = norm(
+          `${item.partCode} ${item.description} ${item.size ?? ""}`
+        );
+        return haystack.includes(q);
+      });
     }
-    // Apply profile filter: keep items that belong to the selected profile,
-    // AND keep items with no profileGroup (standalone sections like Post Mount Plates)
-    if (profileFilter) {
+    // Apply profile filter: keep items whose profileGroup is in the selected
+    // set, AND keep items with no profileGroup (standalone sections like
+    // Post Mount Plates) regardless of selection. Empty array → no filter.
+    if (profileFilter && profileFilter.length > 0) {
       items = items.filter(
-        (item) => !item.profileGroup || item.profileGroup === profileFilter
+        (item) => !item.profileGroup || profileFilter.includes(item.profileGroup)
       );
     }
     return items;

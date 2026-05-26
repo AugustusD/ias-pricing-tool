@@ -49,9 +49,55 @@ function toCatalogItem(p: SupabaseProduct): CatalogItem {
     dealerPrice: p.list_price,
     type,
     profileGroup: p.profile,
-    sectionHeading: "",
+    sectionHeading:
+      deriveFastenerSection(p) ?? deriveWallMountSection(p) ?? "",
   };
 }
+
+/**
+ * The WM-BTM-MID-DBLRAIL sheet has items labeled just "Bottom" or "Double
+ * Glass" in their descriptors. Dealers can't tell from that alone that the
+ * "Bottom" wall mounts are the same extrusion used for mid-rail wall mounts
+ * (Mike's call #1 — "bottom-rail + mid-rail wall mounts = same extrusion").
+ *
+ * Group them under a section heading that makes the dual purpose explicit.
+ */
+function deriveWallMountSection(p: SupabaseProduct): string | null {
+  if (p.xltx_sheet !== "WM-BTM-MID-DBLRAIL") return null;
+  const id = p.identifier;
+  if (id.startsWith("PBWM")) return "Bottom & Mid-Rail Wall Mounts (same extrusion)";
+  if (id.startsWith("PDWM")) return "Double-Rail Wall Mounts";
+  if (id.startsWith("PPLT")) return "Wall Mount Plates";
+  return "";
+}
+
+/**
+ * Fasteners sheet has no profile groups and no explicit section headings.
+ * Derive a section from the identifier prefix so painted screws group above
+ * mill finish (Mike's call #2), with the misc accessory groups below.
+ *
+ * Returns null for non-fastener rows so existing behavior is unchanged.
+ */
+function deriveFastenerSection(p: SupabaseProduct): string | null {
+  if (p.xltx_sheet !== "FASTENERS") return null;
+  const id = p.identifier;
+  if (id.startsWith("CHG")) return "Color Setup Charges";
+  if (id.startsWith("PSC")) return "Painted Screws (Made To Order)";
+  if (id.startsWith("RSC") && !id.includes("PLUG")) return "Mill Finish Screws";
+  if (id.startsWith("RDBR")) return "Driver Bits";
+  if (id.startsWith("RPLSCI") || id.includes("PLUG")) return "Insulators & Concrete Plugs";
+  return "";
+}
+
+/** Sort rank for Fasteners sections — painted before mill finish, etc. */
+const FASTENER_SECTION_RANK: Record<string, number> = {
+  "Color Setup Charges": 0,
+  "Painted Screws (Made To Order)": 1,
+  "Mill Finish Screws": 2,
+  "Driver Bits": 3,
+  "Insulators & Concrete Plugs": 4,
+  "": 99,
+};
 
 /**
  * Fetches all active products from Supabase, groups by `xltx_sheet`, and
@@ -95,6 +141,19 @@ export function useCatalogFromSupabase() {
         const key = row.xltx_sheet ?? "";
         if (!itemsBySheet.has(key)) itemsBySheet.set(key, []);
         itemsBySheet.get(key)!.push(toCatalogItem(row));
+      }
+
+      // Sort the FASTENERS bucket so painted screws come before mill finish,
+      // then driver bits / insulators last. Items keep alphabetical order
+      // within each section so size/spec runs stay stable.
+      const fasteners = itemsBySheet.get("FASTENERS");
+      if (fasteners) {
+        fasteners.sort((a, b) => {
+          const ra = FASTENER_SECTION_RANK[a.sectionHeading] ?? 99;
+          const rb = FASTENER_SECTION_RANK[b.sectionHeading] ?? 99;
+          if (ra !== rb) return ra - rb;
+          return a.partCode.localeCompare(b.partCode);
+        });
       }
 
       // LOPRO products come from `source_file='lopro'` rows with no xltx_sheet.
