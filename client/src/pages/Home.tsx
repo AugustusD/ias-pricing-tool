@@ -7,7 +7,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { X, RotateCcw, Search } from "lucide-react";
-import { catalogData as CATALOG_DATA, type CatalogCategory } from "@/lib/catalogData";
+import { useCatalogFromSupabase } from "@/lib/useCatalogFromSupabase";
 import { useOrder } from "@/contexts/OrderContext";
 import { exportToExcel } from "@/lib/exportUtils";
 import { toast } from "sonner";
@@ -19,6 +19,7 @@ import OrderSummaryModal from "@/components/OrderSummaryModal";
 import EmailPreviewModal from "@/components/EmailPreviewModal";
 
 export default function Home() {
+  const { data: CATALOG_DATA, loading: catalogLoading, error: catalogError } = useCatalogFromSupabase();
   const [activeCategoryId, setActiveCategoryId] = useState<string>(CATALOG_DATA[0].id);
   const [activeTabId, setActiveTabId] = useState<string>(CATALOG_DATA[0].tabs[0]?.id ?? "");
   const [searchQuery, setSearchQuery] = useState("");
@@ -34,7 +35,7 @@ export default function Home() {
 
   const activeCategory = useMemo(
     () => CATALOG_DATA.find((c) => c.id === activeCategoryId) ?? CATALOG_DATA[0],
-    [activeCategoryId]
+    [activeCategoryId, CATALOG_DATA]
   );
 
   const activeTab = useMemo(
@@ -49,7 +50,7 @@ export default function Home() {
       setActiveTabId(cat.tabs[0].id);
     }
     setSearchQuery("");
-  }, []);
+  }, [CATALOG_DATA]);
 
   const handleExport = useCallback(() => {
     if (orderItems.length === 0) {
