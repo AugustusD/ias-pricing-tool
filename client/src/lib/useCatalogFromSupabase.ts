@@ -8,31 +8,52 @@ import {
 
 /**
  * Row shape from public.products in Supabase.
- * Mirrors the migration 001_create_products_and_dealer_discount.sql schema.
+ * Mirrors migration 009_restructure_products_csv_column_order.sql, where the
+ * table leads with the designer-CSV columns: descriptors are 6 flat columns
+ * (descriptor_0..5) and the base price is `default_price` (was list_price).
  */
 type SupabaseProduct = {
   identifier: string;
-  list_price: number | null;
+  default_price: number | null;
   price_type: "List" | "Net";
   product_series: "Standard" | "Infinity" | "Fasteners";
   profile: "Square" | "Round" | "Flat" | "Colonial" | "LOPRO" | null;
-  descriptors: string[];
+  descriptor_0: string | null;
+  descriptor_1: string | null;
+  descriptor_2: string | null;
+  descriptor_3: string | null;
+  descriptor_4: string | null;
+  descriptor_5: string | null;
   per_unit: string | null;
   primary_category: string;
   primary_section: string;
   xltx_sheet: string | null;
 };
 
+/** Reassemble the 6 flat descriptor columns back into the ordered array the
+ *  rest of the app works with. */
+function descriptorArray(p: SupabaseProduct): string[] {
+  return [
+    p.descriptor_0,
+    p.descriptor_1,
+    p.descriptor_2,
+    p.descriptor_3,
+    p.descriptor_4,
+    p.descriptor_5,
+  ].map((d) => d ?? "");
+}
+
 /**
  * Map a Supabase row to the CatalogItem shape the existing components expect.
  *
- *   listPrice / dealerPrice both = list_price. Discounts are applied at runtime
- *   by OrderContext.getEffectivePrice() using the dealer's standardDiscount /
- *   infinityDiscount values, so we keep the base price here.
+ *   listPrice / dealerPrice both = default_price. Discounts are applied at
+ *   runtime by OrderContext.getEffectivePrice() using the dealer's
+ *   standardDiscount / infinityDiscount values, so we keep the base price here.
  */
 function toCatalogItem(p: SupabaseProduct): CatalogItem {
-  const description = p.descriptors.filter(Boolean).join(", ");
-  const size = p.descriptors[5] || null;
+  const descriptors = descriptorArray(p);
+  const description = descriptors.filter(Boolean).join(", ");
+  const size = descriptors[5] || null;
   const type: CatalogItem["type"] =
     p.price_type === "Net"
       ? "net"
@@ -45,8 +66,8 @@ function toCatalogItem(p: SupabaseProduct): CatalogItem {
     description,
     size,
     unit: p.per_unit ?? "Each",
-    listPrice: p.list_price,
-    dealerPrice: p.list_price,
+    listPrice: p.default_price,
+    dealerPrice: p.default_price,
     type,
     profileGroup: p.profile,
     sectionHeading:
@@ -129,7 +150,7 @@ export function useCatalogFromSupabase() {
       const { data: rows, error: queryError } = await supabase
         .from("products")
         .select(
-          "identifier, list_price, price_type, product_series, profile, descriptors, per_unit, primary_category, primary_section, xltx_sheet"
+          "identifier, default_price, price_type, product_series, profile, descriptor_0, descriptor_1, descriptor_2, descriptor_3, descriptor_4, descriptor_5, per_unit, primary_category, primary_section, xltx_sheet"
         )
         .eq("is_active", true);
 
