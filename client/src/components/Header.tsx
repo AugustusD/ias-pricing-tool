@@ -21,7 +21,7 @@ const IAS_COLORS = [
   "White",
   "Light Ivory",
   "Sandalwood",
-  "Oyster Gray",
+  "Oyster Grey",
   "Beige",
   "Silver Matte",
   "Coastal Grey",
