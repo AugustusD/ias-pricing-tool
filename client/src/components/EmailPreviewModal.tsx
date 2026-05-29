@@ -98,7 +98,7 @@ export default function EmailPreviewModal({ onClose, colorSelection }: Props) {
     const lines: string[] = [];
     lines.push("Innovative Aluminum Systems — Dealer Order Inquiry");
     lines.push(`Date: ${date}`);
-    lines.push(`Color: ${colorSelection === "UNSPECIFIED" ? "—" : colorSelection}`);
+    lines.push(`Color: ${colorSelection === "UNSPECIFIED" ? "To Be Determined" : colorSelection}`);
     lines.push("");
     lines.push("Part Code | Description | Size | Unit | Qty | Unit Price | Line Total");
     lines.push("-".repeat(72));
@@ -166,7 +166,7 @@ export default function EmailPreviewModal({ onClose, colorSelection }: Props) {
                         <tr>
                           <td style={{ paddingRight: "20px", color: "#555" }}>Color:</td>
                           <td style={{ fontWeight: "600" }}>
-                            {colorSelection === "UNSPECIFIED" ? "— Unspecified" : colorSelection === "CUSTOM" ? "Custom (specify)" : colorSelection}
+                            {colorSelection === "UNSPECIFIED" ? "To Be Determined" : colorSelection === "CUSTOM" ? "Custom (specify)" : colorSelection}
                           </td>
                         </tr>
                       </tbody>

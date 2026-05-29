@@ -227,7 +227,7 @@ export default function Header({
           >
             {IAS_COLORS.map((c) => (
               <option key={c} value={c}>
-                {c === "UNSPECIFIED" ? "— Color —" : c === "CUSTOM" ? "Custom…" : c}
+                {c === "UNSPECIFIED" ? "To Be Determined" : c === "CUSTOM" ? "Custom…" : c}
               </option>
             ))}
           </select>

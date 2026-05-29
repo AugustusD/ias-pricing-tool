@@ -62,7 +62,7 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail, colorSel
           <div className="flex items-center gap-2">
             <span className="text-xs text-muted-foreground">Color:</span>
             <span className="text-xs font-bold text-[#B69A5A]">
-              {colorSelection === "UNSPECIFIED" ? "— Unspecified" : colorSelection === "CUSTOM" ? "Custom (specify)" : colorSelection}
+              {colorSelection === "UNSPECIFIED" ? "To Be Determined" : colorSelection === "CUSTOM" ? "Custom (specify)" : colorSelection}
             </span>
           </div>
           <div className="flex items-center gap-2 ml-auto">
