@@ -152,6 +152,10 @@ export function useCatalogFromSupabase() {
         .select(
           "identifier, default_price, price_type, product_series, profile, descriptor_0, descriptor_1, descriptor_2, descriptor_3, descriptor_4, descriptor_5, per_unit, primary_category, primary_section, xltx_sheet"
         )
+        // Mike's call (Q3): CHGCCPOWDER ("CALL" price) shouldn't be in the
+        // dealer-facing menu. Custom-color orders trigger a separate
+        // disclaimer banner in the cart instead.
+        .neq("identifier", "CHGCCPOWDER")
         .eq("is_active", true);
 
       if (cancelled) return;

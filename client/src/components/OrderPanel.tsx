@@ -12,9 +12,10 @@ type OrderPanelProps = {
   onExport: () => void;
   onEmail: () => void;
   onSummary: () => void;
+  colorSelection: string;
 };
 
-export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: OrderPanelProps) {
+export default function OrderPanel({ onClose, onExport, onEmail, onSummary, colorSelection }: OrderPanelProps) {
   const { items, removeItem, updateQuantity, adjustQuantity, totalItems, totalPrice, getEffectivePrice, clearOrder, standardDiscount, infinityDiscount } = useOrder();
 
   return (
@@ -141,6 +142,15 @@ export default function OrderPanel({ onClose, onExport, onEmail, onSummary }: Or
       {/* Footer */}
       {items.length > 0 && (
         <div className="border-t border-border bg-white">
+          {/* Custom-color disclaimer (Mike's call: bold red, near the total) */}
+          {colorSelection === "CUSTOM" && (
+            <div className="px-3 py-2 bg-red-50 border-b border-red-200">
+              <p className="text-[0.7rem] font-bold text-red-700 leading-snug">
+                Contact Innovative for Custom Powder and Per-order Setup Add-On Cost
+              </p>
+            </div>
+          )}
+
           {/* Total */}
           <div className="px-3 py-2.5 flex items-center justify-between border-b border-border">
             <span className="text-xs font-bold uppercase tracking-wider text-foreground">

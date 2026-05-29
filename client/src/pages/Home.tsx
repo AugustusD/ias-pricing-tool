@@ -5,12 +5,18 @@
  * Font: Helvetica Neue / Helvetica / Arial
  */
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { X, RotateCcw, Search } from "lucide-react";
 import { useCatalogFromSupabase } from "@/lib/useCatalogFromSupabase";
 import { useOrder } from "@/contexts/OrderContext";
 import { exportToExcel } from "@/lib/exportUtils";
 import { toast } from "sonner";
+
+// Mike's call (Q5): painted screws (PSC*) only stock in these 4 colors.
+// Picking any other color while a screw is in the cart triggers an auto-added
+// setup charge: CHGSCSCRSETUP ($40) for non-stocking standard colors,
+// CHGCCSCRSETUP ($150) for Custom color.
+const STOCKING_SCREW_COLORS = ["Rideau Brown", "Phantom Bronze", "White", "Black"];
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import ProductTable from "@/components/ProductTable";
@@ -32,7 +38,77 @@ export default function Home() {
   const [profileFilter, setProfileFilter] = useState<string[]>([]);
   const [colorSelection, setColorSelection] = useState<string>("UNSPECIFIED");
 
-  const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder } = useOrder();
+  const { items: orderItems, totalItems, totalPrice, getEffectivePrice, standardDiscount, infinityDiscount, clearOrder, addItem, removeItem } = useOrder();
+
+  // Tracks which auto-add charge code we put in the cart so we only remove
+  // OUR additions, never a charge the dealer added themselves.
+  const autoAddedScrewChargeRef = useRef<string | null>(null);
+
+  // ── Auto-add the screw setup charge (Mike's Q5 rule) ────────────────────
+  useEffect(() => {
+    if (catalogLoading) return;
+
+    const hasPaintedScrew = orderItems.some((i) => i.partCode.startsWith("PSC"));
+
+    // Determine which setup charge (if any) should be in the cart right now
+    let targetCode: string | null = null;
+    if (hasPaintedScrew) {
+      if (colorSelection === "CUSTOM") {
+        targetCode = "CHGCCSCRSETUP";
+      } else if (colorSelection !== "UNSPECIFIED" && !STOCKING_SCREW_COLORS.includes(colorSelection)) {
+        targetCode = "CHGSCSCRSETUP";
+      }
+    }
+
+    const currentAuto = autoAddedScrewChargeRef.current;
+
+    // Nothing to do
+    if (currentAuto === targetCode) return;
+
+    // Remove the previous auto-added charge (only if WE added it)
+    if (currentAuto && orderItems.some((i) => i.partCode === currentAuto)) {
+      removeItem(currentAuto);
+    }
+
+    // Add the new one
+    if (targetCode) {
+      let chargeItem: any = null;
+      let chargeCat: any = null;
+      let chargeTab: any = null;
+      outer: for (const cat of CATALOG_DATA) {
+        for (const tab of cat.tabs) {
+          const found = tab.items.find((i: any) => i.partCode === targetCode);
+          if (found) {
+            chargeItem = found;
+            chargeCat = cat;
+            chargeTab = tab;
+            break outer;
+          }
+        }
+      }
+      if (chargeItem) {
+        addItem({
+          partCode: chargeItem.partCode,
+          description: chargeItem.description,
+          size: chargeItem.size,
+          unit: chargeItem.unit,
+          dealerPrice: chargeItem.dealerPrice,
+          listPrice: chargeItem.listPrice,
+          isNetPrice: (chargeCat as any).isNetPrice ?? (chargeCat as any).isNet ?? true,
+          isInfinity: (chargeCat as any).isInfinity ?? false,
+          categoryName: (chargeCat as any).name,
+          tabName: (chargeTab as any).name,
+        });
+        const price = chargeItem.dealerPrice ?? 0;
+        toast.info(
+          `Auto-added ${targetCode} ($${price.toFixed(2)}) — required for ${colorSelection === "CUSTOM" ? "Custom color" : colorSelection} screws.`,
+          { duration: 6000 }
+        );
+      }
+    }
+
+    autoAddedScrewChargeRef.current = targetCode;
+  }, [orderItems, colorSelection, catalogLoading, CATALOG_DATA, addItem, removeItem]);
 
   const activeCategory = useMemo(
     () => CATALOG_DATA.find((c) => c.id === activeCategoryId) ?? CATALOG_DATA[0],
@@ -212,6 +288,7 @@ export default function Home() {
             onExport={handleExport}
             onEmail={handleEmail}
             onSummary={() => setSummaryModalOpen(true)}
+            colorSelection={colorSelection}
           />
         )}
       </div>

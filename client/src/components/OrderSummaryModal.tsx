@@ -190,6 +190,15 @@ export default function OrderSummaryModal({ onClose, onExport, onEmail, colorSel
           )}
         </div>
 
+        {/* Custom-color disclaimer (Mike's call: bold red, near the total) */}
+        {colorSelection === "CUSTOM" && (
+          <div className="border-t border-red-200 bg-red-50 px-6 py-2.5">
+            <p className="text-xs font-bold text-red-700 leading-snug">
+              Contact Innovative for Custom Powder and Per-order Setup Add-On Cost
+            </p>
+          </div>
+        )}
+
         {/* Footer */}
         <div className="border-t border-border bg-white px-6 py-4 flex items-center justify-between flex-shrink-0">
           <div className="flex items-center gap-4">

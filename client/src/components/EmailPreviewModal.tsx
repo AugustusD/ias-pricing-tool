@@ -112,6 +112,10 @@ export default function EmailPreviewModal({ onClose, colorSelection }: Props) {
     }
     lines.push("-".repeat(72));
     lines.push(`GRAND TOTAL: $${grandTotal.toFixed(2)}`);
+    if (colorSelection === "CUSTOM") {
+      lines.push("");
+      lines.push("*** CONTACT INNOVATIVE FOR CUSTOM POWDER AND PER-ORDER SETUP ADD-ON COST ***");
+    }
     lines.push("");
     lines.push("(Tip: use the Print/PDF button in the pricing tool to attach a formatted copy.)");
 
@@ -227,6 +231,15 @@ export default function EmailPreviewModal({ onClose, colorSelection }: Props) {
                 </tr>
               </tfoot>
             </table>
+
+            {/* Custom-color disclaimer (Mike's call: bold red, immediately after the total) */}
+            {colorSelection === "CUSTOM" && (
+              <div style={{ marginTop: "12px", padding: "10px 12px", backgroundColor: "#FEF2F2", border: "1px solid #FECACA", borderRadius: "4px" }}>
+                <p style={{ margin: 0, color: "#B91C1C", fontWeight: "700", fontSize: "12px", lineHeight: "1.4" }}>
+                  Contact Innovative for Custom Powder and Per-order Setup Add-On Cost
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
