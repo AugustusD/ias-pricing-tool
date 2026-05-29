@@ -139,12 +139,13 @@ export default function Header({
   onColorChange,
   colorRequired,
 }: HeaderProps) {
-  const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount, discountLocked } = useOrder();
+  const { standardDiscount, infinityDiscount, setStandardDiscount, setInfinityDiscount, discountLocked, standardLocked, infinityLocked } = useOrder();
 
   // Don't highlight as "missing" when admin set them to 0 — the lock indicates
-  // the value is intentional, not blank.
-  const stdBlank = !discountLocked && standardDiscount === 0;
-  const infBlank = !discountLocked && infinityDiscount === 0;
+  // the value is intentional, not blank. Per-field, so an unlocked-but-blank
+  // field still asks the dealer to fill it in.
+  const stdBlank = !standardLocked && standardDiscount === 0;
+  const infBlank = !infinityLocked && infinityDiscount === 0;
 
   return (
     <header className="ias-header flex-shrink-0 z-50">
@@ -287,7 +288,7 @@ export default function Header({
             value={standardDiscount}
             onChange={setStandardDiscount}
             highlight={stdBlank}
-            locked={discountLocked}
+            locked={standardLocked}
           />
 
           <div className="w-px h-5 bg-black/10" />
@@ -297,7 +298,7 @@ export default function Header({
             value={infinityDiscount}
             onChange={setInfinityDiscount}
             highlight={infBlank}
-            locked={discountLocked}
+            locked={infinityLocked}
           />
 
           {/* Hint copy: "set by IAS" when locked, "← Enter your discount" when blank */}

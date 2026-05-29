@@ -29,10 +29,15 @@ type OrderContextType = {
   infinityDiscount: number;
   setStandardDiscount: (d: number) => void;
   setInfinityDiscount: (d: number) => void;
-  /** True when the discounts were supplied by the Dealer Portal via URL
-   *  hash. When locked, the Header should render the values as read-only —
-   *  the admin is the source of truth and dealers can't override them. */
+  /** True when EITHER discount was supplied by the Dealer Portal via URL
+   *  hash. Header uses this for the "Set by IAS" tagline. The two per-field
+   *  flags below are what drive each individual input's read-only state —
+   *  the portal may set only one of the two (e.g. dealer has Infinity
+   *  discount but no Standard yet), and the unlocked field should remain
+   *  editable. */
   discountLocked: boolean;
+  standardLocked: boolean;
+  infinityLocked: boolean;
   getEffectivePrice: (item: OrderItem) => number;
 };
 
@@ -52,21 +57,26 @@ function readLS(key: string): number {
 
 // Read the dealer's discounts from the URL hash, dropped here by the Dealer
 // Portal's Order Sheets tile. Format: #std=33.5&inf=43.5 (percentages, 0-100).
-// When present, both fields are locked — admin is the source of truth.
-// Returns null if no hash params are present.
-function readHashDiscounts(): { standard: number; infinity: number } | null {
+// Either key may be absent — the portal only emits values for discount
+// columns that are actually set on the dealer. A missing key means "fall
+// back to localStorage / 0 and DON'T lock that field" rather than "set
+// this field to 0 and lock it". Returns null if neither key is present.
+function readHashDiscounts(): { standard: number | null; infinity: number | null } | null {
   if (typeof window === "undefined" || !window.location.hash) return null;
   const raw = window.location.hash.startsWith("#") ? window.location.hash.slice(1) : window.location.hash;
   const params = new URLSearchParams(raw);
   const std = params.get("std");
   const inf = params.get("inf");
   if (std === null && inf === null) return null;
-  const stdN = std === null ? 0 : parseFloat(std);
-  const infN = inf === null ? 0 : parseFloat(inf);
-  if (!Number.isFinite(stdN) || !Number.isFinite(infN)) return null;
+  function parseClamped(s: string | null): number | null {
+    if (s === null) return null;
+    const n = parseFloat(s);
+    if (!Number.isFinite(n)) return null;
+    return Math.min(100, Math.max(0, n));
+  }
   return {
-    standard: Math.min(100, Math.max(0, stdN)),
-    infinity: Math.min(100, Math.max(0, infN)),
+    standard: parseClamped(std),
+    infinity: parseClamped(inf),
   };
 }
 
@@ -75,11 +85,15 @@ const OrderContext = createContext<OrderContextType | null>(null);
 export function OrderProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<OrderItem[]>([]);
 
-  // Hash discounts win over localStorage. If the dealer arrived via the
-  // portal's Order Sheets tile, both values come from the admin and are
-  // locked. Otherwise fall back to the manual-entry localStorage flow.
+  // Hash discounts win over localStorage. The portal only emits keys for
+  // discount columns the dealer actually has set, so a missing key here
+  // means "no admin value — let the dealer enter their own" rather than
+  // "lock at 0". discountLocked is therefore per-field. Either being true
+  // means we treat this session as admin-managed.
   const hashDiscounts = readHashDiscounts();
-  const [discountLocked] = useState<boolean>(hashDiscounts !== null);
+  const [standardLocked] = useState<boolean>(hashDiscounts?.standard != null);
+  const [infinityLocked] = useState<boolean>(hashDiscounts?.infinity != null);
+  const discountLocked = standardLocked || infinityLocked;
   const [standardDiscount, setStandardDiscountState] = useState<number>(
     () => hashDiscounts?.standard ?? readLS(LS_STANDARD)
   );
@@ -87,14 +101,20 @@ export function OrderProvider({ children }: { children: React.ReactNode }) {
     () => hashDiscounts?.infinity ?? readLS(LS_INFINITY)
   );
 
-  // Persist discounts to localStorage whenever they change
+  // Persist discounts to localStorage whenever they change — but ONLY for
+  // fields the dealer can actually edit. A locked (admin-set) field should
+  // not overwrite the dealer's previously-saved manual value, otherwise a
+  // later standalone visit (no hash) would load the admin number instead
+  // of what the dealer last typed.
   useEffect(() => {
+    if (standardLocked) return;
     try { localStorage.setItem(LS_STANDARD, String(standardDiscount)); } catch {}
-  }, [standardDiscount]);
+  }, [standardDiscount, standardLocked]);
 
   useEffect(() => {
+    if (infinityLocked) return;
     try { localStorage.setItem(LS_INFINITY, String(infinityDiscount)); } catch {}
-  }, [infinityDiscount]);
+  }, [infinityDiscount, infinityLocked]);
 
   const setStandardDiscount = useCallback((d: number) => {
     setStandardDiscountState(Math.min(100, Math.max(0, d)));
@@ -175,6 +195,8 @@ export function OrderProvider({ children }: { children: React.ReactNode }) {
         setStandardDiscount,
         setInfinityDiscount,
         discountLocked,
+        standardLocked,
+        infinityLocked,
         getEffectivePrice,
       }}
     >
